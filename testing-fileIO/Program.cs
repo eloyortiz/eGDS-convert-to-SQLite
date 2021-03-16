@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
@@ -22,14 +23,14 @@ namespace testing_fileIO
             Solutions = new List<string>();
             Index = -1;
         }
-        // Other properties, methods, events...
+
     }
 
     class Program
     {
         static void Main(string[] args)
         {
-            string sPathFiles = @"/Users/eortiz/GDS/GDS-UCO/testing-fileIO/data/";
+            string sPathFiles = @"/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/data/";
             string sPathInputFiles = @sPathFiles + "_PANTALLAS/";
             string sPathOutoutFiles = @sPathFiles + "_output/";
             string sFilename = "pantallas.txt";
@@ -37,7 +38,7 @@ namespace testing_fileIO
             
             List<Pantalla> Listado = new List<Pantalla>();
 
-          
+            #region TESTING
             //// Example #1
             //// Read the file as one string.
             //string text = System.IO.File.ReadAllText( sPathFile + sFilename) ;
@@ -50,6 +51,7 @@ namespace testing_fileIO
             // Example #2
             // Read each line of the file into a string array. Each element
             // of the array is one line of the file.
+            #endregion
 
             string[] pantallas = File.ReadAllLines(sPathFiles + sFilename);
             foreach (string pantalla in pantallas)
@@ -100,6 +102,18 @@ namespace testing_fileIO
                             oPantalla.Solutions.Add(content);
                             break;
 
+                        case 9: //fin de pantalla
+                            Listado.Add(oPantalla);
+                            oPantalla = new Pantalla();
+
+                            string json = JsonConvert.SerializeObject(Listado, Formatting.Indented);
+                            Console.WriteLine(json);
+
+                            WriteCSV(Listado, sPathOutoutFiles + pantalla + ".csv");
+
+                           
+                            break;
+
                         default:
                             break;
                     }
@@ -112,22 +126,22 @@ namespace testing_fileIO
             }
 
 
-            string json = JsonConvert.SerializeObject(Listado, Formatting.Indented);
-            Console.WriteLine(json);
+            //string json = JsonConvert.SerializeObject(Listado, Formatting.Indented);
+            //Console.WriteLine(json);
 
-            WriteCSV(Listado, sPathOutoutFiles + "pantallas.csv");
+            //WriteCSV(Listado, sPathOutoutFiles + "pantallas.csv");
 
-            //LISTADO DE PANTALLAS FORMADO
-            foreach ( Pantalla pantalla in Listado)
-            {
-                string nuevo = pantalla.Index.ToString() + ".txt";
+            ////LISTADO DE PANTALLAS FORMADO
+            //foreach ( Pantalla pantalla in Listado)
+            //{
+            //    string nuevo = pantalla.Index.ToString() + ".txt";
 
-                //ESCRIBE FICHERO
-                //Task writeContent = WriteLines(sPathOutoutFiles + nuevo, lines);
+            //    //ESCRIBE FICHERO
+            //    //Task writeContent = WriteLines(sPathOutoutFiles + nuevo, lines);
 
 
                 
-            }
+            //}
 
             //// Display the file contents by using a foreach loop.
             //Console.WriteLine("Contents of {0} = ", sFilename);
@@ -146,18 +160,12 @@ namespace testing_fileIO
 
         public static async Task WriteText(string sPathFileName, string sText)
         {
-            //string text =
-            //    "A class is the most powerful data type in C#. Like a structure, " +
-            //    "a class defines the data and behavior of the data type. ";
-
             await File.WriteAllTextAsync(sPathFileName, sText);
-
         }
 
         public static async Task WriteLines(string sPathFileName, string[] sLines)
         {
             await File.WriteAllLinesAsync(sPathFileName, sLines);
-
         }
 
         public static void WriteCSV<T>(IEnumerable<T> items, string path)
@@ -175,5 +183,6 @@ namespace testing_fileIO
                 }
             }
         }
+
     }
 }
