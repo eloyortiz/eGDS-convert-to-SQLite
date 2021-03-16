@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Data.Sqlite;
 using Newtonsoft.Json;
 
 namespace testing_fileIO
@@ -37,6 +38,37 @@ namespace testing_fileIO
 
             
             List<Pantalla> Listado = new List<Pantalla>();
+
+
+            #region SQLITE
+            // /Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/data/egds.db
+            using (var connection = new SqliteConnection("Data Source=/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/data/egds.db"))
+            {
+                connection.Open();
+                var idCode = "111111";
+
+                var command = connection.CreateCommand();
+                command.CommandText =
+                @"
+                    SELECT *
+                    FROM Users
+                    WHERE idCode = $idCode                    
+                ";
+                command.Parameters.AddWithValue("$idCode", idCode);
+
+        
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var name = reader.GetString(1);
+
+                        Console.WriteLine($"Hello, {name}!");
+                    }
+                }
+            }
+
+            #endregion SQLITE
 
             #region TESTING
             //// Example #1
@@ -107,7 +139,7 @@ namespace testing_fileIO
                             oPantalla = new Pantalla();
 
                             string json = JsonConvert.SerializeObject(Listado, Formatting.Indented);
-                            Console.WriteLine(json);
+                            //Console.WriteLine(json);
 
                             WriteCSV(Listado, sPathOutoutFiles + pantalla + ".csv");
 
@@ -120,8 +152,6 @@ namespace testing_fileIO
 
                     
                 }
-
-              
 
             }
 
