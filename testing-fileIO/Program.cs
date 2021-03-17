@@ -7,14 +7,14 @@ using System.Text.Json;
 
 namespace testing_fileIO
 {
-    public class Pantalla
+    public class Section
     {
         public int Index { get; set; }
         public List<string> TerminalText { get; set; }
         public List<string> InfoText { get; set; }
         public List<string> Solutions { get; set; }
 
-        public Pantalla()
+        public Section()
         {
             InfoText = new List<string>();
             TerminalText = new List<string>();
@@ -22,6 +22,21 @@ namespace testing_fileIO
             Index = -1;
         }
 
+    }
+    public class Classroom
+    {
+        public int Index { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public List<Section> SectionsList { get; set; }
+
+        public Classroom()
+        {
+            Name = string.Empty;
+            Description = string.Empty;
+            SectionsList = new List<Section>();
+            Index = 0;
+        }
     }
 
     class Program
@@ -41,8 +56,8 @@ namespace testing_fileIO
             string sFilePantallas = "pantallasTodas.txt";
             var sqliteDbPath = "Data Source=" + sPathFiles + "egds.db";
 
-
-            List<Pantalla> Listado = new List<Pantalla>();
+            List<Classroom> ClassroomList = new List<Classroom>();
+           // List<Section> SectionsList = new List<Section>();
 
             #region SQLITE
             
@@ -78,10 +93,14 @@ namespace testing_fileIO
             string[] pantallas = File.ReadAllLines(sPathFiles + sFilePantallas);
             foreach (string pantalla in pantallas)
             {
+                Classroom oClassroom = new Classroom();
+                oClassroom.Index = ClassroomList.Count + 1;
+              
+
                 //SON TODAS LAS LINEAS DEL FICHERO DE PANTALLA
                 string[] lines = File.ReadAllLines(sPathInputFiles + pantalla);
 
-                Pantalla oPantalla = new Pantalla();
+                Section oSection = new Section();
                 int currentIndex = -1;
 
                 foreach (string line in lines)
@@ -102,41 +121,49 @@ namespace testing_fileIO
                     {
                         if ( currentIndex > -1)
                         {
-                            Listado.Add(oPantalla);
-                            oPantalla = new Pantalla();
+                            oClassroom.SectionsList.Add(oSection);
+                            oSection = new Section();
                         }
 
                         currentIndex = lineIndex;
-                        oPantalla.Index = currentIndex;
+                        oSection.Index = currentIndex;
                     }
 
                     switch ( command )
                     {
+                        case 22: //Classroom Name
+                            oClassroom.Name = content.Trim();
+                            break;
+
                         case 1: //terminalText
-                            oPantalla.TerminalText.Add(content);
+                            oSection.TerminalText.Add(content);
                             break;
 
                         case 2: //infoText
-                            oPantalla.InfoText.Add(content);
+                            oSection.InfoText.Add(content);
                             break;
 
                         case 5: //solutions
-                            oPantalla.Solutions.Add(content);
+                            oSection.Solutions.Add(content);
                             break;
 
                         case 9: //fin de pantalla
-                            Listado.Add(oPantalla);
-                            oPantalla = new Pantalla();
+                            
+                            oClassroom.SectionsList.Add(oSection);
+                            ClassroomList.Add(oClassroom);
 
-                            string jsonString = JsonSerializer.Serialize(Listado);
+                            oSection = new Section();
+
+                            string jsonString = JsonSerializer.Serialize(oClassroom.SectionsList);
 
                             var options = new JsonSerializerOptions
                             {
                                 WriteIndented = true
                             };
 
-                            jsonString = JsonSerializer.Serialize(Listado, options);
+                            jsonString = JsonSerializer.Serialize(oClassroom.SectionsList, options);
                             File.WriteAllText(sPathOutputFiles + pantalla.Split('.')[0] + ".json", jsonString);
+                            
 
                             break;
 
@@ -151,9 +178,6 @@ namespace testing_fileIO
 
             #endregion FIN LECTURA FICHEROS
 
-           
-
         }
-
     }
 }
