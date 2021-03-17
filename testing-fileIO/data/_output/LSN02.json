@@ -1,0 +1,878 @@
+[
+  {
+    "Index": 0,
+    "TerminalText": [],
+    "InfoText": [
+      " After finishing this lesson,  you will be able to...",
+      " ",
+      "   [ encode and decode airlines.",
+      "   [ encode and decode cities and airports.",
+      "   [ encode and decode equipment.",
+      "   [ encode and decode countries.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 1,
+    "TerminalText": [],
+    "InfoText": [
+      "The term itinerary refers to all the departure points,  connecting points,  and",
+      "destinations in a trip. The following itinerary consists of 2 segments:",
+      "",
+      "                          1.^Paris^ -^ London^",
+      "                          2.^London^ -^ Paris^",
+      " ",
+      "This itinerary is a round trip. The first segment is called the outbound ",
+      "segment,  and the second segment is called the return segment.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 2,
+    "TerminalText": [],
+    "InfoText": [
+      "City codes and airport codes are used to indicate the board point and off ",
+      "point of each segment,  as follows:",
+      "                                      MADPAR^",
+      "                                       !  !",
+      "                        Board point~~~~{  }~~~~Off point",
+      " ",
+      "This city pair would indicate a segment from Madrid (MAD to Paris (PAR.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 3,
+    "TerminalText": [],
+    "InfoText": [
+      " The transaction code DAN^ is used to encode a city,  as follows:",
+      "               ",
+      "                                  DAN^MADRID",
+      "                                   !   !",
+      "                    Encode city~~~~{   }~~~~City name",
+      " ",
+      " This entry will display the city code for Madrid. Input this entry now."
+    ],
+    "Solutions": [
+      "DANMADRID",
+      "DAN MADRID"
+    ]
+  },
+  {
+    "Index": 4,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "MAD C MADRID/SPAIN                                 /ES",
+      "    A MAD - MADRID                      0M         /ES"
+    ],
+    "InfoText": [
+      "The response gives the 3-letter IATA code,  the code indicator,  and the",
+      "name. The C after the code indicates that the code is a city code. The A",
+      "in the next line indicates the airport code. The country code is shown on",
+      "the far right. Now encode the city Munich."
+    ],
+    "Solutions": [
+      "DANMUNICH",
+      "DAN MUNICH"
+    ]
+  },
+  {
+    "Index": 5,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "MUC C MUNICH/GERMANY                              /DE",
+      "    A MUC - MUNICH                                /DE"
+    ],
+    "InfoText": [
+      " The transaction code DAC^ is used to decode a city or airport code,  as",
+      " follows:",
+      "                                   DAC^FLR",
+      "                                    !  !",
+      "                     Decode city~~~~{  }~~~~City code",
+      " ",
+      " Input this entry now."
+    ],
+    "Solutions": [
+      "DACFLR",
+      "DAC FLR"
+    ]
+  },
+  {
+    "Index": 6,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "FLR C FLORENCE                   /IT:ITALY"
+    ],
+    "InfoText": [
+      "Now input the entry to decode the city code DUR."
+    ],
+    "Solutions": [
+      "DACDUR",
+      "DAC DUR"
+    ]
+  },
+  {
+    "Index": 7,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "DUR C DURBAN                     /ZA:SOUTH AFRICA"
+    ],
+    "InfoText": [
+      "Encode the city Bremen."
+    ],
+    "Solutions": [
+      "DANBREMEN",
+      "DAN BREMEN"
+    ]
+  },
+  {
+    "Index": 8,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "BRE C BREMEN/GERMANY                               /DE",
+      "    A BRE - BREMEN                      0M         /DE"
+    ],
+    "InfoText": [
+      "Now input the entry to decode the city code PAR. "
+    ],
+    "Solutions": [
+      "DACPAR",
+      "DAC PAR"
+    ]
+  },
+  {
+    "Index": 9,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "CITY :",
+      "  PAR C PARIS                     /FR:FRANCE",
+      "AIRPORT-HELIPORT:",
+      "  CDG A CHARLES DE GAULLE         /FR       -  0M",
+      "  LBG A LE BOURGET                /FR       -  0M",
+      "  ORY A ORLY                      /FR       -  0M",
+      "  TNF A TOUSSUS LE NOBLE          /FR       -  0M",
+      "  JDP A HELIPORT DE PARIS         /FR       -  0M",
+      "  JPU A LA DEFENSE HPT            /FR       -  0M"
+    ],
+    "InfoText": [
+      "Some cities have multiple airports. In this case,  each airport has a",
+      "different code. In this example,  PAR is the city code for Paris,  whereas",
+      "CDG is the code for the Charles de Gaulle airport. Now encode the city",
+      "Barcelona."
+    ],
+    "Solutions": [
+      "DANBARCELONA",
+      "DAN BARCELONA"
+    ]
+  },
+  {
+    "Index": 10,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "BCN C BARCELONA/SPAIN                               /ES",
+      "    A BCN - BARCELONA                               /ES"
+    ],
+    "InfoText": [
+      "Each airline has a two-letter code. To encode an airline,  type DNA^ followed",
+      "by the airline\u0027s name,  as follows: ",
+      " ",
+      "                               DNA^AMERICA WEST",
+      "                                !      !",
+      "              Encode airline~~~~{      }~~~~Airline name",
+      " ",
+      " This entry will display the airline code for America West. Input this entry."
+    ],
+    "Solutions": [
+      "DNAAMERICA WEST",
+      "DNA AMERICA WEST",
+      "DNA AMERICAWEST",
+      "DNAAMERICAWEST",
+      "DNA AMERICA WEST AIRLINES",
+      "DNAAMERICA WEST AIRLINES",
+      "DNA AMERICAWESTAIRLINES",
+      "DNAAMERICAWESTAIRLINES"
+    ]
+  },
+  {
+    "Index": 11,
+    "TerminalText": [
+      "HP/AWE 401 AMERICA WEST AIRLINES"
+    ],
+    "InfoText": [
+      " The response shows the 2-letter carrier code,  the 3-letter code,  the",
+      " 3-digit numeric code,  and the name of the airline. The transaction code",
+      " DNA^ is also used to decode an airline code,  as follows:",
+      " ",
+      "                                    DNA^CX",
+      " ",
+      " This entry will decode the airline code CX. Input this entry now."
+    ],
+    "Solutions": [
+      "DNACX",
+      "DNA CX"
+    ]
+  },
+  {
+    "Index": 12,
+    "TerminalText": [
+      "CX/CPA 160 CATHAY PACIFIC AIRWAYS"
+    ],
+    "InfoText": [
+      "Now decode the airline code OS."
+    ],
+    "Solutions": [
+      "DNAOS",
+      "DNA OS"
+    ]
+  },
+  {
+    "Index": 13,
+    "TerminalText": [
+      "OS/AUA 257 AUSTRIAN AIRLINES"
+    ],
+    "InfoText": [
+      " Encode the airline Aer Lingus. "
+    ],
+    "Solutions": [
+      "DNAAER LINGUS",
+      "DNA AER LINGUS",
+      "DNA AERLINGUS",
+      "DNAAERLINGUS"
+    ]
+  },
+  {
+    "Index": 14,
+    "TerminalText": [
+      "EI/EIN 053 AER LINGUS"
+    ],
+    "InfoText": [
+      " Decode the airline code JU."
+    ],
+    "Solutions": [
+      "DNAJU",
+      "DNA JU"
+    ]
+  },
+  {
+    "Index": 15,
+    "TerminalText": [
+      "JU/JAT 115 YUGOSLAV AIRLINES"
+    ],
+    "InfoText": [
+      " Each passenger aircraft has a three-letter equipment code. The transaction",
+      " code DNE^ is used to encode aircraft equipment,  as follows:",
+      " ",
+      "                               DNE^FOKKER F27",
+      " ",
+      " This entry will display the equipment code for Fokker F27 aircraft. Input",
+      " this entry now."
+    ],
+    "Solutions": [
+      "DNEFOKKER F27",
+      "DNE FOKKER F27",
+      "DNEFOKKERF27",
+      "DNEFOKKERF27"
+    ]
+  },
+  {
+    "Index": 16,
+    "TerminalText": [
+      "F27 N FOKKER F27 FRIENDSHIP"
+    ],
+    "InfoText": [
+      " The entry code DNE^ is also used to decode an equipment code,  as follows:",
+      " ",
+      "                                    DNE^DH8",
+      " ",
+      "Decode the equipment code M80."
+    ],
+    "Solutions": [
+      "DNEM80",
+      "DNE M80"
+    ]
+  },
+  {
+    "Index": 17,
+    "TerminalText": [
+      "DNEM80",
+      "M80 N MCDONNELL DOUGLAS"
+    ],
+    "InfoText": [
+      "Encode the equipment Cessna."
+    ],
+    "Solutions": [
+      "DNECESSNA",
+      "DNE CESSNA"
+    ]
+  },
+  {
+    "Index": 18,
+    "TerminalText": [
+      "CNJ N CESSNA CITATION",
+      "CNA N CESSNA"
+    ],
+    "InfoText": [
+      "Now decode the equipment code GRG."
+    ],
+    "Solutions": [
+      "DNEGRG",
+      "DNE GRG"
+    ]
+  },
+  {
+    "Index": 19,
+    "TerminalText": [
+      "GRG N GRUMMAN G-21"
+    ],
+    "InfoText": [
+      "The entry code DC^ is used to encode or decode a country,  as follows:",
+      " ",
+      "                                  DC^JAPAN",
+      " ",
+      "This entry will display the country code for Japan. Input this entry now."
+    ],
+    "Solutions": [
+      "DCJAPAN",
+      "DC JAPAN"
+    ]
+  },
+  {
+    "Index": 20,
+    "TerminalText": [
+      "JP    JAPAN/ASIA                          TC3",
+      " ",
+      "JPY   JAPANESE YEN                        LOCAL/INTL PUBLISHED"
+    ],
+    "InfoText": [
+      "The response shows the 2-letter country code,  the country name,  the",
+      "region,  and the IATA traffic conference area. The ISO currency code is",
+      "also displayed. The transaction code DC^ is also used to decode a country",
+      "Input the entry to decode the country code IT."
+    ],
+    "Solutions": [
+      "DCIT",
+      "DC IT"
+    ]
+  },
+  {
+    "Index": 21,
+    "TerminalText": [
+      "IT    ITALY/EUROPE                        TC2",
+      " ",
+      "EUR   EURO       LOCAL/INTL PUBLISHED"
+    ],
+    "InfoText": [
+      "Let\u0027s review. Encode the airline Egyptair."
+    ],
+    "Solutions": [
+      "DNAEGYPTAIR",
+      "DNA EGYPTAIR"
+    ]
+  },
+  {
+    "Index": 22,
+    "TerminalText": [
+      "MS/MSR 077  EGYPTAIR"
+    ],
+    "InfoText": [
+      "Display the city code for Brussels."
+    ],
+    "Solutions": [
+      "DANBRUSSELS",
+      "DAN BRUSSELS"
+    ]
+  },
+  {
+    "Index": 23,
+    "TerminalText": [
+      "BRU C BRUSSELS/BELGIUM                               /DE",
+      "    A BRU - BRUSSELS                                 /DE"
+    ],
+    "InfoText": [
+      "Decode the carrier code AY."
+    ],
+    "Solutions": [
+      "DNAAY",
+      "DNA AY"
+    ]
+  },
+  {
+    "Index": 24,
+    "TerminalText": [
+      "AY/FIN 105     FINNAIR"
+    ],
+    "InfoText": [
+      "Decode the city code STR."
+    ],
+    "Solutions": [
+      "DACSTR",
+      "DAC STR"
+    ]
+  },
+  {
+    "Index": 25,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "STR C STUTTGART/GERMANY                              /DE",
+      "    A STR - ECHTERDINGEN                0M           /DE"
+    ],
+    "InfoText": [
+      "Decode the equipment code 744."
+    ],
+    "Solutions": [
+      "DNE744",
+      "DNE 744"
+    ]
+  },
+  {
+    "Index": 26,
+    "TerminalText": [
+      "744 N BOEING 747-400"
+    ],
+    "InfoText": [
+      "Display the country code for Canada."
+    ],
+    "Solutions": [
+      "DCCANADA",
+      "DC CANADA"
+    ]
+  },
+  {
+    "Index": 27,
+    "TerminalText": [
+      "CA    CANADA/NORTH AMERICA                 TC1",
+      "CAD   CANADIAN DOLLAR                      LOCAL/INTL PUBLISHED"
+    ],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 0,
+    "TerminalText": [],
+    "InfoText": [
+      " After finishing this lesson,  you will be able to...",
+      " ",
+      "      [ display neutral availability for a specific date and city pair.",
+      "      [ interpret the information in an availability display.",
+      "      [ specify the departure time.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 1,
+    "TerminalText": [],
+    "InfoText": [
+      "The transaction code AN^ is input to obtain a neutral display of available",
+      "flights for a specific date and city pair. For example,  the following entry",
+      "will display flights departing on 24 January from Frankfurt to Paris:",
+      " ",
+      "                              AN24JANFRAPAR^",
+      "                     Date~~~~~~~~~~{   !",
+      "                     City pair~~~~~~~~~{\u0022    ",
+      " ",
+      "Input this entry now."
+    ],
+    "Solutions": [
+      "AN24JANFRAPAR"
+    ]
+  },
+  {
+    "Index": 2,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **          12 TH 24JAN 0000",
+      " 1   AF1457  C9 Z2 Y9 S9 K9 H9 T9 /FRA 2 CDG2D 0725   0835   0/320       1:10",
+      "             Q9 V9 X9 GR                                                      ",
+      " 2   LH4366  C9 Z9 V8 L7 H6 B0 G0 /FRA 1 ORY S 0730   0845   0/737       1:15",
+      "             K0 Q0 M0                                                         ",
+      " 3   LH4428  C9 Z9 V9 L9 H9 B9 G9 /FRA 1 CDG 1 0845   0955   0/314       1:10",
+      "             K9 Q9 W9 M9                                                      ",
+      " 4   AF1445  C9 Z2 Y9 S9 K9 H9 T9 /FRA 2 CDG2D 1025   1135   0/AB3       1:10",
+      "             Q9 V9 X9 GR                                                      ",
+      " 5   AF1441  C9 Z2 Y9 S9 K9 H9 T9 /FRA 2 CDG2D 1210   1320   0/735       1:10",
+      "             Q9 V9 X9 GR                                                      ",
+      " 6   LH4410  C9 Z9 V9 L9 H9 B9 G9 /FRA 1 CDG 1 1245   1355   0/314       1:10",
+      "             K9 Q9 W9 M9                                                      "
+    ],
+    "InfoText": [
+      "If a city code is input for a multi-airport city,  AMADEUS will display",
+      "flights for all local airports. Display availability for flights departing",
+      "on 26 August from PAR to MAD."
+    ],
+    "Solutions": [
+      "AN26AUGPARMAD"
+    ]
+  },
+  {
+    "Index": 3,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          21 FR 26AUG 0000",
+      " 1   IB3409  C9 Y9 L9 W9 K9 Q9 V5 /ORY S MAD I 0705   0900   0/M87         1:55",
+      "             T5                                                              ",
+      " 2   AF1142  C9 Z2 Y9 S9 K9 H9 T9 /CDG2D MAD I 0720   0920   0/320         2:00",
+      "             Q9 V9 X9 GR                                                     ",
+      " 3:  IT8530  D9 B9 L9 M9 V9       /CDG2D MAD I 0720   0920   0/320         2:00",
+      " 4   IT4668  D9 M9 L9 B9 K9 Q9 V9 /ORY W MAD   0725   0920   0/100         1:55",
+      " 5:  AF8614  Y9 K9 Q9 T9 V9       /ORY W MAD   0725   0920   0/100         1:55",
+      " 6:  IT8532  D9 B9 L9 M9 V9       /CDG2D MAD I 0955   1155   0/735         2:00",
+      " 7   AF1114  C9 Z2 Y9 S9 K9 H9 T9 /CDG2D MAD I 0955   1155   0/320         2:00",
+      "             Q9 V9 X9 GR                                                     ",
+      " 8   IB3403  C9 Y9 L9 W9 K9 Q9 T9  ORY S MAD I 1015   1210   0/757         1:55"
+    ],
+    "InfoText": [
+      "The heading identifies the display as an AMADEUS availability display. The",
+      "code AN^ indicates that neutral availability is displayed. The number of ",
+      "days between the current date and the departure date is also shown. The ",
+      "flights in this display will depart 21 days after the current date. The ",
+      "heading also shows the day of the week and the departure date. The 4 digits",
+      "on the end of the heading indicate the departure time. AMADEUS will display ",
+      "the first flights departing within 1 hour of this time. If no departure time",
+      "is specified,  0000 is assumed. ",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 4,
+    "TerminalText": [],
+    "InfoText": [
+      "Each flight has a line number. The carrier code and flight number are shown",
+      "after the line number. In this example,  the flight in line 1 is Iberia 3409, ",
+      "and the flight in line 2 is Air France 1142. The colon (: in line 3 indicates",
+      "a duplicate flight listing operated under multiple airline codes. In this",
+      "example,  IT 8530 is the same flight as AF 1142.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 5,
+    "TerminalText": [],
+    "InfoText": [
+      "The columns to the right of the flight number show the number of seats that",
+      "may be sold in one transaction with immediate confirmation. This information",
+      "is called the seat quota. The maximum number of seats shown in each class",
+      "depends on the carrier\u0027s agreement with AMADEUS. On these flights,  up to 9",
+      "seats may be confirmed immediately in one transaction. A slash after the",
+      "seat quota indicates that last-seat availability is displayed. This code is",
+      "called the dynamic availability indicator.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 6,
+    "TerminalText": [],
+    "InfoText": [
+      "The next columns show the airport and terminal where each flight departs.",
+      "The fight in line 1 departs from Orly from terminal S,  whereas the flight",
+      "in line 2 departs from Charles de Gaulle from terminal 2D.",
+      "\u003CPgDn\u003E  "
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 7,
+    "TerminalText": [],
+    "InfoText": [
+      "The next column shows the airport and terminal where each flight arrives.",
+      "The flight in line 1 arrives at Madrid at the international terminal.",
+      "\u003CPgDn\u003E  "
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 8,
+    "TerminalText": [],
+    "InfoText": [
+      "The departure time and arrival time are shown after the off point. The",
+      "flight in line 1 departs at 0705 and arrives at 0900. The local time is",
+      "displayed for each point.",
+      "\u003CPgDn\u003E  "
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 9,
+    "TerminalText": [],
+    "InfoText": [
+      "The number of stops and the equipment code are displayed after the flight",
+      "times. The slash (/ after the number of stops indicates that the carrier",
+      "is an AMADEUS Access carrier. All the flights in this example are nonstop.",
+      "\u003CPgDn\u003E  "
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 10,
+    "TerminalText": [],
+    "InfoText": [
+      "The AMADEUS access indicator may be one of the following:",
+      " ",
+      "                        /^          AMADEUS Access ",
+      "                        .^          AMADEUS Access Sell ",
+      "                        :^          AMADEUS Access Update ",
+      "                        *^          AMADEUS Direct Access ",
+      "   ",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 11,
+    "TerminalText": [],
+    "InfoText": [
+      "A slash (/ indicates that the actual number of available seats are displayed",
+      "in each class,  up to 9 seats per class. If a reservation is booked,  it will ",
+      "be confirmed immediately by the airline. A dot (. indicates that the actual",
+      "number of available seats is not displayed. However,  if a reservation is",
+      "booked,  it will be confirmed immediately. ",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 12,
+    "TerminalText": [],
+    "InfoText": [
+      "A colon (: indicates that the AMADEUS display is synchronized with the",
+      "airline\u0027s reservation system. If a reservation is booked,  a message will",
+      "be sent notifying the airline. An asterisk (* indicates that the actual",
+      "number of available seats can be obtained from the airline by means of",
+      "a special direct-access entry.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 13,
+    "TerminalText": [],
+    "InfoText": [
+      "Which code indicates that the actual number of available seats is displayed, ",
+      "to a maximum of 9 per class?"
+    ],
+    "Solutions": [
+      "/"
+    ]
+  },
+  {
+    "Index": 14,
+    "TerminalText": [],
+    "InfoText": [
+      "The equipment code is displayed to the right of the AMADEUS Access",
+      "indicator. The flight in line 1 is operated with Airbus 343 aircraft.",
+      "\u003CPgDn\u003E  "
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 15,
+    "TerminalText": [],
+    "InfoText": [
+      "The total elapsed flight time is displayed on the right. The flight in",
+      "line 1 has an elapsed time of 1 hour,  55 minutes.",
+      "\u003CPgDn\u003E  "
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 16,
+    "TerminalText": [],
+    "InfoText": [
+      " Assume a client plans to travel on 19 March from Frankfurt to Vienna.",
+      " Display neutral availability. "
+    ],
+    "Solutions": [
+      "AN19MARFRAVIE"
+    ]
+  },
+  {
+    "Index": 17,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          62 MO 19MAR 0000",
+      " 1:  DL2782  C7 D7 Y7 B7 M7 K7 L7  FRA 1 VIE   0725   0855   0.M80         1:30",
+      "             H7 Q7                                                            ",
+      " 2   OS 122  C4 W4 Y4 M4 L4 K4 B4  FRA 1 VIE   0730   0900   0.M80         1:30",
+      " 3   LH3446  C9 Z9 H9 V9 L9 B9 G9 /FRA 1 VIE 2 0735   0855   0/319         1:20",
+      "             K9 Q9 W9 M9                                                     ",
+      " 4   LH3430  C9 Z9 V9 L9 H9 B9 G9 /FRA 1 VIE 2 0835   0955   0/319         1:20",
+      "             K9 Q9 W9 M9                                                     ",
+      " 5:  UA3640  C4 Y4 B4 M4 H4        FRA 1 VIE   0835   0955   0.319   TR    1:20",
+      " 6   OS 124  C4 W4 Y4 M4 L4 K4 B4  FRA 1 VIE   1110   1235   0.M80         1:25",
+      " 7:  DL2778  C7 D7 Y7 B7 M7 K7 L0  FRA 1 VIE   1110   1235   0.M80         1:25",
+      "             H0 Q0                                                           ",
+      " 8:  UA3642  C4 Y4 B4 M4 H4 Q4 V4  FRA 1 VIE   1240   1400   0.321   TR    1:20"
+    ],
+    "InfoText": [
+      "Display neutral availability on 30 January from Madrid to Lisbon."
+    ],
+    "Solutions": [
+      "AN30JANMADLIS"
+    ]
+  },
+  {
+    "Index": 18,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          15 WE 20JAN 0000",
+      " 1  IB3100  C9 Y9 L9 W9 K9 Q9 V5 /MAD I LIS   0810   0920   0/32S         1:10",
+      "            T5                                                              ",
+      " 2  TP 701  C7 Y7 M7 L7 V7        MAD   LIS   0820   0925   0*737         1:05",
+      " 3  TP 703  C7 Y7 M7 L7 V7        MAD   LIS   1045   1150   0*737         1:05",
+      " 4  IB3106  C9 Y9 L9 W9 K9 Q9 V9 /MAD I LIS   1220   1330   0/M87         1:10",
+      "            T9                                                              ",
+      " 5  TP 705  C7 Y7 M7 L7 V7        MAD   LIS   1450   1555   0*32S         1:05",
+      " 6  NI 809  F4 C4 Y4 H4 M4        MAD   LIS   1500   1605   0 100         1:05",
+      " 7  IB3102  C9 Y9 L9 W9 K9 Q9 V9 /MAD I LIS   1645   1755   0/M87         1:10",
+      "            T2                                                              ",
+      " 8  TP 709  C7 Y7 M7 L7 V7        MAD   LIS   2005   2110   0*737         1:05"
+    ],
+    "InfoText": [
+      "A departure time may be specified as follows:",
+      " ",
+      "                          AN22MARBRUNCE0800^",
+      " ",
+      "When this entry is input,  AMADEUS will search for the flights departing",
+      "within one hour of 0800. Input this entry now."
+    ],
+    "Solutions": [
+      "AN22MARBRUNCE0800",
+      "AN22MARBRUNCE800A",
+      "AN22MARBRUNCE8A"
+    ]
+  },
+  {
+    "Index": 19,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          69 WE 22MAR 0800",
+      " 1   SN 965  C9 Y9 M9 L9 K9 T9 QL  BRU   NCE 1 0945   1125   0/73S        1:40",
+      "             B9                                                              ",
+      " 2   SN 967  C9 Y9 M9 L9 K9 T9 QL  BRU   NCE 1 1430   1610   0/73S        1:40",
+      "             B9                                                               ",
+      " 3   SN 969  C9 Y9 M9 L9 K9 T9 QL  BRU   NCE 1 1920   2100   0/73S        1:40",
+      "             B9                                                              ",
+      " 4   SN9377  C9 Y9 M9 L9 K9 T9 QL  BRU   GVA   1710   1820   0/735           ",
+      "             BL                                                              ",
+      "     SR 758  C9 Z9 Y9 M9 L9 H9 K9  GVA M NCE 1 1900   1955   0.320        2:45",
+      "             BR                                                              "
+    ],
+    "InfoText": [
+      "If a flight has more than 7 booking classes,  the additional classes are",
+      "shown on a separate line. In this display,  SN 965 has 8 booking classes.",
+      "Connecting flights are shown in line 4. SN 9377 departs from BRU to GVA, ",
+      "where passengers transfer to SR 758,  which proceeds to NCE.",
+      "\u003CPgDn\u003E  "
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 20,
+    "TerminalText": [],
+    "InfoText": [
+      "Let\u0027s review. What entry would be used to display neutral availability on",
+      "18 June from Brussels to Madrid?"
+    ],
+    "Solutions": [
+      "AN18JUNBRUMAD"
+    ]
+  },
+  {
+    "Index": 21,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry will display neutral availability from London Heathrow Airport",
+      "to all New York City airports on 29 May? "
+    ],
+    "Solutions": [
+      "AN29MAYLHRNYC"
+    ]
+  },
+  {
+    "Index": 22,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the entry to display neutral availability from Rome Fiumicino Airport",
+      "to Paris Charles de Gaulle Airport on 16 October."
+    ],
+    "Solutions": [
+      "AN16OCTFCOCDG"
+    ]
+  },
+  {
+    "Index": 23,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the entry to display neutral availability from all London airports to",
+      "Manchester on 24 July,  departing at 1400."
+    ],
+    "Solutions": [
+      "AN24JULLONMAN1400",
+      "AN24JULLHRMAN2P"
+    ]
+  },
+  {
+    "Index": 24,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry would be used to display neutral availability on 22 April from",
+      "Dublin to Perth?"
+    ],
+    "Solutions": [
+      "AN22APRDUBPER"
+    ]
+  },
+  {
+    "Index": 25,
+    "TerminalText": [],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  }
+]

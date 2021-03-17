@@ -1,0 +1,5457 @@
+[
+  {
+    "Index": 0,
+    "TerminalText": [],
+    "InfoText": [
+      " After finishing this lesson,  you will be able to...",
+      " ",
+      "   [ encode and decode airlines.",
+      "   [ encode and decode cities and airports.",
+      "   [ encode and decode equipment.",
+      "   [ encode and decode countries.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 1,
+    "TerminalText": [],
+    "InfoText": [
+      "The term itinerary refers to all the departure points,  connecting points,  and",
+      "destinations in a trip. The following itinerary consists of 2 segments:",
+      "",
+      "                          1.^Paris^ -^ London^",
+      "                          2.^London^ -^ Paris^",
+      " ",
+      "This itinerary is a round trip. The first segment is called the outbound ",
+      "segment,  and the second segment is called the return segment.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 2,
+    "TerminalText": [],
+    "InfoText": [
+      "City codes and airport codes are used to indicate the board point and off ",
+      "point of each segment,  as follows:",
+      "                                      MADPAR^",
+      "                                       !  !",
+      "                        Board point~~~~{  }~~~~Off point",
+      " ",
+      "This city pair would indicate a segment from Madrid (MAD to Paris (PAR.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 3,
+    "TerminalText": [],
+    "InfoText": [
+      " The transaction code DAN^ is used to encode a city,  as follows:",
+      "               ",
+      "                                  DAN^MADRID",
+      "                                   !   !",
+      "                    Encode city~~~~{   }~~~~City name",
+      " ",
+      " This entry will display the city code for Madrid. Input this entry now."
+    ],
+    "Solutions": [
+      "DANMADRID",
+      "DAN MADRID"
+    ]
+  },
+  {
+    "Index": 4,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "MAD C MADRID/SPAIN                                 /ES",
+      "    A MAD - MADRID                      0M         /ES"
+    ],
+    "InfoText": [
+      "The response gives the 3-letter IATA code,  the code indicator,  and the",
+      "name. The C after the code indicates that the code is a city code. The A",
+      "in the next line indicates the airport code. The country code is shown on",
+      "the far right. Now encode the city Munich."
+    ],
+    "Solutions": [
+      "DANMUNICH",
+      "DAN MUNICH"
+    ]
+  },
+  {
+    "Index": 5,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "MUC C MUNICH/GERMANY                              /DE",
+      "    A MUC - MUNICH                                /DE"
+    ],
+    "InfoText": [
+      " The transaction code DAC^ is used to decode a city or airport code,  as",
+      " follows:",
+      "                                   DAC^FLR",
+      "                                    !  !",
+      "                     Decode city~~~~{  }~~~~City code",
+      " ",
+      " Input this entry now."
+    ],
+    "Solutions": [
+      "DACFLR",
+      "DAC FLR"
+    ]
+  },
+  {
+    "Index": 6,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "FLR C FLORENCE                   /IT:ITALY"
+    ],
+    "InfoText": [
+      "Now input the entry to decode the city code DUR."
+    ],
+    "Solutions": [
+      "DACDUR",
+      "DAC DUR"
+    ]
+  },
+  {
+    "Index": 7,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "DUR C DURBAN                     /ZA:SOUTH AFRICA"
+    ],
+    "InfoText": [
+      "Encode the city Bremen."
+    ],
+    "Solutions": [
+      "DANBREMEN",
+      "DAN BREMEN"
+    ]
+  },
+  {
+    "Index": 8,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "BRE C BREMEN/GERMANY                               /DE",
+      "    A BRE - BREMEN                      0M         /DE"
+    ],
+    "InfoText": [
+      "Now input the entry to decode the city code PAR. "
+    ],
+    "Solutions": [
+      "DACPAR",
+      "DAC PAR"
+    ]
+  },
+  {
+    "Index": 9,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "CITY :",
+      "  PAR C PARIS                     /FR:FRANCE",
+      "AIRPORT-HELIPORT:",
+      "  CDG A CHARLES DE GAULLE         /FR       -  0M",
+      "  LBG A LE BOURGET                /FR       -  0M",
+      "  ORY A ORLY                      /FR       -  0M",
+      "  TNF A TOUSSUS LE NOBLE          /FR       -  0M",
+      "  JDP A HELIPORT DE PARIS         /FR       -  0M",
+      "  JPU A LA DEFENSE HPT            /FR       -  0M"
+    ],
+    "InfoText": [
+      "Some cities have multiple airports. In this case,  each airport has a",
+      "different code. In this example,  PAR is the city code for Paris,  whereas",
+      "CDG is the code for the Charles de Gaulle airport. Now encode the city",
+      "Barcelona."
+    ],
+    "Solutions": [
+      "DANBARCELONA",
+      "DAN BARCELONA"
+    ]
+  },
+  {
+    "Index": 10,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "BCN C BARCELONA/SPAIN                               /ES",
+      "    A BCN - BARCELONA                               /ES"
+    ],
+    "InfoText": [
+      "Each airline has a two-letter code. To encode an airline,  type DNA^ followed",
+      "by the airline\u0027s name,  as follows: ",
+      " ",
+      "                               DNA^AMERICA WEST",
+      "                                !      !",
+      "              Encode airline~~~~{      }~~~~Airline name",
+      " ",
+      " This entry will display the airline code for America West. Input this entry."
+    ],
+    "Solutions": [
+      "DNAAMERICA WEST",
+      "DNA AMERICA WEST",
+      "DNA AMERICAWEST",
+      "DNAAMERICAWEST",
+      "DNA AMERICA WEST AIRLINES",
+      "DNAAMERICA WEST AIRLINES",
+      "DNA AMERICAWESTAIRLINES",
+      "DNAAMERICAWESTAIRLINES"
+    ]
+  },
+  {
+    "Index": 11,
+    "TerminalText": [
+      "HP/AWE 401 AMERICA WEST AIRLINES"
+    ],
+    "InfoText": [
+      " The response shows the 2-letter carrier code,  the 3-letter code,  the",
+      " 3-digit numeric code,  and the name of the airline. The transaction code",
+      " DNA^ is also used to decode an airline code,  as follows:",
+      " ",
+      "                                    DNA^CX",
+      " ",
+      " This entry will decode the airline code CX. Input this entry now."
+    ],
+    "Solutions": [
+      "DNACX",
+      "DNA CX"
+    ]
+  },
+  {
+    "Index": 12,
+    "TerminalText": [
+      "CX/CPA 160 CATHAY PACIFIC AIRWAYS"
+    ],
+    "InfoText": [
+      "Now decode the airline code OS."
+    ],
+    "Solutions": [
+      "DNAOS",
+      "DNA OS"
+    ]
+  },
+  {
+    "Index": 13,
+    "TerminalText": [
+      "OS/AUA 257 AUSTRIAN AIRLINES"
+    ],
+    "InfoText": [
+      " Encode the airline Aer Lingus. "
+    ],
+    "Solutions": [
+      "DNAAER LINGUS",
+      "DNA AER LINGUS",
+      "DNA AERLINGUS",
+      "DNAAERLINGUS"
+    ]
+  },
+  {
+    "Index": 14,
+    "TerminalText": [
+      "EI/EIN 053 AER LINGUS"
+    ],
+    "InfoText": [
+      " Decode the airline code JU."
+    ],
+    "Solutions": [
+      "DNAJU",
+      "DNA JU"
+    ]
+  },
+  {
+    "Index": 15,
+    "TerminalText": [
+      "JU/JAT 115 YUGOSLAV AIRLINES"
+    ],
+    "InfoText": [
+      " Each passenger aircraft has a three-letter equipment code. The transaction",
+      " code DNE^ is used to encode aircraft equipment,  as follows:",
+      " ",
+      "                               DNE^FOKKER F27",
+      " ",
+      " This entry will display the equipment code for Fokker F27 aircraft. Input",
+      " this entry now."
+    ],
+    "Solutions": [
+      "DNEFOKKER F27",
+      "DNE FOKKER F27",
+      "DNEFOKKERF27",
+      "DNEFOKKERF27"
+    ]
+  },
+  {
+    "Index": 16,
+    "TerminalText": [
+      "F27 N FOKKER F27 FRIENDSHIP"
+    ],
+    "InfoText": [
+      " The entry code DNE^ is also used to decode an equipment code,  as follows:",
+      " ",
+      "                                    DNE^DH8",
+      " ",
+      "Decode the equipment code M80."
+    ],
+    "Solutions": [
+      "DNEM80",
+      "DNE M80"
+    ]
+  },
+  {
+    "Index": 17,
+    "TerminalText": [
+      "DNEM80",
+      "M80 N MCDONNELL DOUGLAS"
+    ],
+    "InfoText": [
+      "Encode the equipment Cessna."
+    ],
+    "Solutions": [
+      "DNECESSNA",
+      "DNE CESSNA"
+    ]
+  },
+  {
+    "Index": 18,
+    "TerminalText": [
+      "CNJ N CESSNA CITATION",
+      "CNA N CESSNA"
+    ],
+    "InfoText": [
+      "Now decode the equipment code GRG."
+    ],
+    "Solutions": [
+      "DNEGRG",
+      "DNE GRG"
+    ]
+  },
+  {
+    "Index": 19,
+    "TerminalText": [
+      "GRG N GRUMMAN G-21"
+    ],
+    "InfoText": [
+      "The entry code DC^ is used to encode or decode a country,  as follows:",
+      " ",
+      "                                  DC^JAPAN",
+      " ",
+      "This entry will display the country code for Japan. Input this entry now."
+    ],
+    "Solutions": [
+      "DCJAPAN",
+      "DC JAPAN"
+    ]
+  },
+  {
+    "Index": 20,
+    "TerminalText": [
+      "JP    JAPAN/ASIA                          TC3",
+      " ",
+      "JPY   JAPANESE YEN                        LOCAL/INTL PUBLISHED"
+    ],
+    "InfoText": [
+      "The response shows the 2-letter country code,  the country name,  the",
+      "region,  and the IATA traffic conference area. The ISO currency code is",
+      "also displayed. The transaction code DC^ is also used to decode a country",
+      "Input the entry to decode the country code IT."
+    ],
+    "Solutions": [
+      "DCIT",
+      "DC IT"
+    ]
+  },
+  {
+    "Index": 21,
+    "TerminalText": [
+      "IT    ITALY/EUROPE                        TC2",
+      " ",
+      "EUR   EURO       LOCAL/INTL PUBLISHED"
+    ],
+    "InfoText": [
+      "Let\u0027s review. Encode the airline Egyptair."
+    ],
+    "Solutions": [
+      "DNAEGYPTAIR",
+      "DNA EGYPTAIR"
+    ]
+  },
+  {
+    "Index": 22,
+    "TerminalText": [
+      "MS/MSR 077  EGYPTAIR"
+    ],
+    "InfoText": [
+      "Display the city code for Brussels."
+    ],
+    "Solutions": [
+      "DANBRUSSELS",
+      "DAN BRUSSELS"
+    ]
+  },
+  {
+    "Index": 23,
+    "TerminalText": [
+      "BRU C BRUSSELS/BELGIUM                               /DE",
+      "    A BRU - BRUSSELS                                 /DE"
+    ],
+    "InfoText": [
+      "Decode the carrier code AY."
+    ],
+    "Solutions": [
+      "DNAAY",
+      "DNA AY"
+    ]
+  },
+  {
+    "Index": 24,
+    "TerminalText": [
+      "AY/FIN 105     FINNAIR"
+    ],
+    "InfoText": [
+      "Decode the city code STR."
+    ],
+    "Solutions": [
+      "DACSTR",
+      "DAC STR"
+    ]
+  },
+  {
+    "Index": 25,
+    "TerminalText": [
+      "A:ARPT B:BUS C:CITY D:DUAL H:HELIPORT O:OFF-PT R:RAIL S:ASSOC.",
+      "STR C STUTTGART/GERMANY                              /DE",
+      "    A STR - ECHTERDINGEN                0M           /DE"
+    ],
+    "InfoText": [
+      "Decode the equipment code 744."
+    ],
+    "Solutions": [
+      "DNE744",
+      "DNE 744"
+    ]
+  },
+  {
+    "Index": 26,
+    "TerminalText": [
+      "744 N BOEING 747-400"
+    ],
+    "InfoText": [
+      "Display the country code for Canada."
+    ],
+    "Solutions": [
+      "DCCANADA",
+      "DC CANADA"
+    ]
+  },
+  {
+    "Index": 27,
+    "TerminalText": [
+      "CA    CANADA/NORTH AMERICA                 TC1",
+      "CAD   CANADIAN DOLLAR                      LOCAL/INTL PUBLISHED"
+    ],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 0,
+    "TerminalText": [],
+    "InfoText": [
+      " After finishing this lesson,  you will be able to...",
+      " ",
+      "      [ display neutral availability for a specific date and city pair.",
+      "      [ interpret the information in an availability display.",
+      "      [ specify the departure time.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 1,
+    "TerminalText": [],
+    "InfoText": [
+      "The transaction code AN^ is input to obtain a neutral display of available",
+      "flights for a specific date and city pair. For example,  the following entry",
+      "will display flights departing on 24 January from Frankfurt to Paris:",
+      " ",
+      "                              AN24JANFRAPAR^",
+      "                     Date~~~~~~~~~~{   !",
+      "                     City pair~~~~~~~~~{\u0022    ",
+      " ",
+      "Input this entry now."
+    ],
+    "Solutions": [
+      "AN24JANFRAPAR"
+    ]
+  },
+  {
+    "Index": 2,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **          12 TH 24JAN 0000",
+      " 1   AF1457  C9 Z2 Y9 S9 K9 H9 T9 /FRA 2 CDG2D 0725   0835   0/320       1:10",
+      "             Q9 V9 X9 GR                                                      ",
+      " 2   LH4366  C9 Z9 V8 L7 H6 B0 G0 /FRA 1 ORY S 0730   0845   0/737       1:15",
+      "             K0 Q0 M0                                                         ",
+      " 3   LH4428  C9 Z9 V9 L9 H9 B9 G9 /FRA 1 CDG 1 0845   0955   0/314       1:10",
+      "             K9 Q9 W9 M9                                                      ",
+      " 4   AF1445  C9 Z2 Y9 S9 K9 H9 T9 /FRA 2 CDG2D 1025   1135   0/AB3       1:10",
+      "             Q9 V9 X9 GR                                                      ",
+      " 5   AF1441  C9 Z2 Y9 S9 K9 H9 T9 /FRA 2 CDG2D 1210   1320   0/735       1:10",
+      "             Q9 V9 X9 GR                                                      ",
+      " 6   LH4410  C9 Z9 V9 L9 H9 B9 G9 /FRA 1 CDG 1 1245   1355   0/314       1:10",
+      "             K9 Q9 W9 M9                                                      "
+    ],
+    "InfoText": [
+      "If a city code is input for a multi-airport city,  AMADEUS will display",
+      "flights for all local airports. Display availability for flights departing",
+      "on 26 August from PAR to MAD."
+    ],
+    "Solutions": [
+      "AN26AUGPARMAD"
+    ]
+  },
+  {
+    "Index": 3,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          21 FR 26AUG 0000",
+      " 1   IB3409  C9 Y9 L9 W9 K9 Q9 V5 /ORY S MAD I 0705   0900   0/M87         1:55",
+      "             T5                                                              ",
+      " 2   AF1142  C9 Z2 Y9 S9 K9 H9 T9 /CDG2D MAD I 0720   0920   0/320         2:00",
+      "             Q9 V9 X9 GR                                                     ",
+      " 3:  IT8530  D9 B9 L9 M9 V9       /CDG2D MAD I 0720   0920   0/320         2:00",
+      " 4   IT4668  D9 M9 L9 B9 K9 Q9 V9 /ORY W MAD   0725   0920   0/100         1:55",
+      " 5:  AF8614  Y9 K9 Q9 T9 V9       /ORY W MAD   0725   0920   0/100         1:55",
+      " 6:  IT8532  D9 B9 L9 M9 V9       /CDG2D MAD I 0955   1155   0/735         2:00",
+      " 7   AF1114  C9 Z2 Y9 S9 K9 H9 T9 /CDG2D MAD I 0955   1155   0/320         2:00",
+      "             Q9 V9 X9 GR                                                     ",
+      " 8   IB3403  C9 Y9 L9 W9 K9 Q9 T9  ORY S MAD I 1015   1210   0/757         1:55"
+    ],
+    "InfoText": [
+      "The heading identifies the display as an AMADEUS availability display. The",
+      "code AN^ indicates that neutral availability is displayed. The number of ",
+      "days between the current date and the departure date is also shown. The ",
+      "flights in this display will depart 21 days after the current date. The ",
+      "heading also shows the day of the week and the departure date. The 4 digits",
+      "on the end of the heading indicate the departure time. AMADEUS will display ",
+      "the first flights departing within 1 hour of this time. If no departure time",
+      "is specified,  0000 is assumed. ",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 4,
+    "TerminalText": [],
+    "InfoText": [
+      "Each flight has a line number. The carrier code and flight number are shown",
+      "after the line number. In this example,  the flight in line 1 is Iberia 3409, ",
+      "and the flight in line 2 is Air France 1142. The colon (: in line 3 indicates",
+      "a duplicate flight listing operated under multiple airline codes. In this",
+      "example,  IT 8530 is the same flight as AF 1142.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 5,
+    "TerminalText": [],
+    "InfoText": [
+      "The columns to the right of the flight number show the number of seats that",
+      "may be sold in one transaction with immediate confirmation. This information",
+      "is called the seat quota. The maximum number of seats shown in each class",
+      "depends on the carrier\u0027s agreement with AMADEUS. On these flights,  up to 9",
+      "seats may be confirmed immediately in one transaction. A slash after the",
+      "seat quota indicates that last-seat availability is displayed. This code is",
+      "called the dynamic availability indicator.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 6,
+    "TerminalText": [],
+    "InfoText": [
+      "The next columns show the airport and terminal where each flight departs.",
+      "The fight in line 1 departs from Orly from terminal S,  whereas the flight",
+      "in line 2 departs from Charles de Gaulle from terminal 2D.",
+      "\u003CPgDn\u003E  "
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 7,
+    "TerminalText": [],
+    "InfoText": [
+      "The next column shows the airport and terminal where each flight arrives.",
+      "The flight in line 1 arrives at Madrid at the international terminal.",
+      "\u003CPgDn\u003E  "
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 8,
+    "TerminalText": [],
+    "InfoText": [
+      "The departure time and arrival time are shown after the off point. The",
+      "flight in line 1 departs at 0705 and arrives at 0900. The local time is",
+      "displayed for each point.",
+      "\u003CPgDn\u003E  "
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 9,
+    "TerminalText": [],
+    "InfoText": [
+      "The number of stops and the equipment code are displayed after the flight",
+      "times. The slash (/ after the number of stops indicates that the carrier",
+      "is an AMADEUS Access carrier. All the flights in this example are nonstop.",
+      "\u003CPgDn\u003E  "
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 10,
+    "TerminalText": [],
+    "InfoText": [
+      "The AMADEUS access indicator may be one of the following:",
+      " ",
+      "                        /^          AMADEUS Access ",
+      "                        .^          AMADEUS Access Sell ",
+      "                        :^          AMADEUS Access Update ",
+      "                        *^          AMADEUS Direct Access ",
+      "   ",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 11,
+    "TerminalText": [],
+    "InfoText": [
+      "A slash (/ indicates that the actual number of available seats are displayed",
+      "in each class,  up to 9 seats per class. If a reservation is booked,  it will ",
+      "be confirmed immediately by the airline. A dot (. indicates that the actual",
+      "number of available seats is not displayed. However,  if a reservation is",
+      "booked,  it will be confirmed immediately. ",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 12,
+    "TerminalText": [],
+    "InfoText": [
+      "A colon (: indicates that the AMADEUS display is synchronized with the",
+      "airline\u0027s reservation system. If a reservation is booked,  a message will",
+      "be sent notifying the airline. An asterisk (* indicates that the actual",
+      "number of available seats can be obtained from the airline by means of",
+      "a special direct-access entry.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 13,
+    "TerminalText": [],
+    "InfoText": [
+      "Which code indicates that the actual number of available seats is displayed, ",
+      "to a maximum of 9 per class?"
+    ],
+    "Solutions": [
+      "/"
+    ]
+  },
+  {
+    "Index": 14,
+    "TerminalText": [],
+    "InfoText": [
+      "The equipment code is displayed to the right of the AMADEUS Access",
+      "indicator. The flight in line 1 is operated with Airbus 343 aircraft.",
+      "\u003CPgDn\u003E  "
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 15,
+    "TerminalText": [],
+    "InfoText": [
+      "The total elapsed flight time is displayed on the right. The flight in",
+      "line 1 has an elapsed time of 1 hour,  55 minutes.",
+      "\u003CPgDn\u003E  "
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 16,
+    "TerminalText": [],
+    "InfoText": [
+      " Assume a client plans to travel on 19 March from Frankfurt to Vienna.",
+      " Display neutral availability. "
+    ],
+    "Solutions": [
+      "AN19MARFRAVIE"
+    ]
+  },
+  {
+    "Index": 17,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          62 MO 19MAR 0000",
+      " 1:  DL2782  C7 D7 Y7 B7 M7 K7 L7  FRA 1 VIE   0725   0855   0.M80         1:30",
+      "             H7 Q7                                                            ",
+      " 2   OS 122  C4 W4 Y4 M4 L4 K4 B4  FRA 1 VIE   0730   0900   0.M80         1:30",
+      " 3   LH3446  C9 Z9 H9 V9 L9 B9 G9 /FRA 1 VIE 2 0735   0855   0/319         1:20",
+      "             K9 Q9 W9 M9                                                     ",
+      " 4   LH3430  C9 Z9 V9 L9 H9 B9 G9 /FRA 1 VIE 2 0835   0955   0/319         1:20",
+      "             K9 Q9 W9 M9                                                     ",
+      " 5:  UA3640  C4 Y4 B4 M4 H4        FRA 1 VIE   0835   0955   0.319   TR    1:20",
+      " 6   OS 124  C4 W4 Y4 M4 L4 K4 B4  FRA 1 VIE   1110   1235   0.M80         1:25",
+      " 7:  DL2778  C7 D7 Y7 B7 M7 K7 L0  FRA 1 VIE   1110   1235   0.M80         1:25",
+      "             H0 Q0                                                           ",
+      " 8:  UA3642  C4 Y4 B4 M4 H4 Q4 V4  FRA 1 VIE   1240   1400   0.321   TR    1:20"
+    ],
+    "InfoText": [
+      "Display neutral availability on 30 January from Madrid to Lisbon."
+    ],
+    "Solutions": [
+      "AN30JANMADLIS"
+    ]
+  },
+  {
+    "Index": 18,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          15 WE 20JAN 0000",
+      " 1  IB3100  C9 Y9 L9 W9 K9 Q9 V5 /MAD I LIS   0810   0920   0/32S         1:10",
+      "            T5                                                              ",
+      " 2  TP 701  C7 Y7 M7 L7 V7        MAD   LIS   0820   0925   0*737         1:05",
+      " 3  TP 703  C7 Y7 M7 L7 V7        MAD   LIS   1045   1150   0*737         1:05",
+      " 4  IB3106  C9 Y9 L9 W9 K9 Q9 V9 /MAD I LIS   1220   1330   0/M87         1:10",
+      "            T9                                                              ",
+      " 5  TP 705  C7 Y7 M7 L7 V7        MAD   LIS   1450   1555   0*32S         1:05",
+      " 6  NI 809  F4 C4 Y4 H4 M4        MAD   LIS   1500   1605   0 100         1:05",
+      " 7  IB3102  C9 Y9 L9 W9 K9 Q9 V9 /MAD I LIS   1645   1755   0/M87         1:10",
+      "            T2                                                              ",
+      " 8  TP 709  C7 Y7 M7 L7 V7        MAD   LIS   2005   2110   0*737         1:05"
+    ],
+    "InfoText": [
+      "A departure time may be specified as follows:",
+      " ",
+      "                          AN22MARBRUNCE0800^",
+      " ",
+      "When this entry is input,  AMADEUS will search for the flights departing",
+      "within one hour of 0800. Input this entry now."
+    ],
+    "Solutions": [
+      "AN22MARBRUNCE0800",
+      "AN22MARBRUNCE800A",
+      "AN22MARBRUNCE8A"
+    ]
+  },
+  {
+    "Index": 19,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          69 WE 22MAR 0800",
+      " 1   SN 965  C9 Y9 M9 L9 K9 T9 QL  BRU   NCE 1 0945   1125   0/73S        1:40",
+      "             B9                                                              ",
+      " 2   SN 967  C9 Y9 M9 L9 K9 T9 QL  BRU   NCE 1 1430   1610   0/73S        1:40",
+      "             B9                                                               ",
+      " 3   SN 969  C9 Y9 M9 L9 K9 T9 QL  BRU   NCE 1 1920   2100   0/73S        1:40",
+      "             B9                                                              ",
+      " 4   SN9377  C9 Y9 M9 L9 K9 T9 QL  BRU   GVA   1710   1820   0/735           ",
+      "             BL                                                              ",
+      "     SR 758  C9 Z9 Y9 M9 L9 H9 K9  GVA M NCE 1 1900   1955   0.320        2:45",
+      "             BR                                                              "
+    ],
+    "InfoText": [
+      "If a flight has more than 7 booking classes,  the additional classes are",
+      "shown on a separate line. In this display,  SN 965 has 8 booking classes.",
+      "Connecting flights are shown in line 4. SN 9377 departs from BRU to GVA, ",
+      "where passengers transfer to SR 758,  which proceeds to NCE.",
+      "\u003CPgDn\u003E  "
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 20,
+    "TerminalText": [],
+    "InfoText": [
+      "Let\u0027s review. What entry would be used to display neutral availability on",
+      "18 June from Brussels to Madrid?"
+    ],
+    "Solutions": [
+      "AN18JUNBRUMAD"
+    ]
+  },
+  {
+    "Index": 21,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry will display neutral availability from London Heathrow Airport",
+      "to all New York City airports on 29 May? "
+    ],
+    "Solutions": [
+      "AN29MAYLHRNYC"
+    ]
+  },
+  {
+    "Index": 22,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the entry to display neutral availability from Rome Fiumicino Airport",
+      "to Paris Charles de Gaulle Airport on 16 October."
+    ],
+    "Solutions": [
+      "AN16OCTFCOCDG"
+    ]
+  },
+  {
+    "Index": 23,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the entry to display neutral availability from all London airports to",
+      "Manchester on 24 July,  departing at 1400."
+    ],
+    "Solutions": [
+      "AN24JULLONMAN1400",
+      "AN24JULLHRMAN2P"
+    ]
+  },
+  {
+    "Index": 24,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry would be used to display neutral availability on 22 April from",
+      "Dublin to Perth?"
+    ],
+    "Solutions": [
+      "AN22APRDUBPER"
+    ]
+  },
+  {
+    "Index": 25,
+    "TerminalText": [],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 0,
+    "TerminalText": [],
+    "InfoText": [
+      " After finishing this lesson,  you will be able to...",
+      "          ",
+      "         [ display return availability.",
+      "         [ scroll the availability display.",
+      "         [ change the departure date or time.",
+      "         [ change the airline,  board point,  or off point.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 1,
+    "TerminalText": [],
+    "InfoText": [
+      "When flight availability is displayed,  the following entry code may be used",
+      "to display availability for return flights:",
+      " ",
+      "                                 ACR^",
+      " ",
+      "To demonstrate,  display neutral availability on 10 April from Munich to",
+      "Frankfurt."
+    ],
+    "Solutions": [
+      "AN10APRMUCFRA"
+    ]
+  },
+  {
+    "Index": 2,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          19 TU 10APR 0000",
+      " 1   LH 117  C9 Z9 V9 H9 B9 L9 G9  MUC   FRA 1 0645   0750   0/734       1:05",
+      "             K9 Q9 W9 M9                                                     ",
+      " 2   LH 115  C9 Z9 V9 H9 B9 L9 G9  MUC   FRA 1 0700   0805   0/AB6       1:05",
+      "             K9 Q9 W9 M9                                                     ",
+      " 3:  UA3621  C4 Y4 B4 M0 H0 Q0 V0  MUC   FRA 1 0745   0850   0.320       1:05",
+      " 4   LH 119  C9 Z9 V9 H9 B8 L4 G3  MUC   FRA 1 0745   0850   0/320       1:05",
+      "             K3 M0                                                           ",
+      " 5:  UA3623  C4 Y4 B4 M4 H4 Q0 V0  MUC   FRA 1 0850   0955   0.734       1:05",
+      " 6   LH 127  C9 Z9 V9 H9 B9 L9 G9  MUC   FRA 1 0850   0955   0/734       1:05",
+      "             K9 Q3 M0                                                        ",
+      " 7:  UA3649  C4 Y4 B4 M4 H4 Q0 V0  MUC   FRA 1 0950   1055   0.321       1:05"
+    ],
+    "InfoText": [
+      "Now display return availability."
+    ],
+    "Solutions": [
+      "ACR"
+    ]
+  },
+  {
+    "Index": 3,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          19 TU 10APR 0000",
+      " 1   LH 162  C9 Z9 V9 H9 B9 L9 G9  FRA 1 MUC   1820   1915   0/734       0:55",
+      "             K9 Q9 W9 M9                                                     ",
+      " 2   LH 166  C9 Z9 V9 H9 B9 L9 G9  FRA 1 MUC   1935   2030   0/320       0:55",
+      "             K9 Q9 W9 M9                                                     ",
+      " 3   LH 170  C9 Z9 V9 H9 B9 L9 G9  FRA 1 MUC   2035   2130   0/AB6       0:55",
+      "             K9 Q9 W9 M9                                                     ",
+      " 4   LH 174  C9 Z9 V9 H9 B9 L9 G9  FRA 1 MUC   2125   1020   0/734       0:55",
+      "             K9 Q9 W9 M9                                                     ",
+      " 5   LH2400  C9 Z9 V9 H9 B9 L9 G9  FRA 1 TXL   1735   1840   0/AB6         ",
+      "             K9 S9 Q9 W9 M9                                                  ",
+      "     LH2524  C9 Z9 V9 H9 B9 S9 L9  TXL   MUC   1910   2020   0/320       2:45",
+      "             K9 G9 Q9 W9 M9                                                  "
+    ],
+    "InfoText": [
+      "The return availability display shows flights from Frankfurt to Munich.",
+      "If a date is not specified,  return flights are displayed for the same",
+      "departure date. The return date may be input as follows:",
+      " ",
+      "                                ACR25FEB^",
+      " ",
+      "This example will display return flights on 25 February. To demonstrate, ",
+      "assume a client plans to travel from Rome to Madrid on 22 April. He prefers",
+      "to depart at about 0800. Display neutral availability."
+    ],
+    "Solutions": [
+      "AN22APRROMMAD0800",
+      "AN22APRFCOMAD0800"
+    ]
+  },
+  {
+    "Index": 4,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          31 SU 22APR 0800",
+      " 1   TG 942  P9 J9 Y9 M9 Q9 B9     FCO   MAD   0750   1010   0/743       2:20",
+      " 2   IB3609  C9 M9 L9 W9 K9 T9     FCO I MAD I 0800   1025   0/320       2:25",
+      " 3   AZ 058  C4 Y4 M4 L4 B4 W4 T4  FCO I MAD I 0915   1145   0*M80       2:30",
+      "             V4 K4                                                           ",
+      " 4   IB3605  C9 M9 L9 W9 K9 T9     FCO I MAD I 1250   1515   0/757       2:25",
+      " 5   AZ 060  C4 Y4 M4 L4 B4 W4 T4  FCO I MAD I 1430   1700   0*M80       2:30",
+      "             V4 K4                                                           ",
+      " 6   KU 167  F4 J4 Y4 B4 H4 T4 VL  FCO I MAD I 1710   1930   0 AB6       2:20",
+      " 7   AZ 062  C4 Y4 M4 L4 B4 W4 T4  FCO I MAD I 1800   2030   0*M80       2:30",
+      "             V4 K4                                                           ",
+      " 8   IB3607  C9 M9 L9 W9 K9 TL     FCO I MAD I 1905   2130   0/320       2:25"
+    ],
+    "InfoText": [
+      "The client wants to return on 29 April. Display return availability."
+    ],
+    "Solutions": [
+      "ACR29APR",
+      "AN29APRMADROM",
+      "ACR7"
+    ]
+  },
+  {
+    "Index": 5,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          38 SU 29APR 0000",
+      " 1   AZ 059  C4 Y4 M4 L4 B4 W4 T4  MAD I FCO I 0735   1000   0*M80       2:25",
+      "             V4 K4                                                           ",
+      " 2   IB3604  C9 M9 L9 W9 K9 TR     MAD I FCO I 0930   1150   0/757       2:20",
+      " 3   TG 943  P9 J9 Y9 M9 Q0 B0     MAD   FCO   1240   1455   0/743       2:15",
+      " 4   AZ 061  C4                    MAD I FCO I 1240   1505   0*M80       2:25",
+      " 5   IB3606  C9 M9 L9 W9 K9 T9     MAD I FCO I 1545   1805   0/320       2:20",
+      " 6   AZ 063  C4 Y4 M4 L4 B4 W4 T4  MAD I FCO I 1755   2020   0*M80       2:25",
+      "             V4 K4                                                           ",
+      " 7   IB3608  C9 M9 L9 W9 K9 T9     MAD I FCO I 2005   2225   0/320       2:20"
+    ],
+    "InfoText": [
+      "This display shows flights from Madrid to Rome departing on 29 April.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 6,
+    "TerminalText": [],
+    "InfoText": [
+      "If the client departs from Madrid at 1545,  what time will he arrive in",
+      "Rome?"
+    ],
+    "Solutions": [
+      "1805",
+      "505P"
+    ]
+  },
+  {
+    "Index": 7,
+    "TerminalText": [],
+    "InfoText": [
+      "The return date and departure time may be input as follows:",
+      " ",
+      "                              ACR19SEP1400^",
+      " ",
+      "This example will display return flights on 19 September,  departing at 1400.",
+      "To demonstrate,  display neutral availability on 23 March from all Paris",
+      "airports to Lisbon,  departing at 0900."
+    ],
+    "Solutions": [
+      "AN23MARPARLIS0900"
+    ]
+  },
+  {
+    "Index": 8,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **           3 TU 23MAR 0900",
+      " 1:  AF8600  Y9 K9 Q9 T9 V9        CDG2D LIS   0800   0930   0/100       2:30",
+      " 2   IT4762  D9 M9 L9 B9 K9 Q9 V9  CDG2D LIS   0800   0930   0/100       2:30",
+      " 3   TP 401  C4 Y7 M7 L7 VR        ORY S LIS   0820   0940   0*320       2:20",
+      " 4:  AF8612  Y9 K9 Q9 T9 V9        ORY W LIS   1035   1150   0/320       2:15",
+      " 5   IT4752  D9 M9 L9 B9 K9 Q9 V9  ORY W LIS   1035   1150   0/320       2:15",
+      " 6   VD 312  C9 Y9 K9 Q9 V9        ORY S LIS   1200   1325   0/M80       2:25",
+      " 7   TP 403  C4 Y7 M7 L7 VR        ORY S LIS   1210   1330   0*320       2:20",
+      " 8:  AF8602  Y9 K9 Q9 T9 V9        CDG2D LIS   1245   1415   0/320       2:30",
+      " 9   IT4766  D9 M9 L9 B9 K9 Q9 V9  CDG2D LIS   1245   1415   0/320       2:30",
+      "10:  AF8604  Y9 K9 Q9 T9 V9        CDG2D LIS   1545   1715   0/100       2:30",
+      "11   IT4768  D9 M9 L9 B9 K9 Q9 V9  CDG2D LIS   1545   1715   0/100       2:30",
+      "12   TP 405  C4 Y7 M7 L7 V7        ORY S LIS   1705   1825   0*320       2:20"
+    ],
+    "InfoText": [
+      "Display return flights on 26 March,  departing at 1200."
+    ],
+    "Solutions": [
+      "ACR26MAR1200",
+      "AN26MARLISPAR1200"
+    ]
+  },
+  {
+    "Index": 9,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **           6 FR 26MAR 1200",
+      " 1   TP 402  C4 Y7 M7 L7 VR        LIS   ORY S 1255   1615   0*320       2:20",
+      " 2   IT4749  D9 M9 L9 B9 K9 Q9 V9  LIS   ORY W 1330   1645   0/320       2:15",
+      " 3:  AF8611  Y9 K9 Q9 T9 V9        LIS   ORY W 1330   1645   0/320       2:15",
+      " 4   VD 315  C9 Y0                 LIS   ORY S 1415   1740   0/M80       2:25",
+      " 5:  AF8605  Y9 K9 Q9 T9 V9        LIS   CDG2D 1515   1840   0/320       2:25",
+      " 6   IT4767  D9 M9 L9 B9 K9 Q9 V9  LIS   CDG2D 1515   1840   0/320       2:25",
+      " 7   TP 404  C4 Y7 M7 L7 VR        LIS   ORY S 1545   1905   0*737       2:20",
+      " 8   TP 406  C4 Y7 M7 L7 V7        LIS   ORY S 1800   2120   0*320       2:20",
+      " 9:  AF8607  Y9 K9 Q9 T9 V9        LIS   CDG2D 1825   2150   0/100       2:25",
+      "10   IT4769  D9 M9 L9 B9 K9 Q9 V9  LIS   CDG2D 1825   2150   0/100       2:25"
+    ],
+    "InfoText": [
+      "Display neutral availability on 14 June from Brussels to Dusseldorf,  departing",
+      "at 0900."
+    ],
+    "Solutions": [
+      "AN14JUNBRUDUS0900",
+      "AN14JUNBRUDUS900A",
+      "AN14JUNBRUDUS9A"
+    ]
+  },
+  {
+    "Index": 10,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          51 TH 14JUN 0900",
+      " 1   SN 401  C9 W9 Y9 M6 L4 K2 BL  BRU   DUS   0650   0735   0/DH8       0:45",
+      " 2   SN 403  C9 W9 Y9 M9 L9 K9 T9  BRU   DUS   1045   1135   0/DH8       0:50",
+      "             BL                                                              ",
+      " 3:  DL2707  C7 D7 Y0 B0 M0 K0 L0  BRU   DUS   1045   1135   0.DH8       0:50",
+      "             H0 Q0                                                           ",
+      " 4:  DL2727  C0 D0 Y0 B0 M0 K0 L0  BRU   DUS   1450   1540   0.DH8       0:50",
+      "             H0 Q0                                                           ",
+      " 5   SN 405  C9 W9 Y9 M9 L9 K8 T4  BRU   DUS   1450   1540   0/DH8       0:50",
+      "             BL                                                              ",
+      " 6   SN 407  C9 W9 Y9 M9 L9 K9 T7  BRU   DUS   1910   2000   0/DH8       0:50",
+      "             BL                                                              ",
+      " 7   SN 409  C9 W9 Y9 M9 L9 K8 T4  BRU   DUS   1000   1050   0/DH8       0:50",
+      "             BL                                                              "
+    ],
+    "InfoText": [
+      "The following entry will display return availability 5 days later:",
+      " ",
+      "                                 ACR5^",
+      " ",
+      "Input this entry."
+    ],
+    "Solutions": [
+      "ACR5",
+      "ACR19JUN",
+      "AN19JUNPARPSA"
+    ]
+  },
+  {
+    "Index": 11,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          56 TU 19JUN 0000",
+      " 1:  DL2708  C0 D0 Y0 B0 M0 K0 L0  DUS   BRU   0805   0855   0.DH8       0:50",
+      "             H0 Q0                                                           ",
+      " 2   SN 402  C9 W9 Y9 M9 L9 K9 T9  DUS   BRU   0805   0855   0/DH8       0:50",
+      "             BL                                                              ",
+      " 3   SN 404  C9 W9 Y9 M8 L4 KL BL  DUS   BRU   1230   1320   0/DH8       0:50",
+      " 4:  DL2710  C0 D0 Y0 B0 M0 K0 L0  DUS   BRU   1230   1320   0.DH8       0:50",
+      "             H0 Q0                                                           ",
+      " 5   SN 406  C9 W9 Y9 M8 L6 K4 BL  DUS   BRU   1655   1745   0/DH8       0:50",
+      " 6:  DL2709  C7 D7 Y0 B0 M0 K0 L0  DUS   BRU   1655   1745   0.DH8       0:50",
+      "             H0 Q0                                                           ",
+      " 7   SN 408  C9 W9 Y9 M9 L9 K9 T7  DUS   BRU   2030   2120   0/DH8       0:50",
+      "             BL                                                              "
+    ],
+    "InfoText": [
+      "Assume a client plans to travel on 19 March from London to Madrid. Display",
+      "neutral availability for all London airports."
+    ],
+    "Solutions": [
+      "AN19MARLONMAD"
+    ]
+  },
+  {
+    "Index": 12,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **           7 TU 19MAR 0000",
+      " 1   IB3161  C9 M9 L9 W9 K9 T9     LHR 2 MAD I 0730   1040   0/M87       2:10",
+      " 2   BA 458  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   0800   1115   0/757       2:15",
+      "             V9                                                              ",
+      " 3   BA2464  C9 D7 S9 B9 M9 L9 Q9  LGW N MAD   0855   1215   0/737       2:20",
+      "             V9                                                              ",
+      " 4   BA 456  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   1000   1315   0/320       2:15",
+      "             V9                                                              ",
+      " 5   UK 972  Y4 S4 M4 B4 L4 V4 Q4  STN   MAD I 1040   1410   0*100       2:30",
+      "             H0                                                              ",
+      " 6   IB3163  C9 M9 L9 W9 K9 TL     LHR 2 MAD I 1135   1450   0/320       2:15",
+      " 7   BA 460  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   1415   1730   0/757       2:15",
+      "             V9                                                              "
+    ],
+    "InfoText": [
+      "The following entries will display other flights for the same date and",
+      "city pair:",
+      " ",
+      "              MD^             Display more (move down",
+      "              MU^             Display previous (move up",
+      "              MT^             Display first (move to top",
+      " ",
+      "Input the entry to display more flights."
+    ],
+    "Solutions": [
+      "MD"
+    ]
+  },
+  {
+    "Index": 13,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **           7 TU 19MAR 0000",
+      " 1   BA 462  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   1900   1015   0/757       2:15",
+      "             V9                                                              ",
+      " 2   IB3167  C9 M9 L9 W9 K9 T9     LHR 2 MAD I 1915   1030   0/757       2:15",
+      " 3   AR1115  J9 Y9 M9 L9 W9 T9 K9  LHR 3 MAD I 1945   1050   0/747       2:05",
+      " 4   BA2470  C9 D6 S9 B9 M9 L9 Q9  LGW N MAD   1950   1110   0/737       2:20",
+      "             V9                                                              ",
+      " 5   UX6018  C9 Y9 Q9 B9           LGW S MAD I 2130   0030\u002B1 0/757       2:00",
+      " 6   IB5151  C9 M9 L9 W9 T5        LHR 2 VLC   1135   1445   0/320         ",
+      "     IB 349  C9 Y9 LL W5 B9 K5 QL  VLC   MAD D 1530   1615   0/320       3:40",
+      "             V5 T9                                                           ",
+      " 7   LG 404  C9 DR M9 K9 L9 Q9 S9  LHR 2 LUX   1345   1550   0/73P         ",
+      "             TR                                                              "
+    ],
+    "InfoText": [
+      "Now input the entry to move up."
+    ],
+    "Solutions": [
+      "MU"
+    ]
+  },
+  {
+    "Index": 14,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **           7 TU 19MAR 0000",
+      " 1   IB3161  C9 M9 L9 W9 K9 T9     LHR 2 MAD I 0730   1040   0/M87       2:10",
+      " 2   BA 458  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   0800   1115   0/757       2:15",
+      "             V9                                                              ",
+      " 3   BA2464  C9 D7 S9 B9 M9 L9 Q9  LGW N MAD   0855   1215   0/737       2:20",
+      "             V9                                                              ",
+      " 4   BA 456  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   1000   1315   0/320       2:15",
+      "             V9                                                              ",
+      " 5   UK 972  Y4 S4 M4 B4 L4 V4 Q4  STN   MAD I 1040   1410   0*100       2:30",
+      "             H0                                                              ",
+      " 6   IB3163  C9 M9 L9 W9 K9 TL     LHR 2 MAD I 1135   1450   0/320       2:15",
+      " 7   BA 460  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   1415   1730   0/757       2:15",
+      "             V9                                                              "
+    ],
+    "InfoText": [
+      "The following entry may be used to change the departure time:",
+      " ",
+      "                              AC1700^",
+      " ",
+      "This entry will change the departure time to 1700. Input the entry to ",
+      "change the display to show flights departing at 1400."
+    ],
+    "Solutions": [
+      "AC1400",
+      "AC2P",
+      "AC200P"
+    ]
+  },
+  {
+    "Index": 15,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **           7 TU 19MAR 1400",
+      " 1   BA 460  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   1415   1730   0/757       2:15",
+      "             V9                                                              ",
+      " 2   BA 462  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   1900   1015   0/757       2:15",
+      "             V9                                                              ",
+      " 3   IB3167  C9 M9 L9 W9 K9 T9     LHR 2 MAD I 1915   1030   0/757       2:15",
+      " 4   AR1115  J9 Y9 M9 L9 W9 T9 K9  LHR 3 MAD I 1945   1050   0/747       2:05",
+      " 5   BA2470  C9 D6 S9 B9 M9 L9 Q9  LGW N MAD   1950   1110   0/737       2:20",
+      "             V9                                                              ",
+      " 6   UX6018  C9 Y9 Q9 B9           LGW S MAD I 2130   0030\u002B1 0/757       2:00",
+      " 7   IB5151  C9 M9 L9 W9 T5        LHR 2 VLC   1135   1445   0/320         ",
+      "     IB 349  C9 Y9 LL W5 B9 K5 QL  VLC   MAD D 1530   1615   0/320       3:40",
+      "             V5 T9                                                           "
+    ],
+    "InfoText": [
+      "Change the display to show flights departing at 1100."
+    ],
+    "Solutions": [
+      "AC1100"
+    ]
+  },
+  {
+    "Index": 16,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **           7 TU 19MAR 1100",
+      " 1   BA 456  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   1000   1315   0/320       2:15",
+      "             V9                                                              ",
+      " 2   UK 972  Y4 S4 M4 B4 L4 V4 Q4  STN   MAD I 1040   1410   0*100       2:30",
+      "             H0                                                              ",
+      " 3   IB3163  C9 M9 L9 W9 K9 TL     LHR 2 MAD I 1135   1450   0/320       2:15",
+      " 4   BA 460  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   1415   1730   0/757       2:15",
+      "             V9                                                              ",
+      " 5   BA 462  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   1900   1015   0/757       2:15",
+      "             V9                                                              ",
+      " 6   IB3167  C9 M9 L9 W9 K9 T9     LHR 2 MAD I 1915   1030   0/757       2:15",
+      " 7   AR1115  J9 Y9 M9 L9 W9 T9 K9  LHR 3 MAD I 1945   1050   0/747       2:05"
+    ],
+    "InfoText": [
+      "Display neutral availability on 14 March from all Rome airports to all",
+      "London airports."
+    ],
+    "Solutions": [
+      "AN14MARROMLON",
+      "AN14MARFCOLON"
+    ]
+  },
+  {
+    "Index": 17,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **           2 TH 14MAR 0000",
+      " 1   BA 551  C9 D9 S9 B9 M9 L9 Q0  FCO   LHR 1 0820   1000   0/767       2:40",
+      "             V0                                                              ",
+      " 2   AZ 200  C4 Y4 M4 L4 B4 W4 T4  FCO I LHR 2 0825   1000   0*M80       2:35",
+      "             V0 K0                                                           ",
+      " 3   AZ 202  C4 Y4 M4 L4 B4 W4 T4  FCO I LHR 2 0930   1105   0*AB3       2:35",
+      "             V4 K4                                                           ",
+      " 4   BA 561  C9 D6 S9 B9 M9 L7 Q7  FCO   LHR 1 1055   1220   0/320       2:25",
+      "             V2                                                              ",
+      " 5   AZ 252  C4 Y4 M4 L4 B4 W4 T4  FCO I LGW S 1120   1245   0*M80       2:25",
+      "             V4 K0                                                           ",
+      " 6   BA 553  C9 D9 S9 B9 M9 L9 Q9  FCO   LHR 1 1225   1400   0/767       2:35",
+      "             V9                                                              "
+    ],
+    "InfoText": [
+      "The departure date of an existing availability display may be changed as",
+      "follows: ",
+      "                               AC18MAR^",
+      " ",
+      "This entry will redisplay availability for 18 March. Input this entry."
+    ],
+    "Solutions": [
+      "AC18MAR",
+      "AC6",
+      "AN18MARROMLON"
+    ]
+  },
+  {
+    "Index": 18,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **           6 MO 18MAR 0000",
+      " 1   BA 551  C9 D9 S9 B9 M9 L9 Q9  FCO   LHR 1 0820   1000   0/767       2:40",
+      "             V9                                                              ",
+      " 2   AZ 200  C4 Y4 M4 L4 B4 W4 T4  FCO I LHR 2 0825   1000   0*M80       2:35",
+      "             V4 K4                                                           ",
+      " 3   AZ 202  C4 Y4 M4 L4 B4 W4 T4  FCO I LHR 2 0930   1105   0*AB3       2:35",
+      "             V4 K4                                                           ",
+      " 4   BA 561  C9 D6 S9 B9 M9 L9 Q9  FCO   LHR 1 1055   1220   0/320       2:25",
+      "             V9                                                              ",
+      " 5   AZ 252  C4 Y4 M4 L4 B4 W4 T4  FCO I LGW S 1120   1245   0*M80       2:25",
+      "             V4 K4                                                           ",
+      " 6   BA 553  C9 D9 S9 B9 M9 L9 Q9  FCO   LHR 1 1225   1400   0/767       2:35",
+      "             V9                                                              "
+    ],
+    "InfoText": [
+      "Redisplay availability on 20 March."
+    ],
+    "Solutions": [
+      "AC20MAR",
+      "AC2",
+      "AN20MARROMLON"
+    ]
+  },
+  {
+    "Index": 19,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **           8 WE 20MAR 0000",
+      " 1   BA 551  C9 D9 S9 B9 M9 L9 Q9  FCO   LHR 1 0820   1000   0/767       2:40",
+      "             V0                                                              ",
+      " 2   AZ 200  C4 Y4 M4 L4 B4 W4 T4  FCO I LHR 2 0825   1000   0*M80       2:35",
+      "             V4 K0                                                           ",
+      " 3   AZ 202  C4 Y4 M4 L4 B4 W4 T4  FCO I LHR 2 0930   1105   0*AB3       2:35",
+      "             V4 K4                                                           ",
+      " 4   BA 561  C9 D6 S9 B9 M9 L7 Q7  FCO   LHR 1 1055   1220   0/320       2:25",
+      "             V2                                                              ",
+      " 5   AZ 252  C4 Y4 M4 L4 B4 W4 T4  FCO I LGW S 1120   1245   0*M80       2:25",
+      "             V4 K4                                                           ",
+      " 6   BA 553  C9 D9 S9 B9 M9 L9 Q9  FCO   LHR 1 1225   1400   0/767       2:35",
+      "             V4                                                              "
+    ],
+    "InfoText": [
+      "The following entries may also be used to change the departure date:",
+      " ",
+      "             AC2^       Display flights 2 days later",
+      "             AC-3^      Display flights 3 days earlier",
+      " ",
+      "Display availability for the same city pair 4 days later."
+    ],
+    "Solutions": [
+      "AC4",
+      "AC16MAR",
+      "AN16MARROMLON"
+    ]
+  },
+  {
+    "Index": 20,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          12 SU 22MAR 0000",
+      " 1   BA 551  C9 D9 S9 B9 M9 L9 Q9  FCO   LHR 1 0820   1000   0/767       2:40",
+      "             V9                                                              ",
+      " 2   AZ 200  C4 Y4 M4 L4 B4 W4 T4  FCO I LHR 2 0825   1000   0*M80       2:35",
+      "             V4 K4                                                           ",
+      " 3   AZ 202  C4 Y4 M4 L4 B4 W4 T4  FCO I LHR 2 0930   1105   0*AB3       2:35",
+      "             V4 K4                                                           ",
+      " 4   BA 561  C9 D6 S9 B9 M9 L9 Q9  FCO   LHR 1 1055   1220   0/320       2:25",
+      "             V9                                                              ",
+      " 5   AZ 252  C4 Y4 M4 L4 B4 W4 T4  FCO I LGW S 1120   1245   0*M80       2:25",
+      "             V4 K4                                                           ",
+      " 6   BA 553  C9 D9 S9 B9 M9 L9 Q9  FCO   LHR 1 1225   1400   0/767       2:35",
+      "             V9                                                              "
+    ],
+    "InfoText": [
+      "Redisplay availability 2 days earlier."
+    ],
+    "Solutions": [
+      "AC-2",
+      "AC14MAR",
+      "AN14MARROMLON"
+    ]
+  },
+  {
+    "Index": 21,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          10 FR 20MAR 0000",
+      " 1   BA 551  C9 D9 S9 B9 M9 L9 Q9  FCO   LHR 1 0820   1000   0/767       2:40",
+      "             V0                                                              ",
+      " 2   AZ 200  C4 Y4 M4 L4 B4 W4 T4  FCO I LHR 2 0825   1000   0*M80       2:35",
+      "             V4 K0                                                           ",
+      " 3   AZ 202  C4 Y4 M4 L4 B4 W4 T4  FCO I LHR 2 0930   1105   0*AB3       2:35",
+      "             V4 K4                                                           ",
+      " 4   BA 561  C9 D6 S9 B9 M9 L7 Q7  FCO   LHR 1 1055   1220   0/320       2:25",
+      "             V2                                                              ",
+      " 5   AZ 252  C4 Y4 M4 L4 B4 W4 T4  FCO I LGW S 1120   1245   0*M80       2:25",
+      "             V4 K4                                                           ",
+      " 6   BA 553  C9 D9 S9 B9 M9 L9 Q9  FCO   LHR 1 1225   1400   0/767       2:35",
+      "             V4                                                              "
+    ],
+    "InfoText": [
+      "The following entries may be used to change the board point or off point:",
+      " ",
+      "              ACOSA^                Change board point to OSA",
+      "              AC//MUC^              Change off point to MUC",
+      " ",
+      "Note that AC^ is typed before the new board point,  and AC//^ is typed before",
+      "the new off point. Input the entry to change the board point to MIL."
+    ],
+    "Solutions": [
+      "ACMIL",
+      "ACLIN",
+      "AN26MARMILLON",
+      "AN26MARMILLON",
+      "AN26MARLINLON"
+    ]
+  },
+  {
+    "Index": 22,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          10 FR 26MAR 0000",
+      " 1  AZ 268  C4 Y4 M4 L4 B4 W4 T4  LIN   LHR 3 0750   0845   0*32S         1:55",
+      "            V4 K4                                                           ",
+      " 2  BA 563  C9 D9 S9 B9 M9 L9 Q9  LIN   LHR 4 0800   0905   0/757         2:05",
+      "            V9",
+      " 3  AZ 458  C4 Y4 M4 L4 B4 W4 T4  LIN   LHR 3 1010   1105   0*32S         1:55",
+      "            V4 K4                                                          ",
+      " 4  UK 921  Y4 S4 M4 B4 L4 V4 Q4  LIN   STN   1110   1215   0*146         2:05",
+      "            H4                                                             ",
+      " 5  BA 565  C9 D9 M9 S9 B9 L9 Q9  LIN   LHR 4 1140   1235   0/767         1:55",
+      "            V4",
+      " 6  BA2573  C9 D9 M9 S9 B9 L9 Q2  LIN   LGW N 1245   1340   0/737         1:55",
+      "            V2"
+    ],
+    "InfoText": [
+      "Now change the off point to Amsterdam."
+    ],
+    "Solutions": [
+      "AC//AMS",
+      "AN26MARMILAMS",
+      "AN26MARLINAMS"
+    ]
+  },
+  {
+    "Index": 23,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          10 FR 26MAR 0000",
+      " 1  KL 340  C7 S7 M7 B7 H7 Q7 L7  LIN   AMS   0650  0840   0.737         1:50",
+      "            V7                                                       ",
+      " 2  AZ 372  C4 Y4 M4 L4 B4 W4 T4  LIN   AMS   0855  1045   0*M80         1:50",
+      "            V4 K4                                                          ",
+      " 3  KL 342  C7 S7 M7 B7 H7 Q7 L7  LIN   AMS   1050  1240   0.310         1:50",
+      "            V7                                                       ",
+      " 4  AZ 386  C4 Y4 M4 L4 B4 W4 T4  LIN   AMS   1205  1355   0*M80         1:50",
+      "            V4 K4                                                          ",
+      " 5  KL 346  C7 S7 M7 B7 H7 Q7 L7  LIN   AMS   1605  1800   0.737         1:55",
+      "            V7                                                       ",
+      " 6  AZ 376  C4 Y4 M4 L4 B4 W4 T4  LIN   AMS   1630  1820   0*M80         1:50",
+      "            V4 K4                                                          "
+    ],
+    "InfoText": [
+      " A specific airline may be indicated as follows:",
+      " ",
+      "                             AC/AKL^",
+      " ",
+      " This entry will change the display to show only KLM flights. Note that /A^",
+      " is typed before the airline code. Input this entry."
+    ],
+    "Solutions": [
+      "AC/AKL"
+    ]
+  },
+  {
+    "Index": 24,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          10 FR 26MAR 0000",
+      " 1  KL 340  C7 S7 M7 B7 H7 Q7 L7  LIN   AMS   0650   0840   0.737         1:50",
+      "            V7                                                       ",
+      " 2  KL 342  C7 S7 M7 B7 H7 Q7 L7  LIN   AMS   1050   1240   0.310         1:50",
+      "            V7                                                       ",
+      " 3  KL 346  C7 S7 M7 B7 H7 Q7 L7  LIN   AMS   1605   1800   0.737         1:55",
+      "            V7                                                       ",
+      " 4  KL 348  C7 S7 M7 B7 H7 Q7 L7  LIN   AMS   2030   2220   0.737         1:50",
+      "            V7                                                       ",
+      " 5  AZ 458  C4 Y4 M4 L4 B4 W4 T4  LIN   LHR   1010   1105   0*32S",
+      "            V4 K4                                                          ",
+      "    KL 120  C7 S7 M7 B7 H7 Q7 L7  LHR   AMS   1300   1505   0.737         3:55",
+      "            V7                                                       "
+    ],
+    "InfoText": [
+      "This display shows direct flights of KLM and connections in which KLM",
+      "participates. Change the selected airline to Alitalia."
+    ],
+    "Solutions": [
+      "AC/AAZ"
+    ]
+  },
+  {
+    "Index": 25,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          10 FR 26MAR 0000",
+      " 1  AZ 372  C4 Y4 M4 L4 B4 W4 T4  LIN   AMS   0855   1045   0*M80         1:50",
+      "            V4 K4                                                          ",
+      " 2  AZ 386  C4 Y4 M4 L4 B4 W4 T4  LIN   AMS   1205   1355   0*M80         1:50",
+      "            V4 K4                                                          ",
+      " 3  AZ 376  C4 Y4 M4 L4 B4 W4 T4  LIN   AMS   1630   1820   0*M80         1:50",
+      "            V4 K4                                                          ",
+      " 4  AZ 458  C4 Y4 M4 L4 B4 W4 T4  LIN   LHR   1010   1105   0*32S",
+      "            V4 K4                                                          ",
+      "    KL 120  C7 S7 M7 B7 H7 Q7 L7  LHR   AMS   1300   1505   0.737         3:55",
+      "            V7                                                       "
+    ],
+    "InfoText": [
+      "Availability can be obtained directly from an airline\u0027s reservation system",
+      "by means of the following entry:",
+      " ",
+      "                                    1AZ^",
+      " ",
+      "This entry will display availability from the Alitalia system. Note that 1^",
+      "is typed before the airline code. Input this entry now."
+    ],
+    "Solutions": [
+      "1AZ",
+      "1AZAD26MARLINAMS",
+      "1AZAD26MARMILAMS",
+      "ACL1",
+      "ACL2",
+      "ACL3"
+    ]
+  },
+  {
+    "Index": 26,
+    "TerminalText": [
+      "** AZ - ALITALIA **                       10 FR 26MAR     ",
+      "21  AZ 372   C7  Y7  M7  L7  B7  LIN AMS 0855  1045   0 M80",
+      "             T7  V7  K7  W7                                ",
+      "22  AZ 386   C7  Y7  M7  L7  B7  LIN AMS 1205  1355   0 M80",
+      "             T7  V7  K7  W7                                ",
+      "23  AZ 376   C7  Y7  M7  L7  B7  LIN AMS 1630  1820   0 M80",
+      "             T7  V7  K7  W7                                "
+    ],
+    "InfoText": [
+      "The information in this display is obtained directly from the airline\u0027s",
+      "reservation system. Such a display is called a direct-access^ display",
+      "and shows the exact number of seats available in each class. The",
+      "maximum number displayed depends on the carrier. Note that the line",
+      "numbers start at 21.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 27,
+    "TerminalText": [],
+    "InfoText": [
+      "Let\u0027s review. What entry would be used to display return availability on",
+      "22 August,  departing at 1700?"
+    ],
+    "Solutions": [
+      "ACR22AUG1700"
+    ]
+  },
+  {
+    "Index": 28,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry will change the departure date of an existing availability",
+      "display to 16 October? "
+    ],
+    "Solutions": [
+      "AC16OCT"
+    ]
+  },
+  {
+    "Index": 29,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry will change the display to show flights departing at 1800?"
+    ],
+    "Solutions": [
+      "AC1800"
+    ]
+  },
+  {
+    "Index": 30,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry will change the off point to VCE?"
+    ],
+    "Solutions": [
+      "AC//VCE"
+    ]
+  },
+  {
+    "Index": 31,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry would be used to change the display to show only flights of",
+      "Lufthansa?"
+    ],
+    "Solutions": [
+      "AC/ALH"
+    ]
+  },
+  {
+    "Index": 32,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry would be used to change the display to a direct-access display",
+      "for BD?"
+    ],
+    "Solutions": [
+      "1BD"
+    ]
+  },
+  {
+    "Index": 33,
+    "TerminalText": [],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 0,
+    "TerminalText": [],
+    "InfoText": [
+      " After finishing this lesson,  you will be able to...",
+      "          ",
+      "   [ display availability by arrival time,  departure time,  or elapsed time.",
+      "   [ display connecting flights for a specific transit point.",
+      "   [ display availability for a specific airline.",
+      "   [ display availability in a specific class.",
+      "   [ obtain a direct-access availability display.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 1,
+    "TerminalText": [],
+    "InfoText": [
+      "The transaction code AA^ may be used to order flights by arrival time,  as",
+      "follows:",
+      "                          AA^18MARMADROM1300",
+      " ",
+      "To demonstrate,  display availability by arrival time on 16 July from Milan",
+      "to Brussels."
+    ],
+    "Solutions": [
+      "AA16JULMILBRU",
+      "AA16JULLINBRU"
+    ]
+  },
+  {
+    "Index": 2,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AA **          46 WE 16JUL 0000",
+      " 1   SN 810  C9 Y9 M9 L9 K9 T8 BL  LIN   BRU   0655   0825   0/AR8       1:30",
+      " 2   AZ 292  C4 Y4 M4 L4 B4 W4 T4  LIN   BRU   0855   1025   0*M80       1:30",
+      "             V4 K4                                                           ",
+      " 3   SN 802  C9 Y9 M9 L9 K9 T9 BL  LIN   BRU   0930   1100   0/733       1:30",
+      " 4   AZ 148  C4 Y4 M4 L4 B4 W4 T4  LIN   BRU   1105   1230   0*F70       1:25",
+      "             V4 K4                                                           ",
+      " 5   SN 804  C9 Y9 M9 L9 K9 T6 BL  LIN   BRU   1220   1350   0/146       1:30",
+      " 6   SN 806  C9 Y9 M9 L9 K9 T9 Q9  LIN   BRU   1620   1750   0/733       1:30",
+      "             BL                                                              ",
+      " 7   AZ 150  C4 Y4 M4 L4 B4 W4 T4  LIN   BRU   1640   1810   0*M80       1:30",
+      "             V4 K4                                                           "
+    ],
+    "InfoText": [
+      "The flights in this display are ordered by arrival time. The first flight in",
+      "this display arrives at 0825.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 3,
+    "TerminalText": [],
+    "InfoText": [
+      "The transaction code AD^ may be used to order flights by departure time,  as",
+      "follows:",
+      "                          AD^30JANLHRCDG0900",
+      " ",
+      "To demonstrate,  display availability by departure time on 22 May from",
+      "DUS to CDG,  departing at 1100."
+    ],
+    "Solutions": [
+      "AD22MAYDUSCDG1100",
+      "AD22MAYDUSCDG1100A",
+      "AD22MAYDUSCDG11A",
+      "AD22MAYDUSCDG11",
+      "AD22MAYDUSPAR1100",
+      "AD22MAYDUSPAR1100A",
+      "AD22MAYDUSPAR11A",
+      "AD22MAYDUSPAR11"
+    ]
+  },
+  {
+    "Index": 4,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AE **          03 WE 22MAY 1100",
+      " 1   AF1481  C9 Z2 Y9 S9 K9 H9 T9  DUS   CDG2D 1105   1210   0/737       1:05",
+      "             Q9 V9 X9 GR                                                     ",
+      " 2   AF1407  C9 Z2 Y9 S9 K9 H9 T9  DUS   CDG2D 1335   1440   0/735       1:05",
+      "             Q9 V9 X9 GR                                                     ",
+      " 3   LH4374  C9 Z9 H9 V9 L9 B9 G9  DUS   CDG 1 1500   1605   0/735       1:05",
+      "             K9 Q9 W9 M9                                                     ",
+      " 4   AF1417  C9 Z2 Y9 S9 K9 H9 T9  DUS   CDG2D 1640   1745   0/320       1:05",
+      "             Q9 GR                                                           ",
+      " 5   LH4372  C9 Z9 H9 V9 L9 B9 G9  DUS   CDG 1 1755   1900   0/320       1:05",
+      "             K9 Q9 W9 M9                                                     ",
+      " 6   AF1447  C9 Z2 Y9 S9 K9 H9 T9  DUS   CDG2D 2020   2125   0/320       1:05",
+      "             Q9 V9 X9 GR                                                     "
+    ],
+    "InfoText": [
+      "The transaction code AE^ may be used to order flights by elapsed time,  as",
+      "follows:",
+      "                          AE^10SEPLONPAR",
+      " ",
+      "To demonstrate,  display availability by elapsed time on 14 June from",
+      "Frankfurt to Miami."
+    ],
+    "Solutions": [
+      "AE14JUNFRAMIA"
+    ]
+  },
+  {
+    "Index": 5,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AE **          22 TU 14JUN 0000",
+      " 1   LH 462  F9 C9 Z9 H9 B9 V9 K9  FRA 1 MIA   1020   1410   0/74C       9:50",
+      "             L9 M9 G9 Q9 W1                                                  ",
+      " 2:  UA3525  F4 C4 Y4 B4 M4 H4     FRA 1 MIA   1020   1410   0.74C       9:50",
+      " 3   AA 111  F4 C4 Y4 B4 H4 M4 G4  FRA 1 MIA   1100   1525   0.763      10:25",
+      "             K4 V4 W4 Q4                                                     ",
+      " 4   BA2913  C9 D9 S9 B9 K9 M9 L9  FRA 2 LGW N 0740   0820   0/737         ",
+      "             Q9 V9 W9                                                        ",
+      "     BA 295  F9 J9 S9 B9 K9 M9 L9  LGW N MIA   1000   1425   0/747      12:45",
+      "             Q9 V9                                                           ",
+      " 5   AF1457  C9 Z2 Y9 S9 K9 H9 T9  FRA 2 CDG2D 0725   0835   0/320         ",
+      "             Q9 V9 X9 GR                                                     ",
+      "     AF 032  P3 J9 D9 Z9 Y9 K9 H9  CDG2C MIA   1050   1430   0/747      13:05"
+    ],
+    "InfoText": [
+      "The following entries may be used to re-order the display:",
+      " ",
+      "        ACAA^             Re-order flights by arrival time",
+      "        ACAD^             Re-order flights by departure time",
+      "        ACAE^             Re-order flights by elapsed time",
+      " ",
+      "Input the entry to re-order the display by departure time."
+    ],
+    "Solutions": [
+      "ACAD",
+      "AD16JULMILBRU"
+    ]
+  },
+  {
+    "Index": 6,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AD **          46 WE 16JUL 0000",
+      " 1   SN 810  C9 Y9 M9 L9 K9 T8 BL  LIN   BRU   0655   0825   0/AR8       1:30",
+      " 2   AZ 292  C4 Y4 M4 L4 B4 W4 T4  LIN   BRU   0855   1025   0*M80       1:30",
+      "             V4 K4                                                           ",
+      " 3   SN 802  C9 Y9 M9 L9 K9 T9 BL  LIN   BRU   0930   1100   0/733       1:30",
+      " 4   AZ 148  C4 Y4 M4 L4 B4 W4 T4  LIN   BRU   1105   1230   0*F70       1:25",
+      "             V4 K4                                                           ",
+      " 5   SN 804  C9 Y9 M9 L9 K9 T6 BL  LIN   BRU   1220   1350   0/146       1:30",
+      " 6   SN 806  C9 Y9 M9 L9 K9 T9 Q9  LIN   BRU   1620   1750   0/733       1:30",
+      "             BL                                                              ",
+      " 7   AZ 150  C4 Y4 M4 L4 B4 W4 T4  LIN   BRU   1640   1810   0*M80       1:30",
+      "             V4 K4                                                           "
+    ],
+    "InfoText": [
+      "Now re-order the display by elapsed time."
+    ],
+    "Solutions": [
+      "ACAE",
+      "AE16JULMILBRU"
+    ]
+  },
+  {
+    "Index": 7,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AE **          46 WE 16JUL 0000",
+      " 1   AZ 148  C4 Y4 M4 L4 B4 W4 T4  LIN   BRU   1105   1230   0*F70       1:25",
+      "             V4 K4                                                           ",
+      " 2   SN 810  C9 Y9 M9 L9 K9 T8 BL  LIN   BRU   0655   0825   0/AR8       1:30",
+      " 3   AZ 292  C4 Y4 M4 L4 B4 W4 T4  LIN   BRU   0855   1025   0*M80       1:30",
+      "             V4 K4                                                           ",
+      " 4   SN 802  C9 Y9 M9 L9 K9 T9 BL  LIN   BRU   0930   1100   0/733       1:30",
+      " 5   SN 804  C9 Y9 M9 L9 K9 T6 BL  LIN   BRU   1220   1350   0/146       1:30",
+      " 6   SN 806  C9 Y9 M9 L9 K9 T9 Q9  LIN   BRU   1620   1750   0/733       1:30",
+      "             BL                                                              ",
+      " 7   AZ 150  C4 Y4 M4 L4 B4 W4 T4  LIN   BRU   1640   1810   0*M80       1:30",
+      "             V4 K4                                                           "
+    ],
+    "InfoText": [
+      "When flight availability is requested,  a connecting point may be specified",
+      "as follows:",
+      "                           AN22MARTYOBRU/XPAR^",
+      "                                          !",
+      "                    Connecting point~~~~~~{",
+      " ",
+      "This example will display flights on 22 March from Tokyo to Brussels,  showing",
+      "only those flights which connect in Paris. Input this entry."
+    ],
+    "Solutions": [
+      "AN22MARTYOBRU/XPAR",
+      "AN22MARNRTBRU/XPAR",
+      "AN22MARNRTBRU/XPAR",
+      "AN22MARTYOBRU/XCDG"
+    ]
+  },
+  {
+    "Index": 8,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          12 WE 22MAR 0000",
+      " 1   AF 275  P9 N4 J9 D9 Z5 Y9 K9  NRT 1 CDG2C 1200   1720   0/744         ",
+      "             H9 T5 GR BR                                                     ",
+      "     AF2928  C9 Z2 Y9 S9 K9 H9 T9  CDG2D BRU   1900   1955   0/737      14:55",
+      "             Q6 GR                                                           ",
+      " 2   AF 275  P9 N4 J9 D9 Z5 Y9 K9  NRT 1 CDG2C 1200   1720   0/744         ",
+      "             H9 T5 GR BR                                                     ",
+      "  :  SN 928  C8 Y6 M5 L4 K3 T2 QL  CDG2D BRU   1900   1955   0/735      14:55",
+      "             BL                                                              ",
+      " 3   JL 405  F2 C4 Y4 B4 Q4 M0 H0  NRT 2 CDG2A 1130   1655   0.744         ",
+      "     AF2928  C9 Z2 Y9 S9 K9 H9 T9  CDG2D BRU   1900   1955   0/737      15:25",
+      "             Q6 GR                                                           "
+    ],
+    "InfoText": [
+      "Now display neutral availability on 25 June from Lisbon to Copenhagen,  showing",
+      "only those flights which connect in Madrid."
+    ],
+    "Solutions": [
+      "AN25JUNLISCPH/XMAD"
+    ]
+  },
+  {
+    "Index": 9,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          56 MO 25JUN 0000",
+      " 1   IB3101  C9 M9 L9 W9 Q9 V6 T9  LIS   MAD I 0945   1050   0/M87",
+      "     IB3308  C9 M9 L9 W9 Q9 V6 T9  MAD   CPH   1150   1500   0/M87         5:15",
+      " 2   IB3101  C9 M9 L9 W9 Q9 V6 T9  LIS   MAD I 0945   1050   0/M87",
+      "     SK 592  C9 S9 M9 B9 H9 V9 Q9  MAD   CPH   1525   1835   0/M80         8:50",
+      "             G9                                                             ",
+      " 3   IB3107  C9 M9 L9 W9 Q9 V6 T9  LIS   MAD I 1415   1520   0/M87",
+      "     IB3240  C9 M9 L9 W9 Q9 V6 T9  MAD   CPH   1630   2110   0/M80         6:55"
+    ],
+    "InfoText": [
+      "A specific airline may be requested as follows: ",
+      " ",
+      "                           AD20SEPBCNMUC/AIB^",
+      "                                          !",
+      "                        Airline code~~~~~~{",
+      " ",
+      "This example will display only Iberia flights,  ordered by departure time.",
+      "Input the entry to display only Lufthansa flights on 12 April from all",
+      "London airports to Frankfurt,  ordered by departure time."
+    ],
+    "Solutions": [
+      "AD12APRLONFRA/ALH",
+      "ADIB12APRLONFRA"
+    ]
+  },
+  {
+    "Index": 10,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AD **          23 MO 12APR 0000",
+      " 1   LH4029  C9 Z9 V9 L9 H9 B9 G9  LHR 2 FRA 1 0700   0930   0/321       1:30",
+      "             K9 Q9 W9 M9                                                     ",
+      " 2   LH4043  C9 Z9 V9 L9 H9 B9 G9  LHR 2 FRA 1 0900   1130   0/AB6       1:30",
+      "             K9 Q9 W9 M9                                                     ",
+      " 3   LH4021  C9 Z9 V9 L9 H9 B9 G9  LHR 2 FRA 1 1300   1530   0/AB6       1:30",
+      "             K9 Q9 M0                                                        ",
+      " 4*  LH6353  C9 Z9 V9 L9 H9 B9 G9  LCY   FRA 1 1415   1645   0/142       1:30",
+      "             K9 Q9 W9 M9                                                     ",
+      " 5   LH4007  C9 Z9 V9 L9 H9 B5 G0  LHR 2 FRA 1 1700   1930   0/AB6       1:30",
+      "             K0 Q0 M0                                                        ",
+      " 6*  LH6357  C9 Z9 V9 L9 H9 B9 G9  LCY   FRA 1 1835   2105   0/142       1:30",
+      "             K9 Q9 M0                                                        "
+    ],
+    "InfoText": [
+      "Now display availability on 29 March from all London airports to all Paris",
+      "airports,  showing only British Midland flights ordered by departure time."
+    ],
+    "Solutions": [
+      "AD29MARLONPAR/ABD"
+    ]
+  },
+  {
+    "Index": 11,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AD **           9 MO 29MAR 0000",
+      " 1   BD 171  C4 D4 M4 S4 L4 Q4 V4  LHR 1 CDG 1 0650   0900   0*733       1:10",
+      " 2   BD 173  C4 D4 M4 S4 L4 Q4 V4  LHR 1 CDG 1 0830   1035   0*735       1:05",
+      " 3   BD 175  C4 D4 M4 S4 L4 Q4 V4  LHR 1 CDG 1 1040   1245   0*733       1:05",
+      "             K4                                                              ",
+      " 4   BD 177  C4 D4 M4 S4 L4 Q4 V4  LHR 1 CDG 1 1300   1505   0*735       1:05",
+      "             K4                                                              ",
+      " 5   BD 179  C4 D4 M4 S4 L4 Q4 V4  LHR 1 CDG 1 1430   1635   0*733       1:05",
+      "             K4                                                              ",
+      " 6   BD 181  C4 D4 M4 S4 L4 Q4 V4  LHR 1 CDG 1 1635   1840   0*735       1:05",
+      " 7   BD 183  C4 D4 M4 S4 L4 Q4 V4  LHR 1 CDG 1 1830   2035   0*733       1:05",
+      " 8   BD 185  C4 D4 M4 S4 L4 Q4 V4  LHR 1 CDG 1 2015   1015   0*735       1:00",
+      "             K4                                                              "
+    ],
+    "InfoText": [
+      "A specific type of flight may be requested as follows: ",
+      " ",
+      "                           AN18JUNAMSMAD/FN^",
+      "                                          !",
+      "                        Flight type~~~~~~~{",
+      " ",
+      "This example will display only nonstop flights. Note that /F^ is typed",
+      "before the flight type. Request a neutral display of nonstop flights",
+      "departing on 18 April from Amsterdam to Barcelona."
+    ],
+    "Solutions": [
+      "AN18APRAMSBCN/FN"
+    ]
+  },
+  {
+    "Index": 12,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          29 SU 18APR 0000",
+      " 1   KL 353  C7 S7 M7 B7 H7 Q7 L7  AMS   BCN B 0815   1035   0.737       2:20",
+      "             V0                                                              ",
+      " 2   KL 355  C7 S7 M7 B7 H7 Q7 L7  AMS   BCN B 1305   1515   0.737       2:10",
+      "             V0                                                              ",
+      " 3   IB4247  C9 M9 L9 W9 Q9 V6 T9  AMS   BCN A 1315   1520   0/320       2:05",
+      " 4   KL 357  C7 S7 M7 B7 H7 Q7 L7  AMS   BCN B 1915   2125   0.737       2:10",
+      "             V0                                                              ",
+      " 5   IB4263  C9 M9 L9 W9 Q9 T9     AMS   BCN A 1955   1000   0/M87       2:05",
+      " 6   AF2443  C9 Z2 Y9 S9 K9 H9 T9  AMS   CDG2D 1450   1555   0/733          ",
+      "             Q9 V9 X9 GR                                                    ",
+      "     AF1144  C9 Z2 Y8 S8 KL HL TL  CDG2D BCN B 1650   1830   0/737       3:40",
+      "             GR                                                              "
+    ],
+    "InfoText": [
+      "The following flight types may be requested:",
+      " ",
+      "                AN24SEPLONCAI/FN^           Nonstop flights",
+      "                AN24SEPLONCAI/FD^           Direct flights",
+      "                AN24SEPLONCAI/FC^           Connecting flights",
+      " ",
+      "Request a neutral display of nonstop flights departing on 12 May from Brussels",
+      "to Lisbon."
+    ],
+    "Solutions": [
+      "AN12MAYBRULIS/FN"
+    ]
+  },
+  {
+    "Index": 13,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          53 WE 12MAY 0000",
+      " 1   TP 261  J7 Y7 M7 Q7 L7 V7     BRU   LIS   0700   0830   0*343         2:30",
+      " 2   TP 809  C4 Y7 M7 L7 V7        BRU   LIS   0840   1035   0*100         2:55",
+      " 3   NI 909  F2 C7 Y7 M7 L7 H4 K4  BRU   LIS   0840   1035   0/100         2:55",
+      " 4   SN 891  C9 Y9 M9 L9 K9 T9 BL  BRU   LIS   1030   1215   0/734         2:45",
+      " 5   TP 671  C4 Y7 M7 L7 V7        BRU   LIS   1300   1445   0*737         2:45",
+      " 6   SN 893  C9 Y9 M9 L9 K9 T9 BL  BRU   LIS   1505   1650   0/73S         2:45",
+      " 7   TP 675  C4 Y7 M7 L7 V7        BRU   LIS   2000   2145   0*737         2:45"
+    ],
+    "InfoText": [
+      "Availability may be requested in a specific class as follows:",
+      " ",
+      "                           AN18OCTCDGFCO/CM^",
+      "                                          !",
+      "                        Booking class~~~~~{",
+      " ",
+      "This example will display availability in M class. Note that /C^ is typed",
+      "before the class code. Request a neutral display of flights departing on",
+      "16 April from London to Geneva,  showing only availability in C class."
+    ],
+    "Solutions": [
+      "AN16APRLONGVA/CC"
+    ]
+  },
+  {
+    "Index": 14,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          27 FR 16APR 0000",
+      " 1   BA2736  C9                    LGW N GVA   0800   1030   0/737       1:30",
+      " 2   SR 839  C9                    LHR 2 GVA M 0810   1035   0.M81       1:25",
+      " 3   BA 724  C9                    LHR 1 GVA   0830   1105   0/757       1:35",
+      " 4   LX 873  C9                    LCY   GVA M 0910   1140   0.AR8       1:30",
+      " 5   SR 831  C9                    LHR 2 GVA M 0955   1230   0.321       1:35",
+      " 6   BA 728  C9                    LHR 1 GVA   1250   1525   0/767       1:35",
+      " 7   BA2738  C8                    LGW N GVA   1425   1655   0/737       1:30",
+      " 8   SR 833  C9                    LHR 2 GVA M 1505   1735   0.321       1:30",
+      " 9   BA 730  C9                    LHR 1 GVA   1535   1805   0/757       1:30",
+      "10   LX 879  C9                    LCY   GVA M 1815   2045   0.AR8       1:30"
+    ],
+    "InfoText": [
+      "Request a neutral display of flights departing on 3 May from Madrid to",
+      "Rome,  showing only availability in Y class."
+    ],
+    "Solutions": [
+      "AN3MAYMADROM/CY",
+      "AN03MAYMADROM/CY",
+      "AN3MAYMADFCO/CY",
+      "AN03MAYMADFCO/CY"
+    ]
+  },
+  {
+    "Index": 15,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          44 MO 03MAY 0000",
+      " 1   AZ 059  Y4                    MAD I FCO I 0735   1000   0*M80       2:25",
+      " 2   TG 943  Y9                    MAD   FCO   1240   1455   0/743       2:15",
+      " 3   AZ 061  Y4                    MAD I FCO I 1240   1505   0*M80       2:25",
+      " 4   AZ 063  Y4                    MAD I FCO I 1755   2020   0*M80       2:25",
+      " 5   AF1123  Y9                    MAD I CDG2B 0735   0935   0/737",
+      "     AF 650  Y9                    CDG2A MAD I 1230   1430   0/737       5:55",
+      " 6   AZ 067  Y4                    MAD I LIN   0755   1000   0*M80       ",
+      "     AZ2043  Y4                    LIN   FCO   1100   1205   0*M80       3:10",
+      " 7   AZ 069  Y4                    MAD I LIN   1325   1530   0*M80       ",
+      "     AZ2083  Y4                    LIN   FCO   1620   1725   0*M80       3:00"
+    ],
+    "InfoText": [
+      "A direct-access availability display can be obtained as follows:",
+      " ",
+      "                        1BD^AD20MARLHRAMS",
+      " ",
+      "This entry will display availability from the British Midlands system.",
+      "Note that 1^ is typed before the airline code. Input this entry now."
+    ],
+    "Solutions": [
+      "1BDAD20MARLHRAMS"
+    ]
+  },
+  {
+    "Index": 16,
+    "TerminalText": [
+      "** BD - BRITISH MIDLAND **               096 TU 20MAR     ",
+      "PLEASE REMEMBER UK TAX NOW APPLICABLE                     ",
+      "21  BD 101   C9  D9  S9  M9  Q9  LHR AMS 0650  0855   0 737",
+      "             L9  V9  T9                                   ",
+      "22  BD 103   C9  D9  S9  M9  Q9  LHR AMS 0825  1030   0 735",
+      "             L9  V9  T0                                   ",
+      "23  BD 105   C9  D9  S9  K9  M9  LHR AMS 1025  1230   0 737",
+      "             Q9  L9  V9  T8                               ",
+      "24  BD 107   C9  D9  S9  K9  M9  LHR AMS 1225  1430   0 735",
+      "             Q9  L9  V9  T6                               ",
+      "25  BD 109   C9  D9  S9  K9  M9  LHR AMS 1425  1630   0 733",
+      "             Q9  L9  V9  T9                               "
+    ],
+    "InfoText": [
+      "The information in the direct-access display is obtained directly from the",
+      "the airline\u0027s reservation system. Direct-access displays can only be obtained",
+      "by departure time,  by means of the transaction code AD^.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 17,
+    "TerminalText": [],
+    "InfoText": [
+      "Request a direct-access display for Alitalia flights departing on 17 April",
+      "from all Rome airports to all Paris airports."
+    ],
+    "Solutions": [
+      "1AZAD17APRROMPAR"
+    ]
+  },
+  {
+    "Index": 18,
+    "TerminalText": [
+      "** AZ - ALITALIA **                      096 TU 17APR      ",
+      "   AZ2012 -NOOP-                                           ",
+      "21  AZ 316   C7  Y7  M7  L7  B7  FCO CDG 0825  1030   0 M80",
+      "             T7  V7  K7  W7                                ",
+      "22  AZ 318   C7  Y7  M7  L7  B7  FCO CDG 0910  1115   0 321",
+      "             T7  V7  K7  W7                                ",
+      "23  AZ 320   C7  Y7  M7  L7  B7  FCO CDG 1005  1210   0 AB4",
+      "             T7  V7  K7  W7                                ",
+      "24  AZ 322   C7  Y7  M7  L7  B7  FCO CDG 1310  1510   0 321",
+      "             T7  V7  K7  W7                                ",
+      "25  AZ 324   C7  Y7  M7  L7  B7  FCO CDG 1655  1900   0 AB4",
+      "             T7  V7  K7  W7                                "
+    ],
+    "InfoText": [
+      "A direct-access display can be obtained only with the transaction code AD^.",
+      "The line numbers always begin with 21.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 19,
+    "TerminalText": [],
+    "InfoText": [
+      "Let\u0027s review. What entry would be used to display only Air France flights",
+      "departing on 16 October from CDG to SYD,  ordered by departure time?"
+    ],
+    "Solutions": [
+      "AD16OCTCDGSYD/AAF",
+      "ADAD16OCTCDGSYD"
+    ]
+  },
+  {
+    "Index": 20,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry will display neutral availability on 28 June from MAD to SEA, ",
+      "showing only connecting flights with JFK as the transit point?"
+    ],
+    "Solutions": [
+      "AN28JUNMADSEA/XJFK"
+    ]
+  },
+  {
+    "Index": 21,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry will display only nonstop flights departing on 12 May from",
+      "NCE to AMS,  ordered by arrival time?"
+    ],
+    "Solutions": [
+      "AA12MAYNCEAMS/FN"
+    ]
+  },
+  {
+    "Index": 22,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry will display flights departing on 30 August from CDG to MIA, ",
+      "ordered by elapsed time?"
+    ],
+    "Solutions": [
+      "AE30AUGCDGMIA"
+    ]
+  },
+  {
+    "Index": 23,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry would be used to re-order the display by departure time?"
+    ],
+    "Solutions": [
+      "ACAD"
+    ]
+  },
+  {
+    "Index": 24,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry would be used to obtain a direct-access display for KLM",
+      "flights departing on 18 February from AMS to JNB?"
+    ],
+    "Solutions": [
+      "1KLAD18FEBAMSJNB"
+    ]
+  },
+  {
+    "Index": 25,
+    "TerminalText": [],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 0,
+    "TerminalText": [],
+    "InfoText": [
+      " After finishing this lesson,  you will be able to...",
+      " ",
+      "        [ sell air segments from a flight availability display.",
+      "        [ sell connecting flights in the same class.",
+      "        [ sell connecting flights in different classes.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 1,
+    "TerminalText": [],
+    "InfoText": [
+      "The entry code SS^ is used to book an air segment from an availability display, ",
+      "as follows: ",
+      "                               SS1Y1^",
+      "                      Seats~~~~~~{!!",
+      "                      Class~~~~~~~{}~~~~~~~Line",
+      " ",
+      "This entry will sell 1 seat in Y class on the flight in line 1 of the display.",
+      "To demonstrate,  display neutral availability on 12 June from FRA to NCE.\u0022 "
+    ],
+    "Solutions": [
+      "AN12JUNFRANCE"
+    ]
+  },
+  {
+    "Index": 2,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          18 TU 12JUN 0000",
+      " 1   LH4416  C9 Z9 V9 L9 H9 B9 G9  FRA 1 NCE 1 0805   0935   0/320       1:30",
+      "             K9 Q9 W9 M9                                                     ",
+      " 2   LH4390  C9 Z9 V9 L9 H9 B9 G9  FRA 1 NCE 1 1625   1755   0/321       1:30",
+      "             K9 Q9 W9 M9                                                     ",
+      " 3   LH4582  C9 Z9 V9 L9 H9 B9 G9  FRA 1 GVA   1705   1815   0/320         ",
+      "             K9 Q9 W9 M9                                                     ",
+      "     SR 758  C9 Z9 Y9 M9 L9 H9 K9  GVA M NCE 1 1900   1955   0.320       2:50",
+      "             BR                                                              ",
+      " 4   LH4558  C9 Z9 V9 L9 H9 B9 G9  FRA 1 GVA   0850   1000   0/734         ",
+      "             K9 Q9 W9 M9                                                     ",
+      "     AF3113  Y9 S9 K9 Q9 V9 X9 GR  GVA   NCE 1 1055   1145   0/CRJ       2:55"
+    ],
+    "InfoText": [
+      "The following entry will book 1 seat in C class on the flight that departs",
+      "at 1625:",
+      "                              SS1C2^",
+      " ",
+      "Input this entry."
+    ],
+    "Solutions": [
+      "SS1C2"
+    ]
+  },
+  {
+    "Index": 3,
+    "TerminalText": [],
+    "InfoText": [
+      "Each flight reservation is represented by an air segment. The digit 1",
+      "indicates the first element of the reservation.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 4,
+    "TerminalText": [],
+    "InfoText": [
+      "The following entry will remove the reservation from the agent\u0027s work space",
+      "without storing the information:",
+      " ",
+      "                                IG^",
+      " ",
+      "This action is called ignoring the transaction. Input this entry.\u0022 "
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 5,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Now display neutral availability on 21 April from ZRH to VIE."
+    ],
+    "Solutions": [
+      "AN21APRZRHVIE"
+    ]
+  },
+  {
+    "Index": 6,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AN **          12 WE 21APR 0000",
+      " 1   SR 002  C9 Z9 Y9 M9 L9 H9 K9  ZRH A VIE   0715   0830   0.M81       1:",
+      "             B9                                                            ",
+      " 2   OS 002  C4 W4 Y4 M4 L4 K4 B4  ZRH A VIE   0715   0830   0.M81       1:",
+      " 3   OS 004  C4 W4 Y4 M4 L4 K4 B4  ZRH A VIE   0920   1035   0.M81       1:",
+      " 4   SR 004  C9 Z9 Y9 M9 L9 H9 K9  ZRH A VIE   0920   1035   0.M81       1:",
+      "             B9                                                            ",
+      " 5   SR 006  C9 Z9 Y9 M9 L9 H9 K9  ZRH A VIE   1140   1255   0.M81       1:",
+      "             B9                                                            ",
+      " 6:  OS 006  C4 W4 Y4 M4 L4 K4 B4  ZRH A VIE   1140   1255   0.M81       1:",
+      " 7   OS 008  C4 W4 Y4 M4 L4 K4 B4  ZRH A VIE   1330   1445   0.M81       1:",
+      " 8   SR 008  C9 Z9 Y9 M9 L9 H9 K9  ZRH A VIE   1330   1445   0.M81       1:",
+      "             B9                                                            "
+    ],
+    "InfoText": [
+      "Book 1 seat in Y class on the OS flight that arrives in Vienna at 1035."
+    ],
+    "Solutions": [
+      "SS1Y3"
+    ]
+  },
+  {
+    "Index": 7,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the entry to ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 8,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Assume a client plans to travel on 31 August from Barcelona to Paris.",
+      "Display neutral availability for all local airports."
+    ],
+    "Solutions": [
+      "AN31AUGBCNPAR"
+    ]
+  },
+  {
+    "Index": 9,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **          19 WE 31AUG 0000",
+      " 1   AF1171  C9 Z2 Y9 S9 K9 H9 T9  BCN A CDG2D 0720   0910   0/320       1:50",
+      "             Q9 V9 X9 GR                                                     ",
+      " 2   IB4422  C9 Y9 L9 W9 Q5 TL     BCN B ORY S 0725   0905   0/M87       1:40",
+      " 3   AF1113  C9 Z2 Y9 S9 K9 H9 T9  BCN A CDG2D 1015   1205   0/320       1:50",
+      "             Q9 V9 X9 GR                                                     ",
+      " 4   AF1159  C9 Z2 Y9 S9 K9 H9 T9  BCN A CDG2D 1325   1515   0/737       1:50",
+      "             Q9 V9 X9 GR                                                     ",
+      " 5   IB4424  C9 Y9 L9 W9 Q3 V5 T9  BCN B ORY S 1525   1705   0/M87       1:40",
+      " 6   AF1127  C9 Z2 Y9 S9 KL HL TL  BCN A CDG2D 1620   1810   0/320       1:50",
+      "             GR                                                              ",
+      " 7   IB4420  C9 Y9 L9 W9 Q3 V5 T9  BCN B ORY S 1735   1915   0/M87       1:40"
+    ],
+    "InfoText": [
+      "Assume the client prefers the Air France flight departing at 1325. Book",
+      "a reservation for 2 passengers in Y class."
+    ],
+    "Solutions": [
+      "SS2Y4"
+    ]
+  },
+  {
+    "Index": 10,
+    "TerminalText": [],
+    "InfoText": [
+      "The air segment contains information about the flight reservation. The",
+      "segment number indicates the order in the itinerary.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 11,
+    "TerminalText": [],
+    "InfoText": [
+      "Each flight segment shows the airline code,  flight number,  and class. This",
+      "reservation is booked on Air France flight 1159 in Y class.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 12,
+    "TerminalText": [],
+    "InfoText": [
+      "The departure date is shown after the booking class. This reservation is",
+      "booked for 31 August. The digit after the date indicates the day of the week.",
+      "The digit 3 indicates that the flight departs on Wednesday.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 13,
+    "TerminalText": [],
+    "InfoText": [
+      "The board point and off point are displayed after the date. This flight",
+      "departs from Barcelona and arrives at Charles de Gaulle.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 14,
+    "TerminalText": [],
+    "InfoText": [
+      "The segment status is displayed before the number of seats. The status code HK^",
+      "indicates that the reservation is confirmed.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 15,
+    "TerminalText": [],
+    "InfoText": [
+      "The local departure time and arrival time are displayed after the number of",
+      "seats. This flight will depart from Barcelona at 1325 and arrive at Charles",
+      "de Gaulle at 1515.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 16,
+    "TerminalText": [],
+    "InfoText": [
+      "In this Air France segment,  the latest check-in time and the departure",
+      "terminal are shown before the departure time. Passengers are advised to",
+      "check in no later than 1255 at terminal A.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 17,
+    "TerminalText": [],
+    "InfoText": [
+      "The equipment code,  number of stops,  and meal code are displayed after",
+      "the flight times.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 18,
+    "TerminalText": [],
+    "InfoText": [
+      "Any applicable service information is displayed on the line directly below",
+      "the air segment. In this example,  AF 1159 will arrive at Terminal 2D. Input",
+      "the entry to ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 19,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Now display neutral availability on 14 March from Munich to all London",
+      "airports."
+    ],
+    "Solutions": [
+      "AN14MARMUCLON"
+    ]
+  },
+  {
+    "Index": 20,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **           7 MO 14MAR 0700",
+      " 1*  BA3400  C9 D9 S9 M9 B9 K9 L9  MUC   LGW N 0650   0740   0/737       1:5",
+      "             Q9 V9 W9                                                       ",
+      " 2   LH4086  C9 Z9 V9 L9 H9 B9 G9  MUC   LHR 2 0725   0830   0/320       2:0",
+      "             K9 Q9 W9 M9                                                    ",
+      " 3   BA 947  C9 D9 S9 B9 K9 M9 L9  MUC   LHR 1 0750   0855   0/757       2:0",
+      "             Q9 V9                                                          ",
+      " 4   LH4020  C9 Z9 V9 L9 H9 B9 G9  MUC   LHR 2 1030   1130   0/320       2:0",
+      "             K9 Q9 W9 M9                                                    ",
+      " 5   UK 913  Y4 S4 M4 B4 L4 V4 Q4  MUC   STN   1125   1220   0*143       1:5",
+      "             H4                                                             ",
+      " 6   BA 949  C9 D9 S9 B9 K9 M9 L9  MUC   LHR 1 1210   1300   0/757       1:5",
+      "             Q9 V9                                                          "
+    ],
+    "InfoText": [
+      "Book 4 seats in H class on the flight that departs at 1030."
+    ],
+    "Solutions": [
+      "SS4H4"
+    ]
+  },
+  {
+    "Index": 21,
+    "TerminalText": [],
+    "InfoText": [
+      "In this segment,  the status code HK4^ indicates that 4 seats are now confirmed.",
+      "Input the entry to ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 22,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Display neutral availability on 18 November from Copenhagen to Nice."
+    ],
+    "Solutions": [
+      "AN18NOVCPHNCE"
+    ]
+  },
+  {
+    "Index": 23,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **          15 TU 18NOV 0000",
+      " 1   SK 795  C9 S9 M9 B9 H9 V9 Q9  CPH I NCE   1035   1300   0/M80       2:25",
+      "             G9 L9                                                           ",
+      " 2:  LH6959  C4 Z4 H4 V4 L4 B4 G4  CPH I MUC   0855   1035   0/M87         ",
+      "             K4 M0                                                           ",
+      "     LH4388  C9 Z9 H9 V9 L9 B9 G9  MUC   NCE 1 1110   1240   0/733       3:45",
+      "             K9 Q9 W9 M9                                                     ",
+      " 3   SK 601  C9 S9 M9 B9 H9 V9 Q9  CPH I ZRH B 0855   1040   0/M80         ",
+      "             G9                                                              ",
+      "     SR 754  C9 Z9 Y9 M9 L9 H9 K9  ZRH A NCE 1 1130   1240   0.320       3:45",
+      "             BR                                                              "
+    ],
+    "InfoText": [
+      "Book 2 seats in M class on the direct flight."
+    ],
+    "Solutions": [
+      "SS2M1"
+    ]
+  },
+  {
+    "Index": 24,
+    "TerminalText": [],
+    "InfoText": [
+      "The status code SS^ indicates that the reservation will be confirmed when",
+      "the transaction is ended. Segments have this status if the airline is not",
+      "an AMADEUS Access carrier. Assume the passengers will return on 24 November.",
+      "Display return availability."
+    ],
+    "Solutions": [
+      "ACR6",
+      "ACR24NOV"
+    ]
+  },
+  {
+    "Index": 25,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **          21 MO 24NOV 0000",
+      " 1   SK 796  C9 S9 M9 B9 H9 V9 Q9  NCE   CPH I 1415   1635   0/M80       2:20",
+      "             G9 L9                                                           ",
+      " 2*SRLX3751  C9 ZR Y9 M9 L9 H9 K9  NCE 1 ZRH A 1725   1840   0.AR1         ",
+      "             BR                                                              ",
+      "  *SRLX3402  C9 Z9 Y9 M9 L9 H9 K9  ZRH A CPH I 1915   2055   0.AR1       3:30",
+      "             B9                                                              ",
+      " 3*SRLX3757  C9 Z9 Y9 M9 L9 H9 K9  NCE 1 GVA M 1035   1130   0.AR1         ",
+      "             BR                                                              ",
+      "   BTSK 112  C9 S9 M9 B9 G9 V9     GVA   CPH I 1230   1425   0/ARJ       3:50"
+    ],
+    "InfoText": [
+      "The following entry is used to book connecting flight segments in the",
+      "same class: ",
+      "                              SS2M2^",
+      " ",
+      "This example will book 2 seats in M class on the flights in line 2. Input",
+      "this entry. "
+    ],
+    "Solutions": [
+      "SS2M2"
+    ]
+  },
+  {
+    "Index": 26,
+    "TerminalText": [],
+    "InfoText": [
+      "The text SEE^ RTSVC^ indicates that more than one line of service information",
+      "applies. The service information may be displayed as follows:",
+      " ",
+      "                                   RTSVC^",
+      " ",
+      "Input this entry."
+    ],
+    "Solutions": [
+      "RTSVC"
+    ]
+  },
+  {
+    "Index": 27,
+    "TerminalText": [
+      "RTSVC",
+      "   SK 795  M  CPHNCE    M80           0",
+      "FLIGHT DEPARTS INTERNATIONAL TERMINAL",
+      " SRLX3751  M  NCEZRH    AR1           0",
+      "COCKPIT CREW CROSSAIR AG",
+      "CABIN CREW CROSS AIR AG",
+      " SRLX3402  M  ZRHCPH    AR1           0",
+      "COCKPIT CREW CROSSAIR AG",
+      "CABIN CREW CROSS AIR AG"
+    ],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 28,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Display neutral availability on 22 November from MAD to PHX."
+    ],
+    "Solutions": [
+      "AN22NOVMADPHX"
+    ]
+  },
+  {
+    "Index": 29,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **          17 SA 22NOV 0000",
+      " 1   UX6015  C9 Y9 Q9 B9           MAD I LGW S 0900   1000   0/757         ",
+      "     BA 277  F9 J9 S9 B9 K9 M9 L9  LGW N PHX   1210   1445   0/D10      14:45",
+      "             Q9 V9                                                           ",
+      " 2   DL 109  F7 C7 D7 Y7 B7 M7 K7  MAD I ATL   1430   1735   0.L15         ",
+      "             L7 H7 Q7                                                        ",
+      "     DL 345  F7 Y7 B7 M7 K7 L7 H7  ATL   PHX 3 1930   2019   0.757 6    14:49",
+      "             Q7                                                              ",
+      " 3   DL 109  F7 C7 D7 Y7 B7 M7 K7  MAD I ATL   1430   1735   0.L15         ",
+      "             L7 H7 Q7                                                        ",
+      "     HP2611  F4 Y7 B7 H7 K7 Q7 V7  ATL   PHX 4 1935   2023   0*757 1    14:53",
+      "             M7                                                              "
+    ],
+    "InfoText": [
+      "The following entry is used to book connecting flight segments in different",
+      "classes: ",
+      "                              SS2CF2^",
+      " ",
+      "This example will book 2 seats in C class on DL 109 and in F class on DL 345.",
+      "Input this entry."
+    ],
+    "Solutions": [
+      "SS2CF2"
+    ]
+  },
+  {
+    "Index": 30,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 31,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Display neutral availability on 18 October from EDI to ROM."
+    ],
+    "Solutions": [
+      "AN18OCTEDIROM",
+      "AN18OCTEDIFCO"
+    ]
+  },
+  {
+    "Index": 32,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **           4 MO 18OCT 0000",
+      " 1   BA4733  C9 S9 K9 B9 M9 Q9 L9  EDI   LHR 1 0900   1020   0/737         ",
+      "     BA 554  C9 D8 S9 B9 M9 L9 QL  LHR 1 FCO   1110   1440   0/757       4:40",
+      " 2   BD 067  C4 M4 S4 L4 Q4 V4 K4  EDI   LHR 1 1140   1255   0*100         ",
+      "             W4                                                              ",
+      "     BA 556  C9 D9 S9 B9 M9 L9 Q9  LHR 1 FCO   1400   1725   0/757       4:45",
+      "             V9                                                              ",
+      " 3   SN 696  C9 Y9 M9 L9 K9 T9 QL  EDI   BRU   0635   0915   0/146         ",
+      "             B8                                                              ",
+      "     BA5016  C9 D9 S9 B9 M9 L9 Q9  BRU   FCO   1020   1230   0/737       4:55",
+      "             V9                                                              ",
+      " 4   BD 053  C4 S4 K4 M4 L4 W4     EDI   LHR 1 0845   1005   0*735         ",
+      "     BA 554  C9 D8 S9 B9 M9 L9 QL  LHR 1 FCO   1110   1440   0/757       4:55"
+    ],
+    "InfoText": [
+      "Book 2 seats in M class on BD 067 and in D class on BA 556."
+    ],
+    "Solutions": [
+      "SS2MD2"
+    ]
+  },
+  {
+    "Index": 33,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 34,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Let\u0027s review the entries you learned in this lesson. Display neutral",
+      "availability on 16 May from Frankfurt to Barcelona."
+    ],
+    "Solutions": [
+      "AN16MAYFRABCN"
+    ]
+  },
+  {
+    "Index": 35,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **          19 MO 16MAY 0000",
+      " 1   LH4732  C9 Z9 V9 L9 H9 B9 G9  FRA 1 BCN B 0950   1150   0/320       2:00",
+      "             K9 Q3 M0                                                        ",
+      " 2   IB4513  C9 M9 L9 W9 K9 V9 T9  FRA 1 BCN A 1320   1520   0/M87       2:00",
+      " 3   LH4718  C9 Z9 V9 L9 H9 B9 G9  FRA 1 BCN B 2045   1045   0/733       2:00",
+      "             K9 Q9 W9 M9                                                     ",
+      " 4   LH 138  C9 Z9 V9 H9 B9 L9 G9  FRA 1 MUC   1200   1255   0/321         ",
+      "             K9 S7 M0                                                        ",
+      "     IB4569  C9 M9 L9 W9 K9 T9     MUC   BCN B 1330   1530   0/320       3:30"
+    ],
+    "InfoText": [
+      "What entry would sell 4 seats in L class on the Iberia flight departing at",
+      "1320?"
+    ],
+    "Solutions": [
+      "SS4L2"
+    ]
+  },
+  {
+    "Index": 36,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry would sell 2 seats in C class on the connecting flights?"
+    ],
+    "Solutions": [
+      "SS2C4"
+    ]
+  },
+  {
+    "Index": 37,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry would sell 1 seat on the connecting flights,  in Z class on the",
+      "first segment and in M class on the second segment?"
+    ],
+    "Solutions": [
+      "SS1ZM4"
+    ]
+  },
+  {
+    "Index": 38,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry would sell 3 seats in V class on the Lufthansa flight arriving",
+      "at 1150?"
+    ],
+    "Solutions": [
+      "SS3V1"
+    ]
+  },
+  {
+    "Index": 39,
+    "TerminalText": [],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 0,
+    "TerminalText": [],
+    "InfoText": [
+      " After finishing this lesson,  you will be able to...",
+      " ",
+      "           [ sell a flight by carrier,  flight number,  booking class, ",
+      "             date,  and routing.",
+      "           [ input an information-only segment.",
+      "           [ book an open segment.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 1,
+    "TerminalText": [],
+    "InfoText": [
+      "The transaction code SS^ is used to sell a flight without checking",
+      "availability,  as follows:",
+      "                             SS^KL243H10MAYAMSFRA1",
+      " ",
+      "This entry will book a reservation on KL^ 243^ in H^ class on 10MAY^ from AMS^",
+      "to FRA^ for 1 passenger. Input this entry."
+    ],
+    "Solutions": [
+      "SSKL243H10MAYAMSFRANN1",
+      "SSKL243H10MAYAMSFRA1"
+    ]
+  },
+  {
+    "Index": 2,
+    "TerminalText": [],
+    "InfoText": [
+      "The following entry will book a reservation on LH^ 1050^ in B^ class on 13MAY^",
+      "from FRA^ to DUS^ for 1^ passenger:",
+      " ",
+      "                            SSLH1050B13MAYFRADUS1^",
+      " ",
+      "Note that SS^ is typed before the airline code and the number of seats is",
+      "typed after the destination point. Input this entry."
+    ],
+    "Solutions": [
+      "SSLH1050B13MAYFRADUS1",
+      "SSLH1050B13MAYFRADUSNN1"
+    ]
+  },
+  {
+    "Index": 3,
+    "TerminalText": [],
+    "InfoText": [
+      "Now book a reservation on KL 222 in H class on 16MAY from DUS to AMS for 1",
+      "passenger."
+    ],
+    "Solutions": [
+      "SSKL222H16MAYDUSAMS1",
+      "SSKL222H16MAYDUSAMSNN1"
+    ]
+  },
+  {
+    "Index": 4,
+    "TerminalText": [],
+    "InfoText": [
+      "Note that the Lufthansa segment has the status HK^ indicating that the",
+      "reservation is confirmed. The KLM segments have the status SS^ indicating",
+      "that the seats will be confirmed when the transaction is ended. Ignore",
+      "the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 5,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Now book a reservation on NZ 14 in Y class on 12JUN from AKL to SYD for 2",
+      "passengers."
+    ],
+    "Solutions": [
+      "SSNZ14Y12JUNAKLSYD2",
+      "SSNZ14Y12JUNAKLSYDNN2"
+    ]
+  },
+  {
+    "Index": 6,
+    "TerminalText": [],
+    "InfoText": [
+      "Book a reservation on AN 161 in Y class on 17JUN from SYD to PER. The number",
+      "of passengers must be the same on all flight segments."
+    ],
+    "Solutions": [
+      "SSAN161Y17JUNSYDPER2",
+      "SSAN161Y17JUNSYDPERNN2"
+    ]
+  },
+  {
+    "Index": 7,
+    "TerminalText": [],
+    "InfoText": [
+      "Now book a reservation on AN 28 in Y class on 21JUN from PER to MEL."
+    ],
+    "Solutions": [
+      "SSAN28Y21JUNPERMEL2",
+      "SSAN28Y21JUNPERMELNN2"
+    ]
+  },
+  {
+    "Index": 8,
+    "TerminalText": [],
+    "InfoText": [
+      "Book a reservation on NZ 128 in Y class on 24JUN from MEL to AKL."
+    ],
+    "Solutions": [
+      "SSNZ128Y24JUNMELAKL2",
+      "SSNZ128Y24JUNMELAKLNN2"
+    ]
+  },
+  {
+    "Index": 9,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 10,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Occasionally,  an agent may book a segment directly with the airline by",
+      "phone,  rather than through AMADEUS. The status code PK^ may be used to",
+      "insert a passive segment in the itinerary,  as follows:",
+      " ",
+      "                SSJL401C15JULNRTLHRPK2/11451540/RWGDDF^",
+      " ",
+      "The flight times and the reservation code (called the record locator are",
+      "typed after the number of seats. Input this entry."
+    ],
+    "Solutions": [
+      "SSJL401C15JULNRTLHRPK2/11451540/RWGDDF",
+      "SSJL401C15JULNRTLHR2/11451540/RWGDDF"
+    ]
+  },
+  {
+    "Index": 11,
+    "TerminalText": [],
+    "InfoText": [
+      "Now insert a passive segment for FI 451 in Y class on 22JUL from LHR to",
+      "KEF for 2 passengers,  departing at 1300 and arriving at 1555. The record",
+      "locator is 2FR9GH."
+    ],
+    "Solutions": [
+      "SSFI451Y22JULLHRKEFPK2/13001555/2FR9GH"
+    ]
+  },
+  {
+    "Index": 12,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 13,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "An open^ segment^ is a booked segment on a specific carrier over a specific",
+      "routing,  on an unknown flight or date. The transaction code SO^ is used to",
+      "book an open segment,  as follows:",
+      " ",
+      "                                   SOIBCBCNMAD^",
+      " ",
+      "This entry will book an open segment on IB in C class from BCN to MAD.",
+      "Input this entry."
+    ],
+    "Solutions": [
+      "SOIBCBCNMAD"
+    ]
+  },
+  {
+    "Index": 14,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 15,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Book a reservation on BA 5019 in M class on 18MAR from BRU to MAN for 1",
+      "passenger."
+    ],
+    "Solutions": [
+      "SSBA5019M18MARBRUMAN1",
+      "SSBA5019M18MARBRUMANNN1"
+    ]
+  },
+  {
+    "Index": 16,
+    "TerminalText": [],
+    "InfoText": [
+      "Assume the passenger wants to book an open segment on BA in M class",
+      "from MAN to BRU."
+    ],
+    "Solutions": [
+      "SOBAMMANBRU"
+    ]
+  },
+  {
+    "Index": 17,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 18,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "An open segment may be booked for a specific date as follows:",
+      " ",
+      "                                SOLHL12MARTXLLHR^",
+      " ",
+      "This entry will book an open segment for travel on LH in L class on 12 March",
+      "from TXL to LHR. Input this entry."
+    ],
+    "Solutions": [
+      "SOLHL12MARTXLLHR"
+    ]
+  },
+  {
+    "Index": 19,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 20,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Assume a passenger wants to book an open segment for travel on SK in M class",
+      "on 25 April from FRA to CPH."
+    ],
+    "Solutions": [
+      "SOSKM25APRFRACPH"
+    ]
+  },
+  {
+    "Index": 21,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 22,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "An information segment gives the details of a flight not booked through",
+      "AMADEUS. The transaction code SI^ is used to insert an information segment, ",
+      "as follows: ",
+      "                           SINI909Y25NOVBRULISHK2^",
+      " ",
+      "Information segments are not used by AMADEUS for pricing,  ticketing,  or",
+      "message generation. The example above shows that 2 seats are confirmed (HK",
+      "on NI^ 909^ in Y^ class on 25NOV^ from BRU^ to LIS^. Input this entry."
+    ],
+    "Solutions": [
+      "SINI909Y25NOVBRULISHK2",
+      "SINI909Y25NOVBRULIS2",
+      "SINI909Y25NOVBRULIS"
+    ]
+  },
+  {
+    "Index": 23,
+    "TerminalText": [],
+    "InfoText": [
+      "Assume the passengers have booked a confirmed reservation on NG 6257 in Y",
+      "class on 30 November from LIS to BCN. Input an information segment in the",
+      "itinerary."
+    ],
+    "Solutions": [
+      "SING6257Y30NOVLISBCNHK2",
+      "SING6257Y30NOVLISBCN2",
+      "SING6257Y30NOVLISBCN"
+    ]
+  },
+  {
+    "Index": 24,
+    "TerminalText": [],
+    "InfoText": [
+      "Assume the passengers have booked a confirmed reservation on BQ 803 in Y",
+      "class on 5 December from BCN to BRU. Input an information segment in the",
+      "itinerary."
+    ],
+    "Solutions": [
+      "SIBQ803Y5DECBCNBRUHK2",
+      "SIBQ803Y5DECBCNBRU",
+      "SIBQ803Y5DECBCNBRU2",
+      "SIBQ803Y05DECBCNBRUHK2",
+      "SIBQ803Y05DECBCNBRU2",
+      "SIBQ803Y05DECBCNBRU"
+    ]
+  },
+  {
+    "Index": 25,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 26,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Let\u0027s review. Book a reservation on OA 344 in Y class on 26 May from RUH to",
+      "ATH for 2 passengers."
+    ],
+    "Solutions": [
+      "SSOA344Y26MAYRUHATHNN2",
+      "SSOA344Y26MAYRUHATH2"
+    ]
+  },
+  {
+    "Index": 27,
+    "TerminalText": [],
+    "InfoText": [
+      "Assume a reservation has already been booked on KL 104 in S class departing",
+      "on 30 May from ATH to AMS for 2 passengers. Input the reservation as an",
+      "information-only segment."
+    ],
+    "Solutions": [
+      "SIKL104S30MAYATHAMSHK2",
+      "SIKL104S30MAYATHAMS2",
+      "SIKL104S30MAYATHAMS"
+    ]
+  },
+  {
+    "Index": 28,
+    "TerminalText": [],
+    "InfoText": [
+      "Now book an open segment on AF in M class on 2 April from AMS to CDG."
+    ],
+    "Solutions": [
+      "SOAFM2APRAMSCDG",
+      "SOAFM02APRAMSCDG"
+    ]
+  },
+  {
+    "Index": 29,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 30,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 0,
+    "TerminalText": [],
+    "InfoText": [
+      " After finishing this lesson,  you will be able to...",
+      " ",
+      "           [ place a request for seats on a carrier\u0027s waitlist.",
+      "           [ input a manual waitlisted segment.",
+      "           [ enter a surface (ARNK segment for continuity. ",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 1,
+    "TerminalText": [],
+    "InfoText": [
+      "If a desired booking class is sold out,  but the waitlist is open,  seats may",
+      "be placed on the carrier\u0027s waitlist for that flight. The availability status",
+      "code L^ indicates that seats may be waitlisted. To demonstrate,  display",
+      "neutral availability on 17 May from FRA to PAR departing at 0900."
+    ],
+    "Solutions": [
+      "AN17MAYFRAPAR0900",
+      "AN17MAYFRACDG0900",
+      "AN17MAYFRAPAR09",
+      "AN17MAYFRACDG09",
+      "AN17MAYFRAPAR9A",
+      "AN17MAYFRACDG9A",
+      "AN17MAYFRAPAR900A",
+      "AN17MAYFRACDG900A"
+    ]
+  },
+  {
+    "Index": 2,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **          12 FR 17MAY 0900",
+      " 1   LH4428  C9 Z9 V9 L9 H9 BL GL  FRA 1 CDG 1 0845   0955   0/314       1:10",
+      "             KL QL WL ML                                                      ",
+      " 2   AF1445  C9 Z2 YL SL KL HL TL  FRA 2 CDG2D 1025   1135   0/AB3       1:10",
+      "             QL VL XL GL                                                      ",
+      " 3   AF1441  C9 Z2 YL SL KL HL TL  FRA 2 CDG2D 1210   1320   0/735       1:10",
+      "             QL VL XL GL                                                      ",
+      " 4   LH4410  C9 Z9 V9 L9 H9 B9 G9  FRA 1 CDG 1 1245   1355   0/314       1:10",
+      "             K9 Q9 WL ML                                                      ",
+      " 5   AF1405  C9 Z2 Y9 S9 K9 H9 T9  FRA 2 CDG2D 1605   1715   0/733       1:10",
+      "             Q9 V8 X8 GR                                                      ",
+      " 6   LH4378  C9 Z9 V9 L9 H9 B9 G9  FRA 1 CDG 1 1645   1755   0/314       1:10",
+      "             K9 Q9 W9 M9                                                      "
+    ],
+    "InfoText": [
+      "Assume the clients prefer the Air France flight departing at 1025. The",
+      "availability status L^ indicates seats may be waitlisted in Y class. The",
+      "code PE^ is used to book a waitlisted segment,  as follows:",
+      " ",
+      "                               SS1Y2/PE^",
+      " ",
+      "This entry will waitlist 1 seat in Y class on the flight in line 2. Input",
+      "this entry."
+    ],
+    "Solutions": [
+      "SS1Y2/PE"
+    ]
+  },
+  {
+    "Index": 3,
+    "TerminalText": [],
+    "InfoText": [
+      "The status HL^ indicates a waitlisted flight segment. An alternative",
+      "reservation should be booked to ensure that the passenger has a confirmed",
+      "booking for his departure. Input MPAN^ to redisplay the availability",
+      "display. Then book 1 seat in Y class on the flight in line 5."
+    ],
+    "Solutions": [
+      "SS1Y5"
+    ]
+  },
+  {
+    "Index": 4,
+    "TerminalText": [],
+    "InfoText": [
+      "The passenger is now waitlisted on AF 1445 and confirmed on AF 1405. If the",
+      "waitlisted segment is confirmed later,  you would then cancel the duplicate",
+      "reservation. Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 5,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Display neutral availability on 20 May from STO to LON,  departing at 1100."
+    ],
+    "Solutions": [
+      "AN20MAYSTOLON1100",
+      "AN20MAYSTOLON11A",
+      "AN20MAYARNLON1100",
+      "AN20MAYARNLON11A"
+    ]
+  },
+  {
+    "Index": 6,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **          15 MO 20MAY 1100",
+      " 1:  UA4547  C0 Y4 B4 M4 H4 Q4 V4  ARN 5 LHR 3 1110   1245   0.M87       2:35",
+      " 2   SK 531  C9 S0 M0 B0 H0 V0 Q0  ARN 5 LHR 3 1110   1245   0/M80       2:35",
+      "             G0 L0                                                           ",
+      " 3   BA 777  C9 D0 S0 B0 M0 L0 Q0  ARN   LHR 1 1230   1405   0/737       2:35",
+      "             V0                                                              ",
+      " 4:  UA4549  C0 Y0 B0 M0 H0 Q0 V0  ARN 5 LHR 3 1500   1635   0.M81       2:35",
+      " 5   SK 527  C9 S9 M9 B9 H9 V9 Q9  ARN 5 LHR 3 1500   1635   0/M80       2:35",
+      "             G9 L0                                                           ",
+      " 6   TQ 035  C9 S9 M9              ARN 2 LGW S 1530   1705   0/D95       2:35",
+      " 7 AYTQ 575  C9 S9 Z9 M9 G9 T9 K9  ARN 2 LGW S 1530   1705   0/D95       2:35",
+      "             Q9 V9 L9 A9                                                     "
+    ],
+    "InfoText": [
+      "Assume the passengers prefer the SK flight departing at 1110. Waitlist",
+      "2 seats in S class."
+    ],
+    "Solutions": [
+      "SS2S2/PE"
+    ]
+  },
+  {
+    "Index": 7,
+    "TerminalText": [],
+    "InfoText": [
+      "Input MPAN^ to redisplay the availability display. Then book a confirmed",
+      "reservation for 2 seats in S class on the flight in line 5."
+    ],
+    "Solutions": [
+      "SS2S5"
+    ]
+  },
+  {
+    "Index": 8,
+    "TerminalText": [],
+    "InfoText": [
+      "The passenger is now waitlisted on SK 531 and confirmed on SK 527. Ignore",
+      "the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 9,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "The code PE^ is used to waitlist a segment by carrier and flight number, ",
+      "as follows:",
+      " ",
+      "                        SSAF882Y30APRORYLHRPE1^",
+      " ",
+      "The priority waitlist code PE^ is typed before the number of seats. Study",
+      "the example. Then input the entry to waitlist 2 seats on SN 951 in Y class",
+      "on 27AUG from BRU to AMS."
+    ],
+    "Solutions": [
+      "SSSN951Y27AUGBRUAMSPE2"
+    ]
+  },
+  {
+    "Index": 10,
+    "TerminalText": [],
+    "InfoText": [
+      "The status code PE^ will be changed to HL^ when the transaction is ended.",
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 11,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Input the entry to waitlist one seat on TP 555 in Y class on 13 June from",
+      "FRA to LIS."
+    ],
+    "Solutions": [
+      "SSTP555Y13JUNFRALISPE1"
+    ]
+  },
+  {
+    "Index": 12,
+    "TerminalText": [],
+    "InfoText": [
+      "Now book a confirmed reservation on TP 775 in Y class for the same date and",
+      "city pair. Book the same number of seats."
+    ],
+    "Solutions": [
+      "SSTP775Y13JUNFRALIS1",
+      "SSTP775Y13JUNFRALISNN1"
+    ]
+  },
+  {
+    "Index": 13,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 14,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Display availability by departure time on 23 June from Charles de Gaulle",
+      "to Frankfurt,  departing at 0700."
+    ],
+    "Solutions": [
+      "AD23JUNCDGFRA0700",
+      "AD23JUNCDGFRA7A",
+      "AD23JUNCDGFRA700A",
+      "AD23JUNPARFRA0700",
+      "AD23JUNPARFRA7A",
+      "AD23JUNPARFRA700A"
+    ]
+  },
+  {
+    "Index": 15,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AD **           9 SU 23JUN 0700",
+      " 1   LH4465  C9 Z9 V9 L9 H9 B9 G9  CDG 1 FRA 1 0700   0820   0/321       1:20",
+      "             K9 Q9 W7 M0                                                      ",
+      " 2   AF1466  C9 Z2 Y9 S9 K9 H9 T9  CDG2D FRA 2 0735   0855   0/AB3       1:20",
+      "             Q9 V9 X9 GR                                                      ",
+      " 3   LH4439  C9 Z9 V9 L9 H9 B9 G9  ORY S FRA 1 0935   1050   0/737       1:15",
+      "             K9 Q9 W9 M9                                                      ",
+      " 4   AF1468  C9 Z2 Y9 S9 K6 H4 T4  CDG2D FRA 2 0945   1100   0/735       1:15",
+      "             Q4 V4 X4 GR                                                      ",
+      " 5   LH4413  C9 Z9 V9 L9 H9 B9 G9  CDG 1 FRA 1 1045   1205   0/314       1:20",
+      "             K9 Q9 W9 M8                                                      ",
+      " 6   AF1404  C9 Z2 Y9 S9 K9 H9 T9  CDG2D FRA 2 1320   1440   0/733       1:20",
+      "             Q9 V9 X9 GR                                                      "
+    ],
+    "InfoText": [
+      "Book a confirmed reservation for one passenger in Y class on the AF flight",
+      "departing at 0735."
+    ],
+    "Solutions": [
+      "SS1Y2"
+    ]
+  },
+  {
+    "Index": 16,
+    "TerminalText": [],
+    "InfoText": [
+      "Assume the passenger will travel by train from Frankfurt to Dusseldorf and",
+      "then board a flight to Paris. When the departure point of a flight segment",
+      "is different from the arrival point of the preceding segment,  an ARNK^",
+      "(arrival unknown segment should be input for continuity.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 17,
+    "TerminalText": [],
+    "InfoText": [
+      "An ARNK segment is input as follows:",
+      " ",
+      "                                 SIARNK^",
+      " ",
+      "Input this entry."
+    ],
+    "Solutions": [
+      "SIARNK"
+    ]
+  },
+  {
+    "Index": 18,
+    "TerminalText": [],
+    "InfoText": [
+      "The ARNK segment indicates that the departure point of the next flight is",
+      "different from the arrival point of the previous flight. Display",
+      "availability by departure time on 29 June from DUS to CDG departing",
+      "at 1200."
+    ],
+    "Solutions": [
+      "AD29JUNDUSCDG1200",
+      "AD29JUNDUSPAR1200",
+      "AD29JUNDUSCDG1200N",
+      "AD29JUNDUSPAR1200N",
+      "AD29JUNDUSCDG12N",
+      "AD29JUNDUSPAR12N"
+    ]
+  },
+  {
+    "Index": 19,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AD **          15 SA 29JUN 1200",
+      " 1   AF1481  C9 Z2 Y9 S9 K9 H9 T9  DUS   CDG2D 1105   1210   0/737       1:05",
+      "             Q9 V9 X9 GR                                                     ",
+      " 2   AF1407  C9 Z2 Y9 S9 K9 H9 T9  DUS   CDG2D 1335   1440   0/735       1:05",
+      "             Q9 V9 X9 GR                                                     ",
+      " 3   LH4374  C9 Z9 H9 V9 L9 B9 G9  DUS   CDG 1 1500   1605   0/735       1:05",
+      "             K9 Q9 W9 M9                                                     ",
+      " 4   AF1417  C9 Z2 Y9 S9 K9 H9 T9  DUS   CDG2D 1640   1745   0/320       1:05",
+      "             Q9 GR                                                           ",
+      " 5   LH4372  C9 Z9 H9 V9 L9 B9 G9  DUS   CDG 1 1755   1900   0/320       1:05",
+      "             K9 Q9 W9 M9                                                     ",
+      " 6   AF1447  C9 Z2 Y9 S9 K9 H9 T9  DUS   CDG2D 2020   2125   0/320       1:05",
+      "             Q9 V9 X9 GR                                                     "
+    ],
+    "InfoText": [
+      "Book a confirmed reservation for one passenger in Y class on the AF flight",
+      "departing at 1335."
+    ],
+    "Solutions": [
+      "SS1Y2"
+    ]
+  },
+  {
+    "Index": 20,
+    "TerminalText": [],
+    "InfoText": [
+      "The ARNK segment maintains continuity between the arrival point of",
+      "segment 1 and the departure point of segment 2. Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 21,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Let\u0027s review. Display neutral availability on 16 May from all London",
+      "airports to Madrid."
+    ],
+    "Solutions": [
+      "AN16MAYLONMAD"
+    ]
+  },
+  {
+    "Index": 22,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **          12 TH 16MAY 0000",
+      " 1   IB3161  C9 ML LL WL KL TL     LHR 2 MAD I 0730   1040   0/M87       2:10",
+      " 2   BA 458  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   0800   1115   0/757       2:15",
+      "             V9                                                              ",
+      " 3   BA2464  C9 D7 S9 B9 M9 L9 Q9  LGW N MAD   0855   1215   0/737       2:20",
+      "             V9                                                              ",
+      " 4   BA 456  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   1000   1315   0/320       2:15",
+      "             V9                                                              ",
+      " 5   UK 972  Y4 S4 M4 B4 L4 V4 Q4  STN   MAD I 1040   1410   0*100       2:30",
+      "             H0                                                              ",
+      " 6   IB3163  C9 M9 L9 W9 K9 TL     LHR 2 MAD I 1135   1450   0/320       2:15",
+      " 7   BA 460  C9 D9 S9 B9 M9 L9 Q9  LHR 1 MAD   1415   1730   0/757       2:15",
+      "             V9                                                              "
+    ],
+    "InfoText": [
+      "Assume the passenger prefers the IB flight departing at 0730. Waitlist",
+      "one seat in M class."
+    ],
+    "Solutions": [
+      "SS1M1/PE"
+    ]
+  },
+  {
+    "Index": 23,
+    "TerminalText": [],
+    "InfoText": [
+      "Redisplay the availability display. Then book a confirmed reservation in",
+      "M class on the flight in line 6."
+    ],
+    "Solutions": [
+      "SS1M6"
+    ]
+  },
+  {
+    "Index": 24,
+    "TerminalText": [],
+    "InfoText": [
+      "Assume the passenger will travel by train from Madrid to Barcelona. Input",
+      "an ARNK segment."
+    ],
+    "Solutions": [
+      "SIARNK"
+    ]
+  },
+  {
+    "Index": 25,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the entry to waitlist 1 seat on IB 4515 in Y class on 21 May from",
+      "BCN to FRA."
+    ],
+    "Solutions": [
+      "SSIB4515Y21MAYBCNFRAPE1"
+    ]
+  },
+  {
+    "Index": 26,
+    "TerminalText": [],
+    "InfoText": [
+      "Now book a confirmed reservation on IB 4516 in Y class on 22 May from",
+      "BCN to FRA."
+    ],
+    "Solutions": [
+      "SSIB4516Y22MAYBCNFRA1",
+      "SSIB4516Y22MAYBCNFRANN1"
+    ]
+  },
+  {
+    "Index": 27,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 28,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 0,
+    "TerminalText": [],
+    "InfoText": [
+      " After finishing this lesson,  you will be able to...",
+      " ",
+      "       [ input passenger names.",
+      "       [ input multiple passengers with the same surname.",
+      "       [ input a child or infant name.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 1,
+    "TerminalText": [],
+    "InfoText": [
+      "Details about client reservations are stored in passenger name records,  or\u0022 ",
+      "PNRS. Each PNR contains information such as the passenger names,  contact",
+      "telephone numbers,  ticketing details,  and the person who requested the",
+      "service. Each item of information is stored in a separate PNR element.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 2,
+    "TerminalText": [],
+    "InfoText": [
+      "A PNR can be retrieved by the passenger\u0027s surname,  as follows:",
+      "  ",
+      "                               RT/COLUMBUS^",
+      "  ",
+      "This entry will retrieve the PNR for the surname Columbus. Note that RT/^",
+      "is typed before the name. Input this entry."
+    ],
+    "Solutions": [
+      "RT/COLUMBUS"
+    ]
+  },
+  {
+    "Index": 3,
+    "TerminalText": [
+      "RP/FRALH2330/FRALH2330          0999ZZ 12JUL /1012Z   3G2RPL",
+      "  1.COLUMBUS/C MR\u0022   ",
+      "  2  IB6631 C 02OCT 7 MADSDQ HK1         I  1150  1510   *1A/",
+      "  3  IB6940 C 16OCT 7 SDQMAD HK1            1300  0735\u002B1 *1A\u0022   ",
+      "  4 AP MAD 01 4345721-B",
+      "  5 TK TL30SEP/FRALH2330\u0022   "
+    ],
+    "InfoText": [
+      "Every PNR has an itinerary. The passenger\u0027s name,  contact telehone",
+      "numbers,  and the ticketing arrangement are also stored in the PNR.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 4,
+    "TerminalText": [],
+    "InfoText": [
+      "The name^ element^ shows the names of the passengers.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 5,
+    "TerminalText": [],
+    "InfoText": [
+      "A contact telephone number is stored in the contact^ element^. The label AP^",
+      "identifies this element. The client\u0027s business phone is stored in this PNR.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 6,
+    "TerminalText": [],
+    "InfoText": [
+      " Ticketing details are stored in the ticketing^ element^. The label TK^",
+      " identifies this element. In this example,  the code TL^ indicates the date",
+      " for ticketing.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 7,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction to remove the PNR from the work area."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 8,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "The entry code NM^ is used to input a passenger name,  as follows:",
+      " ",
+      "                              NM^1DRAKE/FRANCIS MR",
+      " ",
+      "The number of passengers in the entry is typed before the surname. This",
+      "entry will input the passenger name Mr. Francis Drake. Input this entry."
+    ],
+    "Solutions": [
+      "NM1DRAKE/FRANCIS MR",
+      "NM1DRAKE/FRANCISMR",
+      "NM1DRAKE/FRANCIS",
+      "NM1DRAKE/F MR",
+      "NM1DRAKE/FMR",
+      "NM1DRAKE/F"
+    ]
+  },
+  {
+    "Index": 9,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 10,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Either the given name or initial may be input. Input the name entry for",
+      "Mrs. G. Koenig."
+    ],
+    "Solutions": [
+      "NM1KOENIG/GMRS",
+      "NM1KOENIG/G MRS",
+      "NM1KOENIG/G"
+    ]
+  },
+  {
+    "Index": 11,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 12,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "A title such as MR or MRS should be included for clarity. The following",
+      "titles are commonly used:",
+      " ",
+      "                   MR^         Male/adult",
+      "                   MRS^        Female/married",
+      "                   MISS^       Female/not married",
+      "                   MS^         Female/marital status unknown",
+      "                   MSTR^       Male/child",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 13,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the name entry for Miss C. Topolos."
+    ],
+    "Solutions": [
+      "NM1TOPOLOS/CMISS",
+      "NM1TOPOLOS/C MISS",
+      "NM1TOPOLOS/C"
+    ]
+  },
+  {
+    "Index": 14,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 15,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Multiple passengers with the same surname are input as follows:",
+      " ",
+      "                          NM2HUBBARD/C^ MR/H^ MRS^",
+      " ",
+      "A slash is typed before each passenger\u0027s initial. This entry will input",
+      "the names Mr. C. Hubbard and Mrs. H. Hubbard. The surname is typed just",
+      "once. Input this entry."
+    ],
+    "Solutions": [
+      "NM2HUBBARD/CMR/HMRS",
+      "NM2HUBBARD/C MR/H MRS",
+      "NM2HUBBARD/C/H",
+      "NM2HUBBARD/C/HMRS",
+      "NM2HUBBARD/C/H MRS"
+    ]
+  },
+  {
+    "Index": 16,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 17,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Now input the name entry for Mr. J. Spratt and Mrs. L. Spratt. Remember to",
+      "type the number of passengers before the surname."
+    ],
+    "Solutions": [
+      "NM2SPRATT/JMR/LMRS",
+      "NM2SPRATT/J MR/L MRS",
+      "NM2SPRATT/J/L",
+      "NM2SPRATT/J/LMRS",
+      "NM2SPRATT/J/L MRS"
+    ]
+  },
+  {
+    "Index": 18,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 19,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "The code (CHD^ is used to identify a child from 2 to 12 years of age,  as",
+      "follows:",
+      " ",
+      "                           NM2DUPREE/ANNE^ MRS/MARIE^ (CHD^",
+      " ",
+      "In this entry,  Marie Dupree is identified as a child. When this entry is ",
+      "input,  AMADEUS will send a message notifying each airline that a child ",
+      "will be travelling. Input this entry."
+    ],
+    "Solutions": [
+      "NM2DUPREE/ANNE MRS/MARIE (CHD",
+      "NM2DUPREE/ANNE MRS/MARIE(CHD",
+      "NM2DUPREE/ANNEMRS/MARIE(CHD",
+      "NM2DUPREE/ANNE MRS/MARIE MISS (CHD",
+      "NM2DUPREE/A MRS/M (CHD",
+      "NM2DUPREE/AMRS/M(CHD",
+      "NM2DUPREE/AMRS/MMISS(CHD"
+    ]
+  },
+  {
+    "Index": 20,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 21,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Input the name entry for Mr. P. Smith,  Mrs R. Smith,  and a child,  N. Smith."
+    ],
+    "Solutions": [
+      "NM3SMITH/PMR/RMRS/N(CHD",
+      "NM3SMITH/P MR/R MRS/N (CHD",
+      "NM3SMITH/P MR/R MRS/N(CHD",
+      "NM3SMITH/P/R/N(CHD"
+    ]
+  },
+  {
+    "Index": 22,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 23,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "The code (INF^ is used to identify an infant under 2 years of age,  as",
+      "follows:",
+      " ",
+      "                           NM1RUIZ/CARMEN^ MRS^ (INF/MARIA^",
+      " ",
+      "This entry indicates that Mrs. Carmen Ruiz will travel with her infant, ",
+      "Maria. Note that the infant is not included in the number of passengers.",
+      "Input this entry."
+    ],
+    "Solutions": [
+      "NM1RUIZ/CARMEN MRS (INF/MARIA",
+      "NM1RUIZ/CARMEN MRS(INF/MARIA",
+      "NM1RUIZ/CARMENMRS(INF/MARIA",
+      "NM1RUIZ/C MRS (INF/MARIA",
+      "NM1RUIZ/C MRS(INF/MARIA"
+    ]
+  },
+  {
+    "Index": 24,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 25,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Assume Mr. Hans Fjeld and Mrs. Ann Fjeld will travel with their infant, ",
+      "Ingmar. Input the passenger names."
+    ],
+    "Solutions": [
+      "NM2FJELD/HANS MR/ANN MRS (INF/INGMAR",
+      "NM2FJELD/HANS MR/ANN MRS(INF/INGMAR",
+      "NM2FJELD/HANSMR/ANNMRS (INF/INGMAR",
+      "NM2FJELD/HANSMR/ANNMRS(INF/INGMAR",
+      "NM2FJELD/H MR/A MRS (INF/I",
+      "NM2FJELD/H MR/A MRS(INF/I",
+      "NM2FJELD/HMR/AMRS (INF/I",
+      "NM2FJELD/HMR/AMRS(INF/I"
+    ]
+  },
+  {
+    "Index": 26,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 27,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Passengers with different surnames may be input with one entry,  as",
+      "follows:",
+      " ",
+      "                         NM1WILLIAMS/J^ MR1THOMAS/P^ MR^",
+      " ",
+      "This entry will input the names Mr. J. Williams and Mr. P. Thomas. The",
+      "number of passengers with each same surname is typed before the surname",
+      "of each passenger. Input this entry."
+    ],
+    "Solutions": [
+      "NM1WILLIAMS/J MR1THOMAS/P MR",
+      "NM1WILLIAMS/JMR1THOMAS/PMR",
+      "NM1WILLIAMS/J1THOMAS/P"
+    ]
+  },
+  {
+    "Index": 28,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 29,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Let\u0027s review. What entry would be used to input the passenger name Mr. J.",
+      "Heilman?"
+    ],
+    "Solutions": [
+      "NM1HEILMAN/J MR",
+      "NM1HEILMAN/JMR",
+      "NM1HEILMAN/J"
+    ]
+  },
+  {
+    "Index": 30,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the name entry for Mr. C. Martinez and Mrs. J. Martinez, ",
+      "travelling with a child,  P. Martinez."
+    ],
+    "Solutions": [
+      "NM3MARTINEZ/C MR/J MRS/P (CHD",
+      "NM3MARTINEZ/CMR/JMRS/P(CHD",
+      "NM3MARTINEZ/C/J/P (CHD",
+      "NM3MARTINEZ/C MR/J MRS/P(CHD",
+      "NM3MARTINEZ/CMR/JMRS/P (CHD",
+      "NM3MARTINEZ/C/J/P(CHD"
+    ]
+  },
+  {
+    "Index": 31,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the name entry for Mrs. Gina Franco travelling with her infant, ",
+      "Paulo."
+    ],
+    "Solutions": [
+      "NM1FRANCO/GINA MRS (INF/PAULO",
+      "NM1FRANCO/GINA MRS(INF/PAULO",
+      "NM1FRANCO/G MRS (INF/PAULO",
+      "NM1FRANCO/G MRS(INF/PAULO",
+      "NM1FRANCO/GMRS (INF/P",
+      "NM1FRANCO/GMRS(INF/P",
+      "NM1FRANCO/GINA (INF/PAULO",
+      "NM1FRANCO/GINA(INF/PAULO",
+      "NM1FRANCO/G (INF/PAULO",
+      "NM1FRANCO/G(INF/PAULO",
+      "NM1FRANCO/G (INF/P",
+      "NM1FRANCO/G(INF/P"
+    ]
+  },
+  {
+    "Index": 32,
+    "TerminalText": [],
+    "InfoText": [
+      "With one entry,  input the names Mr. J. Klein and Mr. R. Peters."
+    ],
+    "Solutions": [
+      "NM1KLEIN/J MR1PETERS/R MR",
+      "NM1KLEIN/JMR1PETERS/RMR",
+      "NM1KLEIN/J1PETERS/R"
+    ]
+  },
+  {
+    "Index": 33,
+    "TerminalText": [],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 0,
+    "TerminalText": [],
+    "InfoText": [
+      " After finishing this lesson,  you will be able to...",
+      " ",
+      "       [ input contact telephone numbers.",
+      "       [ identify location indicators used in phone entries.",
+      "       [ include passenger association.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 1,
+    "TerminalText": [],
+    "InfoText": [
+      "The entry code AP^ is used to input contact phone numbers,  as follows: ",
+      " ",
+      "                         APPAR^ 61698484-B^\u0022 ",
+      " ",
+      "Note that the city code is typed before the telephone number. In this",
+      "example,  the code -B^ identifies the number as the client business phone.",
+      "Input this entry."
+    ],
+    "Solutions": [
+      "APPAR -B"
+    ]
+  },
+  {
+    "Index": 2,
+    "TerminalText": [],
+    "InfoText": [
+      "A home contact phone is input as follows: ",
+      " ",
+      "                          APPAR^ 44572672-H^\u0022 ",
+      " ",
+      "The location indicator -H^ identifies the number as a business phone. Input",
+      "this entry."
+    ],
+    "Solutions": [
+      "APPAR -H"
+    ]
+  },
+  {
+    "Index": 3,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 4,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "The following location codes are used in phone entries:",
+      " ",
+      "                   A^   Travel agency",
+      "                   B^   Business contact",
+      "                   H^   Home contact",
+      " ",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 5,
+    "TerminalText": [],
+    "InfoText": [
+      "Normally,  it is not necessary to input the agency\u0027s phone. AMADEUS",
+      "automatically communicates the city,  telephone number,  and agency name",
+      "to each airline in the itinerary. Make the entry to store the Barcelona",
+      "business phone 03 3442923."
+    ],
+    "Solutions": [
+      "APBCN -B"
+    ]
+  },
+  {
+    "Index": 6,
+    "TerminalText": [],
+    "InfoText": [
+      "Now input the Barcelona home phone 03 3713543."
+    ],
+    "Solutions": [
+      "APBCN -H"
+    ]
+  },
+  {
+    "Index": 7,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 8,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Input the passenger name Mr. Karl Morantz."
+    ],
+    "Solutions": [
+      "NM1MORANTZ/KARL MR",
+      "NM1MORANTZ/KARLMR",
+      "NM1MORANTZ/K MR",
+      "NM1MORANTZ/KMR",
+      "NM1MORANTZ/K"
+    ]
+  },
+  {
+    "Index": 9,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the Frankfurt business phone 069 373745."
+    ],
+    "Solutions": [
+      "APFRA -B"
+    ]
+  },
+  {
+    "Index": 10,
+    "TerminalText": [],
+    "InfoText": [
+      "Now input the Frankfurt home phone 069 470292."
+    ],
+    "Solutions": [
+      "APFRA -H"
+    ]
+  },
+  {
+    "Index": 11,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 12,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Input the passenger names Mr. P. Blanc and Mr. G. Dupres. Input both names",
+      "with one entry."
+    ],
+    "Solutions": [
+      "NM1BLANC/P MR1DUPRES/G MR",
+      "NM1BLANC/PMR1DUPRES/GMR",
+      "NM1BLANC/P1DUPRES/G"
+    ]
+  },
+  {
+    "Index": 13,
+    "TerminalText": [],
+    "InfoText": [
+      "Assume Mr. Blanc\u0027s home phone in Paris is 45678322. The contact element",
+      "is input as follows:",
+      "                         APPAR^ 45678322-H/P1^",
+      " ",
+      "The code /P1^ refers to passenger 1,  identifying the phone as that of Mr.",
+      "Blanc. Input this entry."
+    ],
+    "Solutions": [
+      "APPAR -H/P1"
+    ]
+  },
+  {
+    "Index": 14,
+    "TerminalText": [],
+    "InfoText": [
+      "Assume Mr. Dupres\u0027s home phone in Paris is 44726531. Input the contact",
+      "element."
+    ],
+    "Solutions": [
+      "APPAR -H/P2"
+    ]
+  },
+  {
+    "Index": 15,
+    "TerminalText": [],
+    "InfoText": [
+      "The code /P1^ identifies the first home phone as that of Mr. Blanc,  and /P2^",
+      "identifies the second home phone as that of Mr. Dupres. These codes are",
+      "called the passenger^ association^. Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 16,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Display neutral availability from all Paris airports to Madrid on 19 May."
+    ],
+    "Solutions": [
+      "AN19MAYPARMAD"
+    ]
+  },
+  {
+    "Index": 17,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **           9 TH 19MAY 0000",
+      " 1   IB3409  C9 M9 L9 W9 Q9 V6 T9  ORY   MAD I 0705   0855   0/320       1:50",
+      " 2   RN 110  C4 D4 W4 Q4 M4        ORY   MAD I 0715   0905   0 73S       1:50",
+      " 3   AF1142  C9 Z2 Y9 S9 K9 H9 T9  CDG2A MAD I 0720   0920   0/735       2:00",
+      "             Q9 V9 X9 GR                                                     ",
+      " 4   IT4668  C4 Q4 M4 K4 T4        ORY   MAD I 0725   0920   0/100       1:55",
+      " 5   AF1114  C9 Y9 Q9 K9 T9        CDG2A MAD I 0920   1120   0/737       2:00",
+      "             Q9 V9 X9 GR                                                     ",
+      " 6   IB3403  C9 M9 L9 W9 Q9 V6 T9  ORY   MAD I 1015   1205   0/320       1:50",
+      " 7   IB3443  C9 M9 L9 W9 Q9 V6 T9  CDG   MAD I 1200   1400   0/M87       2:00",
+      " 8   IB3405  C9 M9 L9 W9 Q9 V6 T9  ORY   MAD I 1405   1555   0/320       1:50"
+    ],
+    "InfoText": [
+      "Sell 2 seats Y class on the Air France flight departing from CDG at 0920."
+    ],
+    "Solutions": [
+      "SS2Y5"
+    ]
+  },
+  {
+    "Index": 18,
+    "TerminalText": [],
+    "InfoText": [
+      "The passengers are Mr. C. Gomez and Mrs. R. Gomez. Input the names."
+    ],
+    "Solutions": [
+      "NM2GOMEZ/C MR/R MRS",
+      "NM2GOMEZ/CMR/RMRS",
+      "NM2GOMEZ/C/R"
+    ]
+  },
+  {
+    "Index": 19,
+    "TerminalText": [],
+    "InfoText": [
+      "Mr. Gomez\u0027s business phone in Madrid is 01 3841983. Input the phone and",
+      "include the correct passenger association code."
+    ],
+    "Solutions": [
+      "APMAD -B/P1"
+    ]
+  },
+  {
+    "Index": 20,
+    "TerminalText": [],
+    "InfoText": [
+      "If all passengers have the same phone,  passenger association may be omitted.",
+      "Input the Madrid home phone 01 4622243."
+    ],
+    "Solutions": [
+      "APMAD -H",
+      "APMAD -H/P1-2",
+      "APMAD -H/P1, 2"
+    ]
+  },
+  {
+    "Index": 21,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 22,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 0,
+    "TerminalText": [],
+    "InfoText": [
+      " After finishing this lesson,  you will be able to...",
+      "  ",
+      "           [ input a ticketing element.",
+      "           [ indicate the ticketing office.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 1,
+    "TerminalText": [],
+    "InfoText": [
+      "The entry code TK^ is used to input a ticketing arrangement,  as follows:",
+      " ",
+      "                                 TKTL15JUN^",
+      " ",
+      "The code TL^ is used to arrange ticketing on a specified date. Input this",
+      "entry."
+    ],
+    "Solutions": [
+      "TKTL15JUN"
+    ]
+  },
+  {
+    "Index": 2,
+    "TerminalText": [],
+    "InfoText": [
+      "The code TL^ indicates the last date on which tickets may be purchased.",
+      "Input the entry to ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 3,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "The following are example of other ticketing arrangement codes:",
+      " ",
+      "              OK^                   Tickets have been issued",
+      "              MA^                   Tickets to be mailed ",
+      "              PT^                   Prepaid ticket",
+      "              AT^                   Airport ticket",
+      " ",
+      "Input the entry to arrange an airport ticket for 16 February."
+    ],
+    "Solutions": [
+      "TKAT16FEB"
+    ]
+  },
+  {
+    "Index": 4,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 5,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "The office identification code can be included,  as follows:",
+      " ",
+      "                             TKTL24JUN/FRALH0989^",
+      " ",
+      "If no office identification is input,  the system defaults to the office",
+      "where the ticketing element was input. Make the entry to arrange ticketing\u0022 ",
+      "on 22 March. Include the office identification code PARAF0991."
+    ],
+    "Solutions": [
+      "TKTL22MAR/PARAF0991"
+    ]
+  },
+  {
+    "Index": 6,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 7,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Assume a client wants to travel on 16 March from Frankfurt to Fiumicino.",
+      "He prefers to depart at 0900. Display neutral availability."
+    ],
+    "Solutions": [
+      "AN16MARFRAROM0900",
+      "AN16MARFRAFCO0900",
+      "AN16MARFRAROM9A",
+      "AN16MARFRAFCO9A"
+    ]
+  },
+  {
+    "Index": 8,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **           9 TU 16MAR 0900",
+      " 1   AZ 401  C4 Y4 M4 L4 B4 W4 T4  FRA 1 FCO I 0905   1055   0*M80       1:50",
+      "             V4 K4                                                           ",
+      " 2   LH3548  C9 Z9 V9 L9 H9 B9 G9  FRA 1 FCO I 0930   1115   0/733       1:45",
+      "             K9 Q9 W9 M9                                                     ",
+      " 3   AZ 403  C4 Y4 M4 L4 B4 W4 T4  FRA 1 FCO I 1155   1345   0*M80       1:50",
+      "             V4 K4                                                           ",
+      " 4   AZ 405  C4 Y4 M4 L4 B4 W4 T4  FRA 1 FCO I 1325   1515   0*M80       1:50",
+      "             V4 K4                                                           ",
+      " 5   LH3566  C9 Z9 V9 L9 H9 B9 G9  FRA 1 FCO I 1655   1840   0/735       1:45",
+      "             K9 Q6 W5 M0                                                     ",
+      " 6   AZ 407  C4 Y4 M4 L4 B4 W4 T4  FRA 1 FCO I 1945   2135   0*M80       1:50",
+      "             V4 K4                                                           "
+    ],
+    "InfoText": [
+      "Assume the passenger wants one seat in C class on the Lufthansa flight",
+      "departing at 0930."
+    ],
+    "Solutions": [
+      "SS1C2"
+    ]
+  },
+  {
+    "Index": 9,
+    "TerminalText": [],
+    "InfoText": [
+      "Assume the client wants to purchase the ticket on 11 March. Input the",
+      "ticketing arrangement."
+    ],
+    "Solutions": [
+      "TKTL11MAR"
+    ]
+  },
+  {
+    "Index": 10,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 11,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "A client plans to travel from Brussels to Athens on 13 March. Display",
+      "neutral availability."
+    ],
+    "Solutions": [
+      "AN13MARBRUATH"
+    ]
+  },
+  {
+    "Index": 12,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **           9 WE 13MAR 0000",
+      " 1   SN 301  C9 Y9 M9 L9 K9 T9 B9  BRU   ATH  1000   1415   1/735       4:15",
+      " 2   OA 146  C4 Y4 M4 K4 L4        BRU   ATH  1215   1620   0*734       3:05",
+      " 3   KL 382  C7 S7 M7 B7 H7 Q7 L0  BRU   AMS  0825   0910   0.F28",
+      "             V0                                                             ",
+      "     KL 101  C7 S7 M7 B7 H7 Q7 L7  AMS   ATH  0950   1420   0.737       5:55",
+      "             V7                                                             ",
+      " 4   KL 386  C7 S7 M7 B7 H7 Q7 L0  BRU   AMS  1620   1710   0.F28",
+      "             V0                                                             ",
+      "     KL 105  C7 S7 M7 B7 H7 Q7 L7  AMS   ATH  1925   2355   0.737       6:15",
+      "             V7                                                       \t"
+    ],
+    "InfoText": [
+      "The client would like one seat in K class on the Olympic Airways flight",
+      "departing at 1215."
+    ],
+    "Solutions": [
+      "SS1K2"
+    ]
+  },
+  {
+    "Index": 13,
+    "TerminalText": [],
+    "InfoText": [
+      "The clients want to return on 20 March. Display return availability."
+    ],
+    "Solutions": [
+      "ACR20MAR",
+      "AN20MARATHBRU",
+      "ACR7"
+    ]
+  },
+  {
+    "Index": 14,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **          16 WE 20MAR 0000",
+      " 1   OA 145  C4 Y4 M4 K4 L4        ATH   BRU   0920   1140   0.734       4:20",
+      " 2   SN 302  C9 Y9 M9 L9 K9 T9 B9  ATH   BRU   1510   1735   0.737       4:25",
+      " 3   KL 100  C7 S7 M7 B7 H7 Q7 L7  ATH   AMS   0605   0845   0/737",
+      "             V0                                                             ",
+      "     KL 383  C7 S7 M7 B7 H7 Q7 L7  AMS   BRU   1025   1110   0/737       7:05",
+      "             V0                                                             ",
+      " 4   KL 105  C7 S7 M7 B7 H7 Q7 L7  ATH   AMS   1015   1255   0/737",
+      "             V0                                                             ",
+      "     KL 385  C7 S7 M7 B7 H7 Q7 L7  AMS   BRU   1440   1525   0/737       9:15",
+      "             V0                                                             "
+    ],
+    "InfoText": [
+      "Book one seat in K class on the direct OA flight."
+    ],
+    "Solutions": [
+      "SS1K1"
+    ]
+  },
+  {
+    "Index": 15,
+    "TerminalText": [],
+    "InfoText": [
+      "The passenger is Mr. J. Ory."
+    ],
+    "Solutions": [
+      "NM1ORY/J MR",
+      "NM1ORY/JMR",
+      "NM1ORY/J"
+    ]
+  },
+  {
+    "Index": 16,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the Brussels business phone 02 5312636."
+    ],
+    "Solutions": [
+      "APBRU -B"
+    ]
+  },
+  {
+    "Index": 17,
+    "TerminalText": [],
+    "InfoText": [
+      "Now input the Brussels home phone 02 5478172."
+    ],
+    "Solutions": [
+      "APBRU -H"
+    ]
+  },
+  {
+    "Index": 18,
+    "TerminalText": [],
+    "InfoText": [
+      "Assume the tickets must be purchased by 6 March to obtain the discount fare",
+      "in K class. Input the ticketing deadline."
+    ],
+    "Solutions": [
+      "TKTL6MAR",
+      "TKTL06MAR"
+    ]
+  },
+  {
+    "Index": 19,
+    "TerminalText": [],
+    "InfoText": [
+      "This PNR now contains a name element,  an itinerary,  contact elements,  and",
+      "a ticketing element. Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 20,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "Let\u0027s review. What entry would be used to arrange an airport ticket for",
+      "29 January?"
+    ],
+    "Solutions": [
+      "TKAT29JAN"
+    ]
+  },
+  {
+    "Index": 21,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the entry to indicate that the ticket will be mailed on 18 June."
+    ],
+    "Solutions": [
+      "TKMA18JUN"
+    ]
+  },
+  {
+    "Index": 22,
+    "TerminalText": [],
+    "InfoText": [
+      "What entry is used to indicate that the ticket has been issued?"
+    ],
+    "Solutions": [
+      "TKOK"
+    ]
+  },
+  {
+    "Index": 23,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the entry to arrange ticketing for 30 April."
+    ],
+    "Solutions": [
+      "TKTL30APR"
+    ]
+  },
+  {
+    "Index": 24,
+    "TerminalText": [],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 0,
+    "TerminalText": [],
+    "InfoText": [
+      " After finishing this lesson,  you will be able to...",
+      "  ",
+      "           [ store a received-from element.",
+      "           [ end the transaction.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 1,
+    "TerminalText": [],
+    "InfoText": [
+      "The received-from element identifies the person who requested the service.",
+      "The transaction code RF^ is used to input a received-from element,  as",
+      "follows: ",
+      "                                 RF^MRBRAUN",
+      " ",
+      "This entry indicates that Mr. Braun requested the service. Input this",
+      "entry. Note that the text does not include any spaces. If a space is input, ",
+      "it will be deleted by the system. Input this entry."
+    ],
+    "Solutions": [
+      "RFP"
+    ]
+  },
+  {
+    "Index": 2,
+    "TerminalText": [],
+    "InfoText": [
+      "The received-from element is displayed initially below the responsible",
+      "office identification code. However,  when the transaction is ended,  this",
+      "element is no longer displayed. Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 3,
+    "TerminalText": [],
+    "InfoText": [],
+    "Solutions": []
+  },
+  {
+    "Index": -1,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the name^ entry^ for Mr. L. Schindler."
+    ],
+    "Solutions": [
+      "NM1SCHINDLER/L MR",
+      "NM1SCHINDLER/LMR",
+      "NM1SCHINDLER/L"
+    ]
+  },
+  {
+    "Index": 4,
+    "TerminalText": [],
+    "InfoText": [
+      "The abbreviation P^ or PAX^ may be used if the passenger requested his own\u0022 ",
+      "reservation. This entry is input as follows:",
+      " ",
+      "                                      RFP^",
+      " ",
+      "Input this entry."
+    ],
+    "Solutions": [
+      "RFP"
+    ]
+  },
+  {
+    "Index": 5,
+    "TerminalText": [],
+    "InfoText": [
+      "The received-from element is free-format. Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 6,
+    "TerminalText": [],
+    "InfoText": [],
+    "Solutions": []
+  },
+  {
+    "Index": -1,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the name entry for Mrs. P. Larsen."
+    ],
+    "Solutions": [
+      "NM1LARSEN/P MRS",
+      "NM1LARSEN/PMRS",
+      "NM1LARSEN/P"
+    ]
+  },
+  {
+    "Index": 7,
+    "TerminalText": [],
+    "InfoText": [
+      "Assume the passenger\u0027s assistant,  Mr. Svenson,  requested the reservation.",
+      "Input the received-from element."
+    ],
+    "Solutions": [
+      "RFP"
+    ]
+  },
+  {
+    "Index": 8,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 9,
+    "TerminalText": [],
+    "InfoText": [],
+    "Solutions": []
+  },
+  {
+    "Index": -1,
+    "TerminalText": [],
+    "InfoText": [
+      "Input the name entry for Mr. N. Patel."
+    ],
+    "Solutions": [
+      "NMPATEL/NMR",
+      "NMPATEL/N MR",
+      "NM1PATEL/NMR",
+      "NM1PATEL/N MR",
+      "NMPATEL/N",
+      "NM1PATEL/N"
+    ]
+  },
+  {
+    "Index": 10,
+    "TerminalText": [],
+    "InfoText": [
+      "Assume the passenger requested the reservation. Input the received-from entry."
+    ],
+    "Solutions": [
+      "RF"
+    ]
+  },
+  {
+    "Index": 11,
+    "TerminalText": [],
+    "InfoText": [
+      "Ignore the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 12,
+    "TerminalText": [],
+    "InfoText": [],
+    "Solutions": []
+  },
+  {
+    "Index": -1,
+    "TerminalText": [],
+    "InfoText": [
+      "Display neutral availability from on 22 June from FCO to AMS."
+    ],
+    "Solutions": [
+      "AN22JUNFCOAMS",
+      "AN22JUNFCOAMS"
+    ]
+  },
+  {
+    "Index": 13,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **          14 TU 22JUN 0000",
+      " 1   AZ 108  C4 Y4 M4 L4 B4 W4 T4  FCO I AMS   0945   1215   0*M80       2:30",
+      "             V4 K4                                                           ",
+      " 2   AZ 110  C4 Y4 M4 L4 B4 W4 T4  FCO I AMS   1620   1850   0*M80       2:30",
+      "             V4 K4                                                           ",
+      " 3   AZ2058  Y4 L4 H4 T4 V4 Q4 K4  FCO D LIN   1300   1405   0*M82         ",
+      "     AZ 114  C4 Y4 M4 L4 B4 W4 T4  LIN   AMS   1450   1635   0*M80       3:35",
+      "             V4 K4                                                           ",
+      " 4   AZ2076  Y4 L4                 FCO D LIN   1540   1645   0*M82         ",
+      "     AZ 116  C4 Y4 M4 L4 B4 W4 T4  LIN   AMS   1735   1920   0*M80       3:40",
+      "             V4 K4                                                           "
+    ],
+    "InfoText": [
+      "Sell 2 seats Y class on AZ 108."
+    ],
+    "Solutions": [
+      "SS2Y1"
+    ]
+  },
+  {
+    "Index": 14,
+    "TerminalText": [],
+    "InfoText": [
+      "The passengers are Mr. L. Tichwell and Mrs. P. Tichwell. Input the",
+      "passenger names."
+    ],
+    "Solutions": [
+      "NM2TICHWELL/LMR/PMRS",
+      "NM2TICHWELL/L MR/P MRS",
+      "NM2TICHWELL/L/P"
+    ]
+  },
+  {
+    "Index": 15,
+    "TerminalText": [],
+    "InfoText": [
+      "Now input the Copenhagen home phone 45 31268765."
+    ],
+    "Solutions": [
+      "APCPH -H"
+    ]
+  },
+  {
+    "Index": 16,
+    "TerminalText": [],
+    "InfoText": [
+      "Arrange ticketing for 19 June."
+    ],
+    "Solutions": [
+      "TKTL19JUN"
+    ]
+  },
+  {
+    "Index": 17,
+    "TerminalText": [],
+    "InfoText": [
+      "The reservation was received from Mr. Tichwell. Input the received-from",
+      "element."
+    ],
+    "Solutions": [
+      "RFP"
+    ]
+  },
+  {
+    "Index": 18,
+    "TerminalText": [],
+    "InfoText": [
+      "This PNR now includes a received-from element,  name elements,  an itinerary, ",
+      "a contact element,  and a ticketing element. In the next lesson,  you will",
+      "learn how to end the transaction and store the reservation. Ignore the",
+      "the transaction."
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 19,
+    "TerminalText": [
+      "IGNORED"
+    ],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 0,
+    "TerminalText": [],
+    "InfoText": [
+      " After finishing this lesson,  you will be able to...",
+      " ",
+      "       [ input mandatory PNR elements.",
+      "       [ end the transaction.",
+      "       [ identify a record locator.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 1,
+    "TerminalText": [],
+    "InfoText": [
+      "Before a PNR can be stored by the system,  the PNR must have a name element, ",
+      "itinerary,  contact element,  ticketing element,  and received-from element.",
+      "In general,  the information may be input in any order. When the record is",
+      "complete,  the agent inputs the entry to end the transaction. To demonstrate, ",
+      "display neutral availability on 18 July from FRA to ROM,  departing at 1000."
+    ],
+    "Solutions": [
+      "AN18JULFRAROM1000",
+      "AN18JULFRAFCO1000"
+    ]
+  },
+  {
+    "Index": 2,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AN **          12 TU 18JUL 1000",
+      " 1   AZ 401  C4 Y4 M4 L4 B4 W4 T4  FRA 1 FCO I 0905   1055   0*M80       1:50",
+      "             V4 K4                                                           ",
+      " 2   LH3548  C9 Z9 V9 L9 H9 B9 G9  FRA 1 FCO I 0930   1115   0/733       1:45",
+      "             K9 Q9 W9 M9                                                     ",
+      " 3   AZ 403  C4 Y4 M4 L4 B4 W4 T4  FRA 1 FCO I 1155   1345   0*M80       1:50",
+      "             V4 K4                                                           ",
+      " 4   AZ 405  C4 Y4 M4 L4 B4 W4 T4  FRA 1 FCO I 1325   1515   0*M80       1:50",
+      "             V4 K4                                                           ",
+      " 5   LH3566  C9 Z9 V9 L9 H9 B9 G9  FRA 1 FCO I 1655   1840   0/735       1:45",
+      "             K9 Q6 W5 M0                                                     ",
+      " 6   AZ 407  C4 Y4 M4 L4 B4 W4 T4  FRA 1 FCO I 1945   2135   0*M80       1:50",
+      "             V4 K4                                                           "
+    ],
+    "InfoText": [
+      "Book 1 seat in C class on the Alitalia flight departing at 1155."
+    ],
+    "Solutions": [
+      "SS1C3"
+    ]
+  },
+  {
+    "Index": 3,
+    "TerminalText": [],
+    "InfoText": [
+      "The passenger name is Mr. W. Schroeder."
+    ],
+    "Solutions": [
+      "NM1SCHROEDER/W MR",
+      "NM1SCHROEDER/WMR",
+      "NM1SCHROEDER/W"
+    ]
+  },
+  {
+    "Index": 4,
+    "TerminalText": [],
+    "InfoText": [
+      "The client\u0027s Frankfurt business phone is 069 230858."
+    ],
+    "Solutions": [
+      "APFRA -B"
+    ]
+  },
+  {
+    "Index": 5,
+    "TerminalText": [],
+    "InfoText": [
+      "The client\u0027s Frankfurt home phone is 069 223774."
+    ],
+    "Solutions": [
+      "APFRA -H"
+    ]
+  },
+  {
+    "Index": 6,
+    "TerminalText": [],
+    "InfoText": [
+      "Arrange ticketing for 17 July."
+    ],
+    "Solutions": [
+      "TKTL17JUL"
+    ]
+  },
+  {
+    "Index": 7,
+    "TerminalText": [],
+    "InfoText": [
+      "The reservation was received from the passenger."
+    ],
+    "Solutions": [
+      "RFP"
+    ]
+  },
+  {
+    "Index": 8,
+    "TerminalText": [],
+    "InfoText": [
+      "The PNR now has all the mandatory elements. The following transaction",
+      "codes may be used to end the transaction:",
+      " ",
+      "         ET^       End transaction/remove from work area",
+      "         ER^       End transaction/redisplay PNR",
+      " ",
+      "Input the entry to end the transaction and remove the PNR from the work area."
+    ],
+    "Solutions": [
+      "ET"
+    ]
+  },
+  {
+    "Index": 9,
+    "TerminalText": [
+      "END OF TRANSACTION COMPLETE - C2FR9E"
+    ],
+    "InfoText": [
+      "The response indicates that AMADEUS has accepted the PNR for storage. The",
+      "6-character code on the right is the record locator. This code may be used",
+      "to retrieve the PNR from storage. You will learn how to retrieve PNRs later.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  },
+  {
+    "Index": 10,
+    "TerminalText": [],
+    "InfoText": [
+      "Which entry is used to end the transaction and redisplay the PNR?"
+    ],
+    "Solutions": [
+      "ER"
+    ]
+  },
+  {
+    "Index": 11,
+    "TerminalText": [],
+    "InfoText": [
+      "Which entry is used to end the transaction and remove the PNR from the",
+      "agent\u0027s work area?"
+    ],
+    "Solutions": [
+      "ET"
+    ]
+  },
+  {
+    "Index": 12,
+    "TerminalText": [],
+    "InfoText": [
+      "The following transaction codes may be used to ignore the transaction:",
+      "  ",
+      "         IG^       Ignore transaction/remove from work area",
+      "         IR^       Ignore transaction/retrieve PNR from storage",
+      "   ",
+      "Input the entry to ignore the transaction and redisplay the PNR."
+    ],
+    "Solutions": [
+      "IR"
+    ]
+  },
+  {
+    "Index": 13,
+    "TerminalText": [],
+    "InfoText": [
+      "A client plans to travel on 22 August from Frankfurt to Miami. He would",
+      "like the flight with the shortest elapsed time. Display availability."
+    ],
+    "Solutions": [
+      "AE22AUGFRAMIA"
+    ]
+  },
+  {
+    "Index": 14,
+    "TerminalText": [
+      "** AMADEUS AVAILABILITY - AE **          21 TH 22AUG 0000",
+      " 1   LH 462  F9 C9 Z9 H9 B9 V9 K9  FRA 1 MIA   1020   1410   0/74C       9:50",
+      "             L9 M9 G9 Q9 W1                                                  ",
+      " 2   AA 111  F4 C4 Y4 B4 H4 M4 G4  FRA 1 MIA   1100   1525   0.763      10:25",
+      "             K4 V4 W4 Q4                                                     ",
+      " 3   BA2913  C9 D9 S9 B9 K9 M9 L9  FRA 2 LGW N 0740   0820   0/737         ",
+      "             Q9 V9 W9                                                        ",
+      "     BA 295  F9 J9 S9 B9 K9 M9 L9  LGW N MIA   1000   1425   0/747      12:45",
+      "             Q9 V9                                                           ",
+      " 5   AF1457  C9 Z2 Y9 S9 K9 H9 T9  FRA 2 CDG2D 0725   0835   0/320         ",
+      "             Q9 V9 X9 GR                                                     ",
+      "     AF 032  P3 J9 D9 Z9 Y9 K9 H9  CDG2C MIA   1050   1430   0/747      13:05",
+      "             T9 GR BR                                                        "
+    ],
+    "InfoText": [
+      "LH 462 has the shortest elapsed time. Book 2 seats in V class."
+    ],
+    "Solutions": [
+      "SS2V1"
+    ]
+  },
+  {
+    "Index": 15,
+    "TerminalText": [],
+    "InfoText": [
+      "The client plans to return on 30 August. Display return availability."
+    ],
+    "Solutions": [
+      "ACR8",
+      "ACR30AUG"
+    ]
+  },
+  {
+    "Index": 16,
+    "TerminalText": [
+      " ** AMADEUS AVAILABILITY - AE **          29 FR 30AUG 0000",
+      " 1   LH 463  F9 C9 Z9 H9 B9 V9 K9  MIA   FRA 1 1600   0650\u002B1 0/74C       8:50",
+      "             L9 M9 G9 Q9                                                     ",
+      " 2:  UA3524  F4 C4 Y4 B4 M4 H4     MIA   FRA 1 1600   0650\u002B1 0.74C       8:50",
+      " 3   AA 110  F4 C4 Y4 B4 H4 M4 G4  MIA   FRA 1 1855   1025\u002B1 0.763       9:30",
+      "             K4 V4 W4 Q4                                                     ",
+      " 4   AA1374  F4 Y4 G4 H4 W4 V4 K4  MIA   BOS B 1335   1651   0.M80 8       ",
+      "             M4 B4 Q4                                                        ",
+      "     LH 423  F6 C9 Z9 H9 B9 V9 K9  BOS E FRA 1 1805   0710\u002B1 0/343      11:35",
+      "             L9 G9 M0 Q0                                                     ",
+      " 5   AA1374  F4 Y4 G4 H4 W4 V4 K4  MIA   BOS B 1335   1651   0.M80 8       ",
+      "             M4 B4 Q4                                                      "
+    ],
+    "InfoText": [
+      "Book 2 seats in V class on the direct Lufthansa flight."
+    ],
+    "Solutions": [
+      "SS2V1"
+    ]
+  },
+  {
+    "Index": 17,
+    "TerminalText": [],
+    "InfoText": [
+      "The passengers are Mr. K. Wurlitzer and Mrs. H. Wurlitzer."
+    ],
+    "Solutions": [
+      "NM2WURLITZER/K MR/H MRS",
+      "NM2WURLITZER/KMR/HMRS",
+      "NM2WURLITZER/K/H"
+    ]
+  },
+  {
+    "Index": 18,
+    "TerminalText": [],
+    "InfoText": [
+      "Mr. Wurlitzer\u0027s Frankfurt business phone is 069 464574."
+    ],
+    "Solutions": [
+      "APFRA -B",
+      "APFRA -B/P1"
+    ]
+  },
+  {
+    "Index": 19,
+    "TerminalText": [],
+    "InfoText": [
+      "The Frankfurt home phone is 069 422533."
+    ],
+    "Solutions": [
+      "APFRA -H",
+      "APFRA -H/P1-2",
+      "APFRA -H/P1, 2"
+    ]
+  },
+  {
+    "Index": 20,
+    "TerminalText": [],
+    "InfoText": [
+      "The clients want to purchase the tickets on 19 August."
+    ],
+    "Solutions": [
+      "TKTL19AUG"
+    ]
+  },
+  {
+    "Index": 21,
+    "TerminalText": [],
+    "InfoText": [
+      "If the received-from information is the last element to be input,  the",
+      "following entry may be used to input the received-from element and end the",
+      "transaction:",
+      " ",
+      "                                RFP;ET^",
+      " ",
+      "Note that ;^ is used to link the received-from entry RFP^ and the entry",
+      "to end the transaction ET^. Input this entry."
+    ],
+    "Solutions": [
+      "RFP;ET"
+    ]
+  },
+  {
+    "Index": 22,
+    "TerminalText": [
+      "END OF TRANSACTION COMPLETE - CHG5YU"
+    ],
+    "InfoText": [
+      "Let\u0027s review the entries for ending and ignoring the transaction. Which",
+      "entry is used to end the transaction and redisplay the PNR?"
+    ],
+    "Solutions": [
+      "ER"
+    ]
+  },
+  {
+    "Index": 23,
+    "TerminalText": [],
+    "InfoText": [
+      "Which entry is used to ignore the transaction and remove the PNR from",
+      "the work area?"
+    ],
+    "Solutions": [
+      "IG"
+    ]
+  },
+  {
+    "Index": 24,
+    "TerminalText": [],
+    "InfoText": [
+      "Which entry is used to end the transaction and remove the PNR from",
+      "the work area?"
+    ],
+    "Solutions": [
+      "ET"
+    ]
+  },
+  {
+    "Index": 25,
+    "TerminalText": [],
+    "InfoText": [
+      "Which entry is used to ignore the transaction and redisplay the PNR?"
+    ],
+    "Solutions": [
+      "IR"
+    ]
+  },
+  {
+    "Index": 26,
+    "TerminalText": [],
+    "InfoText": [
+      "What one entry may be used to indicate that the passenger requested the",
+      "reservation and then end the transaction?"
+    ],
+    "Solutions": [
+      "RFP;ET"
+    ]
+  },
+  {
+    "Index": 27,
+    "TerminalText": [],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
+    ]
+  }
+]

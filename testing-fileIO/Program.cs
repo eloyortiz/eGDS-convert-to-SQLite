@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Data.Sqlite;
-using Newtonsoft.Json;
+
+using System.Text.Json;
 
 namespace testing_fileIO
 {
@@ -31,21 +28,28 @@ namespace testing_fileIO
     {
         static void Main(string[] args)
         {
-            string sPathFiles = @"/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/data/";
-            string sPathInputFiles = @sPathFiles + "_PANTALLAS/";
-            string sPathOutoutFiles = @sPathFiles + "_output/";
-            string sFilename = "pantallas.txt";
+            //COMPROBACION DEL SO PARA LA RUTA DE LOS FICHEROS
+            OperatingSystem osInfo = Environment.OSVersion;
+            Console.WriteLine($"SO - Platform: {osInfo.Platform}, Version: {osInfo.Version}");
 
-            
+            string winPath = @"C:\GDS\GDS-UCO\testing-fileIO\testing-fileIO\data\";
+            string macPath = @"/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/data/";
+
+            string sPathFiles = (osInfo.Platform.ToString().ToLower().Contains("win") ? winPath : macPath);
+            string sPathInputFiles = sPathFiles + "_PANTALLAS/";
+            string sPathOutputFiles = sPathFiles + "_output/";
+            string sFilePantallas = "pantallasTodas.txt";
+            var sqliteDbPath = "Data Source=" + sPathFiles + "egds.db";
+
+
             List<Pantalla> Listado = new List<Pantalla>();
 
-
             #region SQLITE
-            // /Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/data/egds.db
-            using (var connection = new SqliteConnection("Data Source=/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/data/egds.db"))
+            
+            using (var connection = new SqliteConnection( sqliteDbPath ) )
             {
                 connection.Open();
-                var idCode = "111111";
+                var idCode = "222222";
 
                 var command = connection.CreateCommand();
                 command.CommandText =
@@ -56,7 +60,7 @@ namespace testing_fileIO
                 ";
                 command.Parameters.AddWithValue("$idCode", idCode);
 
-        
+
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
@@ -70,22 +74,8 @@ namespace testing_fileIO
 
             #endregion SQLITE
 
-            #region TESTING
-            //// Example #1
-            //// Read the file as one string.
-            //string text = System.IO.File.ReadAllText( sPathFile + sFilename) ;
-
-            //// Display the file contents to the console. Variable text is a string.
-            //System.Console.WriteLine("Contents of {0} = {1}", text, sFilename);
-
-            //Console.ReadKey();
-
-            // Example #2
-            // Read each line of the file into a string array. Each element
-            // of the array is one line of the file.
-            #endregion
-
-            string[] pantallas = File.ReadAllLines(sPathFiles + sFilename);
+            #region LECTURA FICHEROS
+            string[] pantallas = File.ReadAllLines(sPathFiles + sFilePantallas);
             foreach (string pantalla in pantallas)
             {
                 //SON TODAS LAS LINEAS DEL FICHERO DE PANTALLA
@@ -138,12 +128,16 @@ namespace testing_fileIO
                             Listado.Add(oPantalla);
                             oPantalla = new Pantalla();
 
-                            string json = JsonConvert.SerializeObject(Listado, Formatting.Indented);
-                            //Console.WriteLine(json);
+                            string jsonString = JsonSerializer.Serialize(Listado);
 
-                            WriteCSV(Listado, sPathOutoutFiles + pantalla + ".csv");
+                            var options = new JsonSerializerOptions
+                            {
+                                WriteIndented = true
+                            };
 
-                           
+                            jsonString = JsonSerializer.Serialize(Listado, options);
+                            File.WriteAllText(sPathOutputFiles + pantalla.Split('.')[0] + ".json", jsonString);
+
                             break;
 
                         default:
@@ -155,63 +149,10 @@ namespace testing_fileIO
 
             }
 
+            #endregion FIN LECTURA FICHEROS
 
-            //string json = JsonConvert.SerializeObject(Listado, Formatting.Indented);
-            //Console.WriteLine(json);
+           
 
-            //WriteCSV(Listado, sPathOutoutFiles + "pantallas.csv");
-
-            ////LISTADO DE PANTALLAS FORMADO
-            //foreach ( Pantalla pantalla in Listado)
-            //{
-            //    string nuevo = pantalla.Index.ToString() + ".txt";
-
-            //    //ESCRIBE FICHERO
-            //    //Task writeContent = WriteLines(sPathOutoutFiles + nuevo, lines);
-
-
-                
-            //}
-
-            //// Display the file contents by using a foreach loop.
-            //Console.WriteLine("Contents of {0} = ", sFilename);
-            //foreach (string line in lines)
-            //{
-            //    // Use a tab to indent each line of the file.
-            //    Console.WriteLine("\t" + line);
-            //    //_ = WriteText(sPathFile, line);
-            //}
-
-            // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            //Console.ReadKey();
-
-        }
-
-        public static async Task WriteText(string sPathFileName, string sText)
-        {
-            await File.WriteAllTextAsync(sPathFileName, sText);
-        }
-
-        public static async Task WriteLines(string sPathFileName, string[] sLines)
-        {
-            await File.WriteAllLinesAsync(sPathFileName, sLines);
-        }
-
-        public static void WriteCSV<T>(IEnumerable<T> items, string path)
-        {
-            Type itemType = typeof(T);
-            var props = itemType.GetProperties(BindingFlags.Public | BindingFlags.Instance).OrderBy(p => p.Name);
-
-            using (var writer = new StreamWriter(path))
-            {
-                writer.WriteLine(string.Join(", ", props.Select(p => p.Name)));
-
-                foreach (var item in items)
-                {
-                    writer.WriteLine(string.Join(", ", props.Select(p => p.GetValue(item, null))));
-                }
-            }
         }
 
     }

@@ -9,7 +9,7 @@
       "   [ encode and decode cities and airports.",
       "   [ encode and decode equipment.",
       "   [ encode and decode countries.",
-      "<PgDn>"
+      "\u003CPgDn\u003E"
     ],
     "Solutions": [
       "PD"
@@ -27,7 +27,7 @@
       " ",
       "This itinerary is a round trip. The first segment is called the outbound ",
       "segment,  and the second segment is called the return segment.",
-      "<PgDn>"
+      "\u003CPgDn\u003E"
     ],
     "Solutions": [
       "PD"
@@ -44,7 +44,7 @@
       "                        Board point~~~~{  }~~~~Off point",
       " ",
       "This city pair would indicate a segment from Madrid (MAD to Paris (PAR.",
-      "<PgDn>"
+      "\u003CPgDn\u003E"
     ],
     "Solutions": [
       "PD"
@@ -183,7 +183,7 @@
     ],
     "InfoText": [
       "Each airline has a two-letter code. To encode an airline,  type DNA^ followed",
-      "by the airline's name,  as follows: ",
+      "by the airline\u0027s name,  as follows: ",
       " ",
       "                               DNA^AMERICA WEST",
       "                                !      !",
@@ -371,7 +371,7 @@
       "EUR   EURO       LOCAL/INTL PUBLISHED"
     ],
     "InfoText": [
-      "Let's review. Encode the airline Egyptair."
+      "Let\u0027s review. Encode the airline Egyptair."
     ],
     "Solutions": [
       "DNAEGYPTAIR",
@@ -444,6 +444,21 @@
     "Solutions": [
       "DCCANADA",
       "DC CANADA"
+    ]
+  },
+  {
+    "Index": 27,
+    "TerminalText": [
+      "CA    CANADA/NORTH AMERICA                 TC1",
+      "CAD   CANADIAN DOLLAR                      LOCAL/INTL PUBLISHED"
+    ],
+    "InfoText": [
+      "You have reached the end of the lesson. Repeat this lesson until",
+      "you can finish without requesting help.",
+      "\u003CPgDn\u003E"
+    ],
+    "Solutions": [
+      "PD"
     ]
   }
 ]
