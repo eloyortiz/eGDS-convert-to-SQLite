@@ -89,7 +89,7 @@ namespace testing_fileIO
 
             #endregion SQLITE
 
-            #region LECTURA FICHEROS
+            #region LECTURA FICHEROS -> CONVERSION A LISTA DE OBJETOS
             string[] pantallas = File.ReadAllLines(sPathFiles + sFilePantallas);
             foreach (string pantalla in pantallas)
             {
