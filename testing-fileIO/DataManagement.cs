@@ -64,11 +64,10 @@ namespace testing_fileIO
 
         static public void AddCountries(string sFileCSV, string sqliteDbPath)
         {
-            #region COUNTRIES.CSV A SQLITE
-            string[] countries = File.ReadAllLines(sFileCSV);
-            foreach (string country in countries)
+            string[] lines = File.ReadAllLines(sFileCSV);
+            foreach (string line in lines)
             {
-                string[] cols = country.Split(";");
+                string[] cols = line.Split(";");
 
                 using (var connection = new SqliteConnection(sqliteDbPath))
                 {
@@ -96,19 +95,14 @@ namespace testing_fileIO
                     Console.WriteLine($"Rows Inserted - Result: {result}");
                 }
             }
-
-         
-
-            #endregion
         }
 
         static public void AddAircrafts(string sFileCSV, string sqliteDbPath)
         {
-            #region COUNTRIES.CSV A SQLITE
-            string[] countries = File.ReadAllLines(sFileCSV);
-            foreach (string country in countries)
+            string[] lines = File.ReadAllLines(sFileCSV);
+            foreach (string line in lines)
             {
-                string[] cols = country.Split(";");
+                string[] cols = line.Split(";");
 
                 using (var connection = new SqliteConnection(sqliteDbPath))
                 {
@@ -139,19 +133,15 @@ namespace testing_fileIO
 
             }
 
-
-
-            #endregion
         }
 
         static public void AddAirlines(string sFileCSV, string sqliteDbPath)
         {
             int total = 0;
-            #region COUNTRIES.CSV A SQLITE
-            string[] countries = File.ReadAllLines(sFileCSV);
-            foreach (string country in countries)
+            string[] lines = File.ReadAllLines(sFileCSV);
+            foreach (string line in lines)
             {
-                string[] cols = country.Split(";");
+                string[] cols = line.Split(";");
 
                 using (var connection = new SqliteConnection(sqliteDbPath))
                 {
@@ -182,10 +172,6 @@ namespace testing_fileIO
                 Console.WriteLine($"FIN >> Rows Inserted: {total}");
 
             }
-
-
-
-            #endregion
         }
     }
 
