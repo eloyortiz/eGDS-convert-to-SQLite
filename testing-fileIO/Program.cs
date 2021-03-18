@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using Microsoft.Data.Sqlite;
-
 using System.Text.Json;
 
 namespace testing_fileIO
@@ -41,8 +40,9 @@ namespace testing_fileIO
 
     class Program
     {
-        static void Main(string[] args)
+        static void Program2(string[] args)
         {
+            #region VARIABLES
             //COMPROBACION DEL SO PARA LA RUTA DE LOS FICHEROS
             OperatingSystem osInfo = Environment.OSVersion;
             Console.WriteLine($"SO - Platform: {osInfo.Platform}, Version: {osInfo.Version}");
@@ -54,42 +54,17 @@ namespace testing_fileIO
             string sPathInputFiles = sPathFiles + "_PANTALLAS/";
             string sPathOutputFiles = sPathFiles + "_output/";
             string sFilePantallas = "pantallasTodas.txt";
-            var sqliteDbPath = "Data Source=" + sPathFiles + "egds.db";
+            string sqliteDbPath = "Data Source=" + sPathFiles + "egds.db";
+
+            string sCountriesFileCSV = sPathFiles + "countries.csv";
 
             List<Classroom> ClassroomList = new List<Classroom>();
-           // List<Section> SectionsList = new List<Section>();
 
-            #region SQLITE
-            
-            using (var connection = new SqliteConnection( sqliteDbPath ) )
-            {
-                connection.Open();
-                var idCode = "222222";
-
-                var command = connection.CreateCommand();
-                command.CommandText =
-                @"
-                    SELECT *
-                    FROM Users
-                    WHERE idCode = $idCode                    
-                ";
-                command.Parameters.AddWithValue("$idCode", idCode);
+            #endregion VARIABLES
 
 
-                using (var reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        var name = reader.GetString(1);
 
-                        Console.WriteLine($"Hello, {name}!");
-                    }
-                }
-            }
-
-            #endregion SQLITE
-
-            #region LECTURA FICHEROS -> CONVERSION A LISTA DE OBJETOS
+            #region LECTURA FICHEROS PANTALLAS -> CONVERSION A LISTA DE OBJETOS
             string[] pantallas = File.ReadAllLines(sPathFiles + sFilePantallas);
             foreach (string pantalla in pantallas)
             {
@@ -178,6 +153,8 @@ namespace testing_fileIO
 
             #endregion FIN LECTURA FICHEROS
 
+
+         
         }
     }
 }

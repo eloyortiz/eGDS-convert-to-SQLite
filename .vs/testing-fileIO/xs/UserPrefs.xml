@@ -1,27 +1,30 @@
 ﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{03A7DA65-1132-4719-95FF-CE512F32CCE0}|Default">
   <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="testing-fileIO/Program.cs" Line="160" Column="2" />
+      <File FileName="testing-fileIO/DataManagement.cs" Line="77" Column="47" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="testing-fileIO" expanded="True">
+          <Node name="testing-fileIO" expanded="True" selected="True">
             <Node name="testing-fileIO" expanded="True">
               <Node name="data" expanded="True">
                 <Node name="_output" expanded="True" />
               </Node>
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>ClassroomList</Value>
-        </State>
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.testing-fileIO PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../testing-fileIO/DataManagement.cs" line="41" column="24" endLine="41" endColumn="28" offsetX="-1" offsetY="-1" expression="name" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
