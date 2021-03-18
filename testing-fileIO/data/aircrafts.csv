@@ -1,0 +1,334 @@
+﻿1;100 ;Fokker;100 ;M
+2;141 ;BAe;146-100;M
+3;142 ;BAe;146-200;M
+4;143 ;BAe;146-300;M
+5;146 ;BAe;146 ;M
+6;14F;BAe;146 Freighter (-100/200/300QT & QC);M
+7;14X;BAe;146 Freighter (-100QT & QC);M
+8;14Y;BAe;146 Freighter (-200QT & QC);M
+9;14Z;BAe;146 Freighter (-300QT & QC);M
+10;310 ;Airbus;A310;H
+11;312 ;Airbus;A310-200;H
+12;313 ;Airbus;A310-300;H
+13;318 ;Airbus;A318;M
+14;319 ;Airbus;A319;M
+15;31F;Airbus;A310F;M
+16;31X;Airbus;A310-200F;M
+17;31Y;Airbus;A310-300F;M
+18;320 ;Airbus;A320-100/200;M
+19;321 ;Airbus;A321-100/200;M
+20;330 ;Airbus;A330;H
+21;332 ;Airbus;A330-200;H
+22;333 ;Airbus;A330-300;H
+23;340 ;Airbus;A340;H
+24;342 ;Airbus;A340-200;H
+25;343 ;Airbus;A340-300;H
+26;345 ;Airbus;A340-500;H
+27;346 ;Airbus;A340-600;H
+28;380 ;Airbus;A380;H
+29;38F;Airbus;A380F;H
+30;703 ;Boeing;707-300;H
+31;707 ;Boeing;707720;H
+32;70F;Boeing;707 Freighter;H
+33;70M;Boeing;707 Combi;H
+34;717 ;Boeing;717 ;M
+35;721 ;Boeing;727-100;M
+36;722 ;Boeing;727-200;M
+37;727 ;Boeing;727 ;M
+38;72B;Boeing;727-100 Mixed;M
+39;72C;Boeing;727-200 Mixed;M
+40;72F;Boeing;727 Freighter (-100/200);M
+41;72M;Boeing;727 Combi;M
+42;72S;Boeing;727-200 Adv.;M
+43;72X;Boeing;727-100 Freighter;M
+44;72Y;Boeing;727-200 Freighter;M
+45;731 ;Boeing;737-100;M
+46;732 ;Boeing;737-200;M
+47;733 ;Boeing;737-300;M
+48;734 ;Boeing;737-400;M
+49;735 ;Boeing;737-500;M
+50;736 ;Boeing;737-600;M
+51;737 ;Boeing;737 ;M
+52;738 ;Boeing;737-800;M
+53;739 ;Boeing;737-900;M
+54;73C;Boeing;737-300 (winglets);M
+55;73F;Boeing;737 Freighter;M
+56;73G;Boeing;737-700;M
+57;73H;Boeing;737-800 (winglets);M
+58;73M;Boeing;737-200 Combi;M
+59;73W;Boeing;737-700 (winglets);M
+60;73X;Boeing;737-200 Freighter;M
+61;73Y;Boeing;737-300 Freighter;M
+62;73Z;Boeing;737-400 Freighter;M
+63;741 ;Boeing;747-100;H
+64;742 ;Boeing;747-200;H
+65;743 ;Boeing;747-300;H
+66;744 ;Boeing;747-400;H
+67;747 ;Boeing;747 ;H
+68;74C;Boeing;747-200 Combi;H
+69;74D;Boeing;747-300 Combi;H
+70;74E;Boeing;747-400 Combi;H
+71;74F;Boeing;747 Freighter;H
+72;74H;Boeing;747-8 Intercontinental;H
+73;74J;Boeing;747-400 (Domestic);H
+74;74L;Boeing;747SP;H
+75;74M;Boeing;747 Combi;H
+76;74R;Boeing;747SR;H
+77;74T;Boeing;747-100 Freighter;H
+78;74U;Boeing;747-300 / 747-200 SUD Freighter;H
+79;74V;Boeing;747SR Freighter;H
+80;74X;Boeing;747-200 Freighter;H
+81;74Y;Boeing;747-400 Freighter;H
+82;752 ;Boeing;757-200;H
+83;753 ;Boeing;757-300;H
+84;757 ;Boeing;757 ;H
+85;75F;Boeing;757 Freighter;H
+86;75M;Boeing;757 Mixed;H
+87;75W;Boeing;757-200 (winglets);H
+88;75X;Boeing;757-300 (winglets);H
+89;762 ;Boeing;767-200;H
+90;763 ;Boeing;767-300;H
+91;764 ;Boeing;767-400;H
+92;767 ;Boeing;767 ;H
+93;76F;Boeing;767 Freighter;H
+94;76X;Boeing;767-200 Freighter;H
+95;76Y;Boeing;767-300 Freighter;H
+96;772 ;Boeing;777-200;H
+97;773 ;Boeing;777-300;H
+98;777 ;Boeing;777 ;H
+99;77L;Boeing;777-200LR;H
+100;77W;Boeing;777-300ER;H
+101;A26;Antonov;An-26;L
+102;A28;Antonov;An-28 / PZL Mielec M-28;L
+103;A30;Antonov;An-30;L
+104;A32;Antonov;An-32;L
+105;A40;Antonov;An-140;M
+106;A4F;Antonov;An-124;H
+107;A81;Antonov;An-148-100;H
+108;AB2;Airbus;A300B2;H
+109;AB3;Airbus;A300;H
+110;AB4;Airbus;A300B4/C4;H
+111;AB6;Airbus;A300-600/600C/601;H
+112;ABB;Airbus;A300-600ST Beluga;H
+113;ABF;Airbus;A300F;H
+114;ABM;Airbus;A300-600 Combi;H
+115;ABX;Airbus;A300C4/F4 Freighter;H
+116;ABY;Airbus;A600-600F;H
+117;ACD;Rockwell;Commander/Turbo Commander;L
+118;ACP;Rockwell;Commander;L
+119;ACT;Rockwell;Turbo Commander;L
+120;AGH;Agusta / AgustaWestland A-109;;n/a
+121;ALM;Ayres;LM-200 Loadmaster;M
+122;AMD;Dassault;FALCON 10 / 20 / 50;
+123;AN2;Antonov;An-2;M
+124;AN4;Antonov;An-24;M
+125;AN6;Antonov;An-26 / An-30 / An-32;M
+126;AN7;Antonov;An-72 / An-74;M
+127;ANF;Antonov;An-12 Freighter;M
+128;APH;Eurocopter;SA330 Puma / AS332 Super Puma;n/a
+129;AR1;BAe;Avro RJ100;M
+130;AR7;BAe;Avro RJ70;M
+131;AR8;BAe;Avro RJ85;M
+132;ARJ;BAe;Avro RJ70 / RJ85 / RJ100;M
+133;AT4;ATR;ATR 42-300 / 320;M
+134;AT5;ATR;ATR 42-500;M
+135;AT7;ATR;ATR 72;M
+136;ATD;ATR;ATR 42-400;M
+137;ATP;BAe;ATP;M
+138;ATR;ATR;ATR 42 / ATR 72;M
+139;B11;BAC;One Eleven;M
+140;B12;BAC;One Eleven 200;M
+141;B13;BAC;One Eleven 300;M
+142;B14;BAC;One Eleven 400/475;M
+143;B15;BAC;One Eleven 500;M
+144;B72;Boeing;720B;M
+145;BE1;Beechcraft;1900 ;M
+146;BE2;Beechcraft;Beechcraft 200/300 twin piston;L
+147;BE4;Beechcraft;Beechcraft 400;L
+148;BE9;Beechcraft;Beechcraft C99;L
+149;BEC;Beechcraft;Beech light aircraft;L
+150;BEH;Beechcraft;1900D;M
+151;BEP;Beechcraft;Beech singe piston;L
+152;BES;Beechcraft;1900/1900C;M
+153;BET;Beechcraft;Beech twin turboprop;L
+154;BH2;Bell Helicopter;Bell Helicopters;n/a
+155;BNI;Britten Norman;BN-2A/B Islander;L
+156;BNT;Britten Norman;BN-2A Mk III Trislander;L
+157;CCJ;Canadair;Challenger;M
+158;CCX;Bombardier;Global Express;M
+159;CD2;GAF;N22B / N24A Nomad;L
+160;CL4;Canadair;CL-44;M
+161;CN1;Cessna;Cessna single piston engine;L
+162;CN2;Cessna;Cessna twin piston engines;L
+163;CNA;Cessna;Cessna light aircraft;L
+164;CNC;Cessna;Cessna single turboprop engine;L
+165;CNJ;Cessna;Citation;L
+166;CNT;Cessna;Cessna twin turboprop engines;L
+167;CR1;Canadair;CRJ 100;M
+168;CR2;Canadair;CRJ 200;M
+169;CR7;Canadair;CRJ 700;M
+170;CR9;Canadair;CRJ 900;M
+171;CRJ;Canadair;CRJ;M
+172;CRV;Sud-Est;SE.210 Caravelle;M
+173;CS2;CASA;212 Aviocar;M
+174;CS5;Airtech;CN-235;M
+175;CV4;Convair;CV-440 Metropolitan;M
+176;CV5;Convair;CV-580;M
+177;CVF;Convair;CV-240 / 440 / 580 / 600 / 640 Freighter;M
+178;CVR;Convair;CV-240 / 440 / 580 / 600 / 640;M
+179;CVV;Convair;CV-240 Freighter;M
+180;CVX;Convair;CV-440 Freighter;M
+181;CVY;Convair;CV-580 / 600 / 640 Freighter;M
+182;CWC;Curtiss;C-46 Commando;M
+183;D10;Douglas;DC-10;H
+184;D11;Douglas;DC-10-10/15;H
+185;D14;Douglas;DC-10-40;H
+186;D1C;Douglas;DC-10-30/30CF/30ER;H
+187;D1F;Douglas;DC-10 Freighter;H
+188;D1M;Douglas;DC-10 Combi;H
+189;D1X;Douglas;DC-10-10 Freighter;H
+190;D1Y;Douglas;DC-10-30 / 40 Freighter;H
+191;D28;Dornier;Do 228;L
+192;D38;Dornier;Do 328;M
+193;D3F;Douglas;DC-3 Freighter;M
+194;D6F;Douglas;DC-6A/B/C Freighter;M
+195;D8F;Douglas;DC-8 Freighter;H
+196;D8L;Douglas;DC-8-62;H
+197;D8M;Douglas;DC-8 Combi;H
+198;D8Q;Douglas;DC-8-72;H
+199;D8T;Douglas;DC-8-50 Freighter;H
+200;D8X;Douglas;DC-8-61 / 62 / 63 Freighter;H
+201;D8Y;Douglas;DC-8-71 / 72 / 73 Freighter;H
+202;D91;Douglas;DC-9-10;M
+203;D92;Douglas;DC-9-20;M
+204;D93;Douglas;DC-9-30;M
+205;D94;Douglas;DC-9-40;M
+206;D95;Douglas;DC-9-50;M
+207;D9C;Douglas;DC-9-30 Freighter;M
+208;D9F;Douglas;DC-9-40 Freighter;M
+209;D9F;Douglas;DC-9 Freighter;M
+210;D9X;Douglas;DC-9-10 Freighter;M
+211;DC3;Douglas;DC-3;M
+212;DC6;Douglas;DC6A/B;M
+213;DC8;Douglas;DC-8;H
+214;DC9;Douglas;DC-9;M
+215;DF2;Dassault;Falcon 10 / 100 / 20 / 200 / 2000;M
+216;DF3;Dassault;Falcon 50 / 900;M
+217;DFL;Dassault;Falcon;M
+218;DH1;De Havilland Canada;DHC-8-100 Dash 8 / 8Q;M
+219;DH2;De Havilland Canada;DHC-8-200 Dash 8 / 8Q;M
+220;DH3;De Havilland Canada;DHC-8-300 Dash 8 / 8Q;M
+221;DH4;De Havilland Canada;DHC-8-400 Dash 8Q;M
+222;DH7;De Havilland Canada;DHC-7 Dash 7;M
+223;DH8;De Havilland Canada;DHC-8 Dash 8;M
+224;DHB;De Havilland Canada;DHC-2 Beaver / Turbo Beaver;L
+225;DHC;De Havilland Canada;DHC-4 Caribou;M
+226;DHD;De Havilland;DH.104 Dove;L
+227;DHH;De Havilland;DH.114 Heron;L
+228;DHL;De Havilland Canada;DHC-3 Turbo Otter;L
+229;DHO;De Havilland Canada;DHC-3 Otter / Turbo Otter;L
+230;DHP;De Havilland Canada;DHC-2 Beaver;L
+231;DHR;De Havilland Canada;DHC-2 Turbo-Beaver;L
+232;DHS;De Havilland Canada;DHC-3 Otter;L
+233;DHT;De Havilland Canada;DHC-6 Twin Otter;L
+234;E70;Embraer;EMB 170;M
+235;E75;Embraer;EMB 175;M
+236;E90;Embraer;EMB 190;M
+237;E95;Embraer;EMB 195;M
+238;EM2;Embraer;EMB 120 Brasília;L
+239;EMB;Embraer;EMB 110 Bandeirante;M
+240;EMJ;Embraer;EMB 170 / EMB 190;M
+241;ER3;Embraer;ERJ 135;M
+242;ER4;Embraer;ERJ 145;M
+243;ERD;Embraer;ERJ 140;M
+244;ERJ;Embraer;ERJ 135 / ERJ 140 / ERJ 145;M
+245;F21;Fokker;F28 Fellowship 1000;M
+246;F22;Fokker;F28 Fellowship 2000;M
+247;F23;Fokker;F28 Fellowship 3000;M
+248;F24;Fokker;F28 Fellowship 4000;M
+249;F27;Fokker;F27 Friendship;M
+250;F28;Fokker;F28 Fellowship;M
+251;F50;Fokker;50 ;M
+252;F70;Fokker;70 ;M
+253;FK7;Fairchild-Hiller;FH-227;M
+254;FRJ;Dornier;328JET;M
+255;GRG;Grumman;G-21 Goose;L
+256;GRJ;Gulfstream;G-1159 Gulfstream II / III / IV / V;M
+257;GRM;Gulfstream;G-73 Turbo Mallard;L
+258;GRS;Gulfstream;G-159 Gulfstream I;M
+259;H25;Hawker-Siddeley;HS.125;M
+260;HEC;Helio;H-250 Courier / H-295 / 385 Super Courie L;
+261;HS7;BAe;HS.748;M
+262;I14;Ilyushin;IL-114;M
+263;I93;Ilyushin;IL-96-300;H
+264;I9F;Ilyushin;IL-96 Freighter;H
+265;I9M;Ilyushin;IL-96M;H
+266;I9X;Ilyushin;IL-96-300 Freighter;H
+267;I9Y;Ilyushin;IL-96T Freighter;H
+268;IL6;Ilyushin;IL-62;H
+269;IL7;Ilyushin;IL-76;H
+270;IL8;Ilyushin;IL-18;M
+271;IL9;Ilyushin;IL-96;H
+272;ILW;Ilyushin;IL-86;H
+273;J31;BAe;Jetstream 31;L
+274;J32;BAe;Jetstream 32;L
+275;J41;BAe;Jetstream 41;M
+276;JST;BAe;Jetstream 31 / 32 / 41;L/M
+277;JU5;Junkers;Ju 52/3M;M
+278;L10;Lockheed;L-1011 Tristar;H
+279;L11;Lockheed;L-1011 1 / 50 / 100 / 150 / 200 / 250 Tr;H
+280;L15;Lockheed;L-1011 500 Tristar;H
+281;L1F;Lockheed;L-1011 Tristar Freighter;H
+282;L49;Lockheed;L-1049 Super Constellation;M
+283;L4T;LET;L-410;L
+284;LOE;Lockheed;L-188 Electra;M
+285;LOF;Lockheed;L-188 Electra Freighter;M
+286;LOH;Lockheed;L-182 / 282 / 382 (L-100) Hercules;M
+287;LOM;Lockheed;L-188 Electra Mixed;M
+288;LRJ;Learjet;Gates Learjet;M
+289;M11;McDonnell Douglas;MD-11;H
+290;M1F;McDonnell Douglas;MD-11 Freighter;H
+291;M1M;McDonnell Douglas;MD-11 Mixed;H
+292;M80;McDonnell Douglas;MD-80;M
+293;M81;McDonnell Douglas;MD-81;M
+294;M82;McDonnell Douglas;MD-82;M
+295;M83;McDonnell Douglas;MD-83;M
+296;M87;McDonnell Douglas;MD-87;M
+297;M88;McDonnell Douglas;MD-88;M
+298;M90;McDonnell Douglas;MD-90;M
+299;MBH;MBB;Bo 105;n/a
+300;MD9;MD Helicopters;MD900 Explorer;n/a
+301;MIH;Mil;Mi-8 / Mi-17 / Mi-171 / Mil-172;n/a
+302;MU2;Mitsubishi;Mu-2;L
+303;ND2;Nord / SNCAN;N.262;M
+304;NDC;Aerospatiale / SNIAS;SN.601 Corvette;L
+305;NDE;Eurocopter;AS350 Ecureuil / AS355 Ecureuil 2;n/a
+306;NDH;Eurocopter;SA365C / SA365N Dauphin 2;n/a
+307;PA1;Piper;Piper single piston engine;L
+308;PA2;Piper;Piper twin piston engines;L
+309;PAG;Piper;Piper light aircraft;L
+310;PAT;Piper;Piper twin turboprop engines;L
+311;PL2;Pilatus;PC-12;L
+312;PL6;Pilatus;PC-6 Turbo Porter;L
+313;PN6;Partenavia;P.68;L
+314;S20;Saab;2000 ;M
+315;S58;Sikorsky;S-58T;n/a
+316;S61;Sikorsky;S-61;n/a
+317;S76;Sikorsky;S-76;n/a
+318;SF3;Saab;SF340A/B;M
+319;SH3;Shorts;SD.330;M
+320;SH6;Shorts;SD.360;M
+321;SHB;Shorts;SC-5 Belfast;M
+322;SHS;Shorts;SC-7 Skyvan;L
+323;SSC;Aerospatiale / SNIAS;Concorde;H
+324;SWM;Fairchild-Swearingen;SA26 / SA226 / SA227 Metro / Merlin;L
+325;T20;Tupolev;Tu-204 / Tu-214;M
+326;TU3;Tupolev;Tu-134;M
+327;TU5;Tupolev;Tu-154;M
+328;VCV;Vickers;Viscount;M
+329;WWP;IAI;1124 Westwind;M
+330;YK2;Yakovlev / Jakovlev;Yak 42;M
+331;YK4;Yakovlev / Jakovlev;Yak 40;M
+332;YN2;HAMC / Harbin;Y12;M
+333;YN7;Xian;Yunshuji Y7;M
+334;YS1;NAMC;YS-11;M
