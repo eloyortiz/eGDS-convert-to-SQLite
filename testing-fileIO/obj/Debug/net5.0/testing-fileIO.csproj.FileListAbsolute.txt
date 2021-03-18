@@ -48,10 +48,6 @@ C:/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.dll
 C:/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/ref/testing-fileIO.dll
 C:/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.pdb
 C:/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.genruntimeconfig.cache
-/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.GeneratedMSBuildEditorConfig.editorconfig
-/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.AssemblyInfoInputs.cache
-/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.AssemblyInfo.cs
-/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.csproj.CoreCompileInputs.cache
 /Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/bin/Debug/net5.0/testing-fileIO.deps.json
 /Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/bin/Debug/net5.0/testing-fileIO.runtimeconfig.json
 /Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/bin/Debug/net5.0/testing-fileIO.runtimeconfig.dev.json
@@ -76,9 +72,12 @@ C:/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.gen
 /Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/bin/Debug/net5.0/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/bin/Debug/net5.0/runtimes/win-x64/native/e_sqlite3.dll
 /Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/bin/Debug/net5.0/runtimes/win-x86/native/e_sqlite3.dll
+/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.GeneratedMSBuildEditorConfig.editorconfig
+/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.AssemblyInfoInputs.cache
+/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.AssemblyInfo.cs
+/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.csproj.CoreCompileInputs.cache
 /Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.csproj.CopyComplete
 /Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.dll
 /Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/ref/testing-fileIO.dll
 /Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.pdb
 /Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.genruntimeconfig.cache
-/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/Debug/net5.0/testing-fileIO.csprojAssemblyReference.cache
