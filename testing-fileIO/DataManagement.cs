@@ -28,8 +28,8 @@ namespace testing_fileIO
 
             //AddCountries(sFileCSV[0], sqliteDbPath);
             //AddAircrafts(sFileCSV[1], sqliteDbPath);
-            AddAirlines(sFileCSV[2], sqliteDbPath);
-            //TODO AddAirports(sFileCSV[3], sqliteDbPath);
+            //AddAirlines(sFileCSV[2], sqliteDbPath);
+            AddAirports(sFileCSV[3], sqliteDbPath);
 
             #region SQLITE READER TESTING
 
@@ -143,32 +143,30 @@ namespace testing_fileIO
             {
                 string[] cols = line.Split(";");
 
-                var id = cols[0].Trim();
-                var code = cols[1].Trim();
-                var name = cols[2].Trim();
-
-                //var countryName = name.Split().Where(x => x.StartsWith("(") && x.EndsWith(")"))
-                //                        .Select(x => x.Replace("(", string.Empty).Replace(")", string.Empty))
-                //                        .ToList();
+                string id = cols[0].Trim();
+                string code = cols[1].Trim();
+                string name = cols[2].Trim();
 
                 string countryName = string.Empty;
                 int idCountry = 0;
 
+                //FUCK-YOU: NO FUNCIONA CORRECTAMENTE CON LINQ
+                //var countryName = name.Split().Where(x => x.StartsWith("(") && x.EndsWith(")"))
+                //                        .Select(x => x.Replace("(", string.Empty).Replace(")", string.Empty))
+                //                        .ToList();
+
+                //EL NOMBRE DEL PAIS SE EXTRAE DE LA NAME, DONDE IMPLICITO 
                 Regex regex = new Regex(@"\(([^()]+)\)*");
                 foreach (Match match in regex.Matches(name))
                 {
                     countryName = match.Value.Replace("(", string.Empty).Replace(")", string.Empty);
                 }
 
-                if (countryName.Contains("Rica"))
-                {
-                    Console.WriteLine($"{countryName}");
-                }
 
                 using (var connection = new SqliteConnection(sqliteDbPath))
                 {
                     connection.Open();
-                    
+                    // SE EXTRAE EL IDCOUNTRY MEDIANTE EL NOMBRE PARA AÑADIRLO COMO FK
                     var cmdSelect = @"SELECT id FROM 'main'.'Countries' WHERE name like $countryName;";
 
                     var command = connection.CreateCommand();
@@ -182,32 +180,89 @@ namespace testing_fileIO
                         {
                             idCountry = int.Parse(reader.GetString(0));
 
-                            if (countryName.Contains("Rica"))
-                            {
-
+                            if (countryName.Contains("Rica")) {
                                 Console.WriteLine($"CountryId: {idCountry} - {countryName}");
                             }
                         }
                     }
 
-                    //EOP:INSERT
-                    //var cmdInsert = @"INSERT INTO 'main'.'Airlines' ('id', 'code', 'name', 'idCountry') VALUES ($id, $code, $name, $idCountry);";
+                    //INSERT
+                    var cmdInsert = @"INSERT INTO 'main'.'Airlines' ('id', 'code', 'name', 'idCountry', 'Country') VALUES ($id, $code, $name, $idCountry, $Country);";
 
-                    ////command = connection.CreateCommand();
-                    //command.CommandText = cmdInsert;
-                    //command.Parameters.Clear();
-                    //command.Parameters.AddWithValue("$id", id);
-                    //command.Parameters.AddWithValue("$code", code);
-                    //command.Parameters.AddWithValue("$name", name);
-                    //command.Parameters.AddWithValue("$idCountry", idCountry);
+                    command.CommandText = cmdInsert;
+                    command.Parameters.Clear();
+                    command.Parameters.AddWithValue("$id", id);
+                    command.Parameters.AddWithValue("$code", code);
+                    command.Parameters.AddWithValue("$name", name);
+                    command.Parameters.AddWithValue("$idCountry", idCountry);
+                    command.Parameters.AddWithValue("$Country", countryName); //SE GUARDA DIRECTAMENTE EL COUNTRY EXTRAIDO DEL NAME PQ EN ALGUNOS CASOS TIENE DIFERENTE ESCRITURA QUE LA BBDD DE COUNTRIES
 
-                    //int result = command.ExecuteNonQuery();
-                    //total += result;
-                    //Console.WriteLine($"Rows Inserted - Result: {result}");
+
+                    int result = command.ExecuteNonQuery();
+                    total += result;
+                    Console.WriteLine($"Rows Inserted - Result: {result}");
 
                 }
 
-                //Console.WriteLine($"FIN >> Rows Inserted: {total}");
+                Console.WriteLine($"FIN >> Rows Inserted: {total}");
+
+            }
+        }
+
+        static public void AddAirports(string sFileCSV, string sqliteDbPath)
+        {
+            int total = 0;
+            string[] lines = File.ReadAllLines(sFileCSV);
+            foreach (string line in lines)
+            {
+                string[] cols = line.Split(";");
+
+                string id = cols[0].Trim();
+                string code = cols[1].Trim();
+                string name = cols[2].Trim();
+                string location = cols[3].Trim();
+                string countryName = location.Split(",")[1];
+                int idCountry = 0;
+
+                using (var connection = new SqliteConnection(sqliteDbPath))
+                {
+                    connection.Open();
+                    // SE EXTRAE EL IDCOUNTRY MEDIANTE EL NOMBRE PARA AÑADIRLO COMO FK
+                    var cmdSelect = @"SELECT id FROM 'main'.'Countries' WHERE name like $countryName;";
+
+                    var command = connection.CreateCommand();
+                    command.CommandText = cmdSelect;
+
+                    command.Parameters.AddWithValue("$countryName", countryName);
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            idCountry = int.Parse(reader.GetString(0));
+                        }
+                    }
+
+                    //INSERT
+                    var cmdInsert = @"INSERT INTO 'main'.'Airports' ('id', 'code', 'name', 'location', 'idCountry', 'country') VALUES ($id, $code, $name, $location, $idCountry, $countryName);";
+
+                    command.CommandText = cmdInsert;
+                    command.Parameters.Clear();
+                    command.Parameters.AddWithValue("$id", id);
+                    command.Parameters.AddWithValue("$code", code);
+                    command.Parameters.AddWithValue("$name", name);
+                    command.Parameters.AddWithValue("$location", location);
+                    command.Parameters.AddWithValue("$idCountry", idCountry);
+                    command.Parameters.AddWithValue("$countryName", countryName); //SE GUARDA DIRECTAMENTE EL COUNTRY EXTRAIDO DEL NAME PQ EN ALGUNOS CASOS TIENE DIFERENTE ESCRITURA QUE LA BBDD DE COUNTRIES
+
+
+                    int result = command.ExecuteNonQuery();
+                    total += result;
+                    Console.WriteLine($"Rows Inserted - Result: {result}");
+
+                }
+
+                Console.WriteLine($"FIN >> Rows Inserted: {total}");
 
             }
         }
