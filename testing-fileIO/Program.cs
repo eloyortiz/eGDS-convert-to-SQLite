@@ -4,9 +4,6 @@ using System.IO;
 using Microsoft.Data.Sqlite;
 using System.Text.Json;
 using System.Text.RegularExpressions;
-using System.Linq;
-
-
 
 namespace testing_fileIO
 {
@@ -59,6 +56,7 @@ namespace testing_fileIO
         }
 
     }
+
     public class Classroom
     {
         public int Index { get; set; }
@@ -77,7 +75,7 @@ namespace testing_fileIO
 
     public class CSVtoSQLite
     {
-        public List<Classroom> ConvertToList(string sSourceFile, string sPathInputFiles, string sPathOutputFiles)
+        public static List<Classroom> ConvertToList(string sSourceFile, string sPathInputFiles, string sPathOutputFiles)
         {
             List<Classroom> ClassroomList = new List<Classroom>();
 
@@ -170,7 +168,7 @@ namespace testing_fileIO
             #endregion FIN LECTURA FICHEROS
         }
 
-        public int AddClassroom(List<Classroom> classrooms, string sqliteDbPath)
+        public static int AddClassroom(List<Classroom> classrooms, string sqliteDbPath)
         {
             int _total = -1;
             
@@ -228,7 +226,7 @@ namespace testing_fileIO
             return _total;
         }
 
-        public int AddCountries(string sFileCSV, string sqliteDbPath)
+        public static int AddCountries(string sFileCSV, string sqliteDbPath)
         {
             int _total = -1;
             string[] lines = File.ReadAllLines(sFileCSV);
@@ -268,7 +266,7 @@ namespace testing_fileIO
             return _total;
         }
 
-        public int AddAircrafts(string sFileCSV, string sqliteDbPath)
+        public static int AddAircrafts(string sFileCSV, string sqliteDbPath)
         {
             int _total = -1;
             string[] lines = File.ReadAllLines(sFileCSV);
@@ -311,7 +309,7 @@ namespace testing_fileIO
 
         }
 
-        public int AddAirlines(string sFileCSV, string sqliteDbPath)
+        public static int AddAirlines(string sFileCSV, string sqliteDbPath)
         {
             int _total = -1;
             string[] lines = File.ReadAllLines(sFileCSV);
@@ -385,7 +383,7 @@ namespace testing_fileIO
             return _total;
         }
 
-        public int AddAirports(string sFileCSV, string sqliteDbPath)
+        public static int AddAirports(string sFileCSV, string sqliteDbPath)
         {
             int _total = -1;
             string[] lines = File.ReadAllLines(sFileCSV);
@@ -462,9 +460,9 @@ namespace testing_fileIO
             Rutas oRutas = new Rutas();
             CSVtoSQLite oCSV = new CSVtoSQLite();
 
-            List<Classroom> classrooms = oCSV.ConvertToList(oRutas.sFilePantallas, oRutas.sPathInputFiles, oRutas.sPathOutputFiles);
+            List<Classroom> classrooms = CSVtoSQLite.ConvertToList(oRutas.sFilePantallas, oRutas.sPathInputFiles, oRutas.sPathOutputFiles);
 
-            _result = oCSV.AddClassroom(classrooms, oRutas.sqliteDbPath);
+            _result = CSVtoSQLite.AddClassroom(classrooms, oRutas.sqliteDbPath);
 
             
             //_result = oCSV.AddCountries(oRutas.sFileCSV[0], oRutas.sqliteDbPath);
