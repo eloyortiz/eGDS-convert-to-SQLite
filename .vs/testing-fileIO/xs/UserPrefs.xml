@@ -1,8 +1,7 @@
 ﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{03A7DA65-1132-4719-95FF-CE512F32CCE0}|Default">
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="testing-fileIO/DataManagement.cs" Line="62" Column="24" />
-      <File FileName="testing-fileIO/Program.cs" Line="453" Column="25" />
+      <File FileName="testing-fileIO/Program.cs" Line="469" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,6 +11,11 @@
               <Node name="data" expanded="True" />
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>classrooms</Value>
         </State>
       </Pad>
     </Pads>

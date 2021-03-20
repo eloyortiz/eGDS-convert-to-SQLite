@@ -10,14 +10,47 @@ using System.Linq;
 
 namespace testing_fileIO
 {
-    public class Section
+    public class Rutas
+    {
+        string winPath { get; set; }
+        string macPath { get; set; }
+
+
+        public string sPathFiles { get; set; }
+        public string sPathInputFiles { get; set; }
+        public string sPathOutputFiles { get; set; }
+        public string sFilePantallas { get; set; }
+        public string sqliteDbPath { get; set; }
+         
+        public string[] sFileCSV { get; set; }
+
+        public Rutas()
+        {
+            //COMPROBACION DEL SO PARA LA RUTA DE LOS FICHEROS
+            OperatingSystem osInfo = Environment.OSVersion;
+            Console.WriteLine($"SO - Platform: {osInfo.Platform}, Version: {osInfo.Version}");
+
+            winPath = @"C:\GDS\GDS-UCO\testing-fileIO\testing-fileIO\data\";
+            macPath = @"/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/data/";
+
+            sPathFiles = (osInfo.Platform.ToString().ToLower().Contains("win") ? winPath : macPath);
+            sPathInputFiles = sPathFiles + "_PANTALLAS/";
+            sPathOutputFiles = sPathFiles + "_output/";
+            sFilePantallas = sPathFiles + "pantallasTodas.txt";
+            sqliteDbPath = "Data Source=" + sPathFiles + "egds.db";
+
+            sFileCSV = new string[]{ sPathFiles + "countries.csv", sPathFiles + "aircrafts.csv", sPathFiles + "airlines.csv", sPathFiles + "airports.csv" };
+        }
+    }
+
+    public class Chapter
     {
         public int Index { get; set; }
         public List<string> TerminalText { get; set; }
         public List<string> InfoText { get; set; }
         public List<string> Solutions { get; set; }
 
-        public Section()
+        public Chapter()
         {
             InfoText = new List<string>();
             TerminalText = new List<string>();
@@ -31,13 +64,13 @@ namespace testing_fileIO
         public int Index { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public List<Section> SectionsList { get; set; }
+        public List<Chapter> ChapterList { get; set; }
 
         public Classroom()
         {
             Name = string.Empty;
             Description = string.Empty;
-            SectionsList = new List<Section>();
+            ChapterList = new List<Chapter>();
             Index = 0;
         }
     }
@@ -59,7 +92,7 @@ namespace testing_fileIO
                 //SON TODAS LAS LINEAS DEL FICHERO DE PANTALLA
                 string[] lines = File.ReadAllLines(sPathInputFiles + pantalla);
 
-                Section oSection = new Section();
+                Chapter oSection = new Chapter();
                 int currentIndex = -1;
 
                 foreach (string line in lines)
@@ -80,8 +113,8 @@ namespace testing_fileIO
                     {
                         if (currentIndex > -1)
                         {
-                            oClassroom.SectionsList.Add(oSection);
-                            oSection = new Section();
+                            oClassroom.ChapterList.Add(oSection);
+                            oSection = new Chapter();
                         }
 
                         currentIndex = lineIndex;
@@ -108,19 +141,19 @@ namespace testing_fileIO
 
                         case 9: //fin de pantalla
 
-                            oClassroom.SectionsList.Add(oSection);
+                            oClassroom.ChapterList.Add(oSection);
                             ClassroomList.Add(oClassroom);
 
-                            oSection = new Section();
+                            oSection = new Chapter();
 
-                            string jsonString = JsonSerializer.Serialize(oClassroom.SectionsList);
+                            string jsonString = JsonSerializer.Serialize(oClassroom.ChapterList);
 
                             var options = new JsonSerializerOptions
                             {
                                 WriteIndented = true
                             };
 
-                            jsonString = JsonSerializer.Serialize(oClassroom.SectionsList, options);
+                            jsonString = JsonSerializer.Serialize(oClassroom.ChapterList, options);
                             File.WriteAllText(sPathOutputFiles + pantalla.Split('.')[0] + ".json", jsonString);
 
 
@@ -137,26 +170,63 @@ namespace testing_fileIO
             #endregion FIN LECTURA FICHEROS
         }
 
-        public int AddClassroom(List<Classroom> classrooms)
+        public int AddClassroom(List<Classroom> classrooms, string sqliteDbPath)
         {
-            int _result = -1;
+            int _total = -1;
+            
 
-            Console.WriteLine(classrooms);
+            foreach (Classroom classroom in classrooms)
+            {
+                _total = 0;
 
+                var _classGUID = Guid.NewGuid();
 
-            return _result;
+                using (var connection = new SqliteConnection(sqliteDbPath))
+                {
+                    connection.Open();
+                    
+                    var cmdInsert = @"INSERT INTO 'main'.'Classrooms' ('id', 'name', 'description', 'index') VALUES ($id, $name, $description, $index);";
+                    var command = connection.CreateCommand();
+
+                    command.CommandText = cmdInsert;
+
+                    command.Parameters.AddWithValue("$id", _classGUID);
+                    command.Parameters.AddWithValue("$name", classroom.Name);
+                    command.Parameters.AddWithValue("$description", classroom.Description);
+                    command.Parameters.AddWithValue("$index", classroom.Index);
+
+                    int result = command.ExecuteNonQuery();
+                    _total += result;
+                    Console.WriteLine($"Classroom Result: {result}");
+
+                    // SE AÑADEN LOS CHAPTERS
+                    if( result > 0 && classroom.ChapterList.Count > 0)
+                    {
+                        foreach (Chapter chapter in classroom.ChapterList)
+                        {
+                            cmdInsert = @"INSERT INTO 'main'.'Chapters' ('id', 'idClass', 'index', 'infoText', 'terminalText', 'solutions') VALUES ($id, $idClass, $index, $infoText, $terminalText, $solutions);";
+
+                            command = connection.CreateCommand();
+                            command.CommandText = cmdInsert;
+
+                            command.Parameters.Clear();
+                            command.Parameters.AddWithValue("$id", Guid.NewGuid());
+                            command.Parameters.AddWithValue("$idClass", _classGUID);
+                            command.Parameters.AddWithValue("$index", chapter.Index);
+                            command.Parameters.AddWithValue("$infoText", string.Join(";", chapter.InfoText));
+                            command.Parameters.AddWithValue("$terminalText", string.Join(";", chapter.TerminalText)); 
+                            command.Parameters.AddWithValue("$solutions", string.Join(";", chapter.Solutions));
+
+                            int _chapterResult = command.ExecuteNonQuery();
+                            
+                            Console.WriteLine($"Chapter Result: {_chapterResult}");
+                        }
+                    }
+                }  
+            }
+
+            return _total;
         }
-
-        public int AddSection(List<Section> sections, Classroom classroom)
-        {
-            int _result = -1;
-
-            Console.WriteLine(sections.ToString(), classroom);
-
-
-            return _result;
-        }
-
 
         public int AddCountries(string sFileCSV, string sqliteDbPath)
         {
@@ -381,80 +451,26 @@ namespace testing_fileIO
             return _total;
         }
 
-
-        #region SQLITE READER TESTING
-
-        //using (var connection = new SqliteConnection(sqliteDbPath))
-        //{
-        //    connection.Open();
-        //    var idCode = "222222";
-
-        //    var command = connection.CreateCommand();
-        //    command.CommandText =
-        //    @"
-        //    SELECT *
-        //    FROM Users
-        //    WHERE idCode = $idCode                    
-        //";
-        //    command.Parameters.AddWithValue("$idCode", idCode);
-
-
-        //    using (var reader = command.ExecuteReader())
-        //    {
-        //        while (reader.Read())
-        //        {
-        //            var name = reader.GetString(1);
-
-        //            Console.WriteLine($"Hello, {name}!");
-        //        }
-        //    }
-        //}
-
-        #endregion
-
-
-
     }
 
     class Program
     {
-        static void main(string[] args)
+        static void Main(string[] args)
         {
-
-
-            #region VARIABLES
-            //COMPROBACION DEL SO PARA LA RUTA DE LOS FICHEROS
-            OperatingSystem osInfo = Environment.OSVersion;
-            Console.WriteLine($"SO - Platform: {osInfo.Platform}, Version: {osInfo.Version}");
-
-            string winPath = @"C:\GDS\GDS-UCO\testing-fileIO\testing-fileIO\data\";
-            string macPath = @"/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/data/";
-
-            string sPathFiles = (osInfo.Platform.ToString().ToLower().Contains("win") ? winPath : macPath);
-            string sPathInputFiles = sPathFiles + "_PANTALLAS/";
-            string sPathOutputFiles = sPathFiles + "_output/";
-            string sFilePantallas = sPathFiles + "pantallasTodas.txt";
-            string sqliteDbPath = "Data Source=" + sPathFiles + "egds.db";
-
-            string[] sFileCSV = { sPathFiles + "countries.csv", sPathFiles + "aircrafts.csv", sPathFiles + "airlines.csv", sPathFiles + "airports.csv" };
             int _result;
 
+            Rutas oRutas = new Rutas();
             CSVtoSQLite oCSV = new CSVtoSQLite();
 
-            #endregion VARIABLES
+            List<Classroom> classrooms = oCSV.ConvertToList(oRutas.sFilePantallas, oRutas.sPathInputFiles, oRutas.sPathOutputFiles);
 
-            List<Classroom> classrooms = oCSV.ConvertToList(sFilePantallas, sPathInputFiles, sPathOutputFiles);
+            _result = oCSV.AddClassroom(classrooms, oRutas.sqliteDbPath);
 
-            _result = oCSV.AddClassroom(classrooms);
-
-            //_result = oCSV.AddCountries(sFileCSV[0], sqliteDbPath);
-            //_result = oCSV.AddAircrafts(sFileCSV[1], sqliteDbPath);
-            //_result = oCSV.AddAirlines(sFileCSV[2], sqliteDbPath);
-            //_result = oCSV.AddAirports(sFileCSV[3], sqliteDbPath);
-
-
-
-
+            
+            //_result = oCSV.AddCountries(oRutas.sFileCSV[0], oRutas.sqliteDbPath);
+            //_result = oCSV.AddAircrafts(oRutassFileCSV[1], oRutassqliteDbPath);
+            //_result = oCSV.AddAirlines(oRutassFileCSV[2], oRutassqliteDbPath);
+            //_result = oCSV.AddAirports(oRutassFileCSV[3], oRutassqliteDbPath);
 
         }
     }
