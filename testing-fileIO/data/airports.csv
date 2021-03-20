@@ -1,0 +1,1252 @@
+﻿1;ISB;Islamabad, Pakistan;Islamabad, Pakistan
+2;KHI;Karachi, Pakistan;Karachi, Pakistan
+3;LHE;Lahore, Pakistan;Lahore, Pakistan
+4;PEW;Peshawar, Pakistan;Peshawar, Pakistan
+5;BKK;Bangkok, Thailand;Bangkok, Thailand
+6;BFV;-;Buri ram, Thailand
+7;CNX;Chiang Mai, Thailand;Chiang Mai, Thailand
+8;CEI;Chiang Rai, Thailand;Chiang Rai, Thailand
+9;HDY;Hat Yai, Thailand;Hat Yai, Thailand
+10;KKC;Khon Kaen, Thailand;Khon Kaen, Thailand
+11;USM;Koh Samui, Thailand;Koh Samui, Thailand
+12;KBV;-;Krabi, Thailand
+13;HKT;Phuket, Thailand;Phuket, Thailand
+14;THS;-;Sukhothai, Thailand
+15;URT;Surat Thani, Thailand;Surat Thani, Thailand
+16;TST;Trang, Thailand;Trang, Thailand
+17;UBP;Ubon Ratchathni, Thailand;Ubon Ratchathni, Thailand
+18;UTH;Uoon Thani, Thailand;Uoon Thani, Thailand
+19;UVL;New Valley airport;New Valley, Egypt
+20;MUH;Mersa Matrum airport;Mersa Matrum, Egypt
+21;CAI;Cairo International Airport;Cairo, Egypt
+22;LXR;Luxor airport;Luxor, Egypt
+23;ABS;Abu Simbel airport;Abu Simbel, Egypt
+24;HRG;Hurghada airport;Hurghada, Egypt
+25;ALY;Alexandria airport;Alexandria, Egypt
+26;ASW;Aswan airport;Aswan, Egypt
+27;SSH;Ras Nasrani;Sharm El Sheik, Egypt
+28;AAC;Al Arish airport;Al Arish, Egypt
+29;HBE;Borg El Arab Airport;Alexandria, Egypt
+30;ATZ;Assiut airport;Assiut, Egypt
+31;PZU;Port Sudan airport;Port Sudan, Sudan
+32;MWE;Merowe airport;Merowe, Sudan
+33;MAK;Malakal airport;Malakal, Sudan
+34;WUU;Wau airport;Wau, Sudan
+35;DOG;Dongola airport;Dongola, Sudan
+36;UYL;Nyala airport;Nyala, Sudan
+37;EGN;El Geneina airport;El Geneina, Sudan
+38;ELF;El Fasher airport;El Fasher, Sudan
+39;EBD;El Obeid airport;El Obeid, Sudan
+40;WHF;Wadi Haifa airport;Wadi Haifa, Sudan
+41;MRA;Misurata airport;Misurata, Libya
+42;AKF;Kufrah airport;Kufrah, Libya
+43;TOB;Tobruk airport;Tobruk, Libya
+44;TIP;Idris;Tripoli, Libya
+45;LTD;Ghadames airport;Ghadames, Libya
+46;GHT;Ghat airport;Ghat, Libya
+47;BEN;Benina;Benghazi, Libya
+48;LAQ;Laq Beida airport;Laq Beida, Libya
+49;HUQ;Houn airport;Houn, Libya
+50;QBF;Brack airport;Brack, CO
+51;AUH;Aurora Municipal Airport;Abu Dhabi, United Arab Emirates
+52;DXB;Dubai, United Arab Emirates;Dubai, United Arab Emirates
+53;AHB;Abha, Saudi Arabia;Abha, Saudi Arabia
+54;JED;Jeddah, Saudi Arabia;Jeddah, Saudi Arabia
+55;MED;Medina, Saudi Arabia;Medina, Saudi Arabia
+56;RUH;Riyadh, Saudi Arabia;Riyadh, Saudi Arabia
+57;LTK;Latakia airport;Latakia, Syria
+58;DAM;Damascus airport;Damascus, Syria
+59;DEZ;Deirezzor airport;Deirezzor, Syria
+60;ALP;Aleppo airport;Aleppo, Syria
+61;KAC;Kameshli airport;Kameshli, Syria
+62;BGT;Metropolitan Area;Baghdad, iraq
+63;ADJ;Marka;Amman-Civil, Jordan
+64;AMM;Queen Alia International;Amman, Jordan
+65;AQJ;Aqaba airport;Aqaba, Jordan
+66;LEB;Lebanon Municipal Airport;Lebanon Hanover, NH
+67;BEY;Beirut International Airport;Beirut, Lebanon
+68;KWI;Kuwait airport;Kuwait, Kuwait
+69;DOH;Doha airport;Doha, Qatar
+70;BAH;Muharraq International;Bahrain, Bahrain
+71;MCT;Seeb;Muscat, Oman
+72;GXF;Seiyun airport;Seiyun, Yemen
+73;TAI;Ganed;Taiz, Yemen
+74;ADE;Aden International Airport;Aden, Yemen
+75;RIY;Riyan airport;Riyan, Yemen
+76;AXK;Ataq airport;Ataq, Yemen
+77;SAH;El Rahaba;Sanaa, Yemen
+78;HOD;Hodeidah airport;Hodeidah, Yemen
+79;AAY;Al Ghaydah airport;Al Ghaydah, Yemen
+80;ASR;Kayseri airport;Kayseri, Turkey
+81;BZI;Balikesir airport;Balikesir, Turkey
+82;KYA;Konya airport;Konya, Turkey
+83;VAN;Van airport;Van, Turkey
+84;SIC;Sinop Army Air Field;Sinop, Turkey
+85;VAS;Sivas airport;Sivas, Turkey
+86;DLM;Dalaman airport;Dalaman, Turkey
+87;MLX;Malatva airport;Malatva, Turkey
+88;DIY;Diyarbakir airport;Diyarbakir, Turkey
+89;TZX;Trabzon Air Base;Trabzon, Turkey
+90;GZT;Gaziantep airport;Gaziantep, Turkey
+91;ADA;Adana airport;Adana, Turkey
+92;EZS;Elazig airport;Elazig, Turkey
+93;ERC;Erzincan airport;Erzincan, Turkey
+94;ERZ;Erzurum airport;Erzurum, Turkey
+95;1ST;Ataturk/Yesilkoy International Airport;Istanbul, Turkey
+96;ADB;Adnan Menderes;Izmir adb, Turkey
+97;IZM;Adnan Menderes;Izmir izm, Turkey
+98;ESB;Esenboga;Ankara, Turkey
+99;ANK;Etimesgut;Ankara Etimesgu, Turkey
+100;AYT;Antalya airport;Antalya, Turkey
+101;SSX;Samsun airport;Samsun, Turkey
+102;BJV;Milas Airport;Bod rum, Turkey
+103;DNZ;Denizli airport;Denizli, Turkey
+104;MSR;Greven;Muenster, Turkey
+105;SZF;Carsamba;Samsun, Turkey
+106;KCM;Kahramanmaras Airport;Kahramanmaras, Turkey
+107;MQM;Mardin Airport;Mardin, Turkey
+108;ADF;Adiyaman Airport;Adiyaman, Turkey
+109;AJI;Agri Airport;Agri., Turkey
+110;RAS;Rasht airport;Rasht, Iran
+111;KER;Kerman airport;Kerman, Iran
+112;KHA;Khaneh airport;Khaneh, Iran
+113;BND;Bandar Abbas airport;Bandar Abbas, Iran
+114;BDH;Bandar Lengeh airport;Bandar Lengeh, Iran
+115;TBZ;Tabriz airport;Tabriz, Iran
+116;BUZ;Bushehr airport;Bushehr, Iran
+117;OMH;Urmieh airport;Urmieh, Iran
+118;SYZ;Shiraz airport;Shiraz, Iran
+119;THR;Mehrabad/Qualeh Morgeh Airport;Tehran, Iran
+120;MHD;Mashad airport;Mashad, Iran
+121;ABD;Abadan airport;Abadan, Iran
+122;AZD;Yazd airport;Yazd, Iran
+123;AWZ;Ahwaz airport;Ahwaz, Iran
+124;ZAH;Zahedan airport;Zahedan, Iran
+125;IFN;Isfahan airport;Isfahan, Iran
+126;IKA;Imam Khomeini International Airport;Tehran, Iran
+127;ZBR;Chah-Bahar airport;Chah-Bahar, Iran
+128;ADU;Audubon County Airport;Ardabil, Iran
+129;DOH;Doha, Qatar;Doha, Qatar
+130;ALP;Aleppo, Syria;Aleppo, Syria
+131;DAM;Damascus, Syria;Damascus, Syria
+132;AMD;Ahmedabad, India;Ahmedabad, India
+133;IXU;Aurangabad, India;Aurangabad, India
+134;BLR;Bangalore, India;Bangalore, India
+135;ecu;Calcutta, India;Calcutta, India
+136;IXC;Chandigarh, India;Chandigarh, India
+137;COK;Cochin, India;Cochin, India
+138;CJB;Coimbatore, India;Coimbatore, India
+139;DEL;New Delhi, India;Delhi, India
+140;GAU;Gauhati, India;Gauhati, India
+141;GOI;Goa, India;Goa, India
+142;HYD;Hyderabad, India;Hyderabad, India
+143;IDR;Indore, India;Indore, India
+144;JAI;Jaipur, India;Jaipur, India
+145;JSA;-;Jaisalmer, India
+146;HJR;Khajuraho, India;Khajuraho, India
+147;LKO;Lucknow, India;Lucknow, India
+148;MAA;Madras, India;Madras, India
+149;IXM;Madurai, India;Madurai, India
+150;IXE;Mangalore, India;Mangalore, India
+151;BOM;Bombay, India;Mumbai, India
+152;DAC;Dhaka, Bangladesh;Dhaka, Bangladesh
+153;KTM;Kathmandu, Nepal;Kathmandu, Nepal
+154;AMM;Amman, Jordan;Amman, Jordan
+155;BTH;Batham Batu Besar, Indonesia;Batham Batu Besar, Indonesia
+156;DPS;Denpasar/Bali, Indonesia;Denpasar/Bali, Indonesia
+157;DIL;Dili, Indonesia;Dili, Indonesia
+158;CGK;Jakarta, Indonesia;Jakarta, Indonesia
+159;AMI;Mataram, Indonesia;Mataram, Indonesia
+160;MES;Medan, Indonesia;Medan, Indonesia
+161;PDG;Padang, Indonesia;Padang, Indonesia
+162;PKY;Palangkaraya, Indonesia;Palangkaraya, Indonesia
+163;PNK;Pontianak, Indonesia;Pontianak, Indonesia
+164;SOC;Solo, Indonesia;Solo, Indonesia
+165;SUB;Surabaya, Indonesia;Surabaya, Indonesia
+166;JOG;Yogyakarta, Indonesia;Yogyakarta, Indonesia
+167;BCN;Aeropuerto Transoceanico de Barcelona;Barcelona, Spain
+168;BJZ;Talavera La Real;Badajoz, Spain
+169;SDR;Santander airport;Santander, Spain
+170;SCQ;Santiago;Sntiago D Cmpst, Spain
+171;MLN;Melilla airport;Melilla, Spain
+172;MAH;Mahon airport;Mahon, Spain
+173;SVQ;San Pablo Airport;Seville, Spain
+174;VLC;Valencia airport;Valencia, Spain
+175;VLL;Valladolio airport;Valladolio, Spain
+176;VDE;Valverde airport;Valverde, Spain
+177;MAD;Barajas;Madrid, Spain
+178;TFN;Los Rodeos;Tenerife, Spain
+179;TFS;Tenerife Reinas airport;Tenerife Reinas, Spain
+180;VGO;Vigo airport;Vigo, Spain
+181;AGP;Pablo Ruiz Picasso;Malaga, Spain
+182;VIT;Vitoria airport;Vitoria, Spain
+183;MJV;San Javier;Murcia, Spain
+184;FUE;Fuerteventura airport;Fuerteventura, Spain
+185;PMI;Palma de Mallorca airport;Palma de Mallorca, Spain
+186;PNA;Pamplona airport;Pamplona, Spain
+187;GRO;Gerona airport;Gerona, Spain
+188;IBZ;Ibiza airport;Ibiza, Spain
+189;REU;Reus airport;Reus, Spain
+190;GRX;Granada airport;Granada, Spain
+191;ZAZ;Zarogoza airport;Zarogoza, Spain
+192;ALC;Alicante airport;Alicante, Spain
+193;LEI;Almeria airport;Almeria, Spain
+194;XRY;Jerez Frontera airport;Jerez Frontera, Spain
+195;SLM;Salamanca airport;Salamanca, Spain
+196;LCG;La Coruna airport;La Coruna, Spain
+197;BIO;Sondica;Bilbao, Spain
+198;OVD;Asturias;Oviedo, Spain
+199;SPO;Saipan International Airport;San Pablo, Spain
+200;EAS;San Sabastian airport;San Sabastian, Spain
+201;ACE;Lanzarote;Lanzarote, Spain
+202;LPA;Gran Canaria airport;Gran Canaria, Spain
+203;RJL;Logro??o-Agoncillo Airport;Agoncillo, Spain
+204;SPC;Snt Cruz la pal airport;Snt Cruz la pal, Spain
+205;TCI;Tenerife airport;Tenerife, Spain
+206;LEN;Aeropuero de Bajio;Leon len, Spain
+207;LIS;Aeroporto da Portela de Sacavem;Lisbon, Portugal
+208;TER;Aeroporto das Lajes;Terceira, Portugal
+209;FLW;Flores Island airport;Flores Island, Portugal
+210;FNC;Funchal airport;Funchal, Portugal
+211;FAO;Faro airport;Faro, Portugal
+212;PDL;Ponta Delgada airport;Ponta Delgada, Portugal
+213;OPO;Porto airport;Porto, Portugal
+214;PXO;Porto Santo airport;Porto Santo, Portugal
+215;HOR;Horta Faial is airport;Horta Faial is, Portugal
+216;SMA;Santa Maria Azors airport;Santa Maria Azors, Portugal
+217;SJZ;San Jorge Island airport;San Jorge Island, Portugal
+218;SIE;Sines airport;Sines, Portugal
+219;CVU;Corvo Island airport;Corvo Island, Portugal
+220;GRW;Graciosa Island airport;Graciosa Island, Portugal
+221;PIX;Pico Island airport;Pico Island, Portugal
+222;PAR;Metropolitan Area;Paris, France
+223;CDG;Charles de Gaulle;Paris, France
+224;BOD;Merignac;Bordeaux, France
+225;AUR;Aurillac airport;Aurillac, France
+226;AVN;Caumont;Avignon, France
+227;UIP;Pluguffan;Quimper, France
+228;LEH;Octeville;Le Havre, France
+229;LME;Le Mans airport;Le Mans, France
+230;LPY;Le puy airport;Le puy, France
+231;LTQ;Paris-Plage;Le Touquet, France
+232;EBU;Boutheon;St Etienne, France
+233;BOU;Bourges airport;Bourges, France
+234;BES;Guipavas;Brest, France
+235;LIL;Lesquin;Lille, France
+236;LIG;Bellegarde;Limoges, France
+237;CFE;Aulnat;Clermont Ferrand, France
+238;SXB;Entzheim;Strasbourg, France
+239;BAE;Barcelonnette airport;Barcelonnette, France
+240;MLH;Basel/Mulhouse EuroAirport;Basel, France
+241;BIA;Poretta;Bastia, France
+242;MEN;Mende airport;Mende, France
+243;LRT;Lann-Bihouet;Lorient, France
+244;CFR;Carpiquet;Caen, France
+245;CQF;Dunkerque;Calais, France
+246;CLY;Sainte Catherine;Calvi, France
+247;BOR;Belfort airport;Belfort, France
+248;LDE;Ossun;Lourdes Tarbes, France
+249;VAF;Valence airport;Valence, France
+250;LYS;Satolas;Lyon, France
+251;GNB;Saint Geoirs;Grenoble, France
+252;JCA;Heliport;Cannes Heliport, France
+253;CEQ;Mandelieu;Cannes, France
+254;CCF;Carcassonne airport;Carcassonne, France
+255;DCM;Castres airport;Castres, France
+256;MPL;Mediteranee/Frejorgues;Montpellier, France
+257;FSC;Figari airport;Figari, France
+258;DOL;Saint Gatien;Deauville, France
+259;CMF;Aix-Les-Bains;Chambery, France
+260;CHR;Deols;Chateauroux, France
+261;CER;Maupertus;Cherbourg, France
+262;FDF;Le Lamentin;Fort de France, Martinique
+263;DIJ;Longvic;Dijon, France
+264;DNR;St. Malo;Dinard, France
+265;MRS;Marignane-Provence;Marseilles, France
+266;TLN;La Palyvestre;Toulon, France
+267;TLS;Blagnac;Toulouse, France
+268;TUF;Saint-Symphorien;Tours, France
+269;NTE;Chateau Bougon;Nantes, France
+270;BVA;Tille;Beauvais, France
+271;ORY;Orly;Paris, France
+272;PUF;Pont Long Uzein;Pau, France
+273;NCE;Cote dAzur;Nice, France
+274;AGF;Agen airport;Agen, France
+275;FNI;Arles-Camargue (Garons);Nimes, France
+276;AJA;Campo DellOro;Ajaccio, France
+277;EPL;Epinal airport;Epinal, France
+278;RHE;Champagne;Reims, France
+279;RNS;Saint-Jacques;Rennes, France
+280;PGX;Bassillac;Periqueux, France
+281;PGF;Rivesaltes;Perpignan, France
+282;NIT;Niort airport;Niort, France
+283;RNE;Roanne airport;Roanne, France
+284;RDZ;Rodez airport;Rodez, France
+285;PIS;Biard;Poitiers, France
+286;ANE;Angers airport;Angers, France
+287;ANG;Angouleme airport;Angouleme, France
+288;NCY;Annecy airport;Annecy, France
+289;URO;Rouen airport;Rouen, France
+290;EGC;Bergerac airport;Bergerac, France
+291;BZR;Vias;Beziers, France
+292;EDM;La Roche airport;La Roche, France
+293;LRH;Laieu;La Rochelle, France
+294;BIQ;Parme (Bayonne-Anglet);Biarritz, France
+295;LAI;Lannion airport;Lannion, France
+296;BVE;Brive la Gaillar airport;Brive la Gaidar, France
+297;BSL;Basel/Mulhouse EuroAirport;Basel/Mulhouse, France
+298;EAP;EuroAirport;Mulhouse/Basel, France
+299;ETZ;Lorraine;Metz/Nancy, France
+300;GAT;Gap airport;Gap, France
+301;SYT;Saint Yan airport;Saint Yan, France
+302;LON;Metropolitan Area;London, United Kingdom
+303;LGW;Gatwick Airport;London, United Kingdom
+304;LHR;Heathrow Airport;London, United Kingdom
+305;BFS;Aldergrove International;Belfast, United Kingdom
+306;GLA;Abbotsichn;Glasgow, United Kingdom
+307;LBA;Leeds airport;Leeds, United Kingdom
+308;BOH;Bournemouth airport;Bournemouth, United Kingdom
+309;BSH;Brighton airport;Brighton, United Kingdom
+310;BRS;Lulsgate;Bristol, United Kingdom
+311;SYY;Stornoway airport;Stornoway, United Kingdom
+312;SOY;Stronsay airport;Stronsay, United Kingdom
+313;LPL;Speke Airport;Liverpool, United Kingdom
+314;KOI;Kirkwall airport;Kirkwall, United Kingdom
+315;BRR;Barra airport;Barra, United Kingdom
+316;LDY;Eglinton Airport;Londonderry, United Kingdom
+317;SWS;Swansea airport;Swansea, United Kingdom
+318;BUT;Burtonwood airport;Burtonwood, United Kingdom
+319;CBG;Cambridge airport;Cambridge, United Kingdom
+320;CVT;Baginton;Coventry, United Kingdom
+321;CAL;Campbeltown airport;Campbeltown, United Kingdom
+322;CWL;Rhoose;Cardiff, United Kingdom
+323;CAX;Carlisle airport;Carlisle, United Kingdom
+324;MAN;Ringway International Airport;Manchester, United Kingdom
+325;CEG;Chester airport;Chester, United Kingdom
+326;MSE;Kent International Airport;Mansion, United Kingdom
+327;WRY;Westray airport;Westray, United Kingdom
+328;WIC;Wick airport;Wick, United Kingdom
+329;DND;Dundee airport;Dundee, United Kingdom
+330;ABZ;Dyce;Aberdeen, United Kingdom
+331;EOI;Eday airport;Eday, United Kingdom
+332;EDI;Edinburgh airport;Edinburgh, United Kingdom
+333;HUY;Humberside airport;Humberside, United Kingdom
+334;NCL;Newcastle airport;Newcastle, United Kingdom
+335;NQY;St. Mawgan Airport;Newquay, United Kingdom
+336;PZE;Penzance Heliport;Penzance, United Kingdom
+337;INV;Inverness airport;Inverness, United Kingdom
+338;NWI;Norwich airport;Norwich, United Kingdom
+339;ILY;Port Ellen Airport;Islay, United Kingdom
+340;EXT;Exeter airport;Exeter, United Kingdom
+341;PLH;Roborough Airport;Plymouth, United Kingdom
+342;BEB;Benbecula airport;Benbecula, United Kingdom
+343;HAW;Haverfordwest Airport;Haverfordwest, United Kingdom
+344;BHX;Birmingham airport;Birmingham, United Kingdom
+345;BLK;Squires Gate Airport;Blackpool, United Kingdom
+346;NDY;Sanday airport;Sanday, United Kingdom
+347;SOU;Eastleigh;Southampton, United Kingdom
+348;DSA;Doncaster Sheffield Airport;, United Kingdom
+349;COL;Coll Island airport;Coll Island, United Kingdom
+350;STN;Stansted;London Stansted, United Kingdom
+351;BHD;Harbour Airport;Belfast Harbour, United Kingdom
+352;LWK;Tingwall;Lerwick Tingwall, United Kingdom
+353;SDZ;Shetland Islands airport;Shetland Islands, United Kingdom
+354;LSI;Sumburgh;Shetland Sumburg, United Kingdom
+355;MME;Tees Side airport;Tees Side, United Kingdom
+356;TRE;Tiree Island airport;Tiree Island, United Kingdom
+357;PPW;Papa Westray airport;Papa Westray, United Kingdom
+358;PIK;Glasgow Prestwick airport;Glasgow Prestwick, United Kingdom
+359;NRL;North Ronaldsay airport;North Ronaldsay, United Kingdom
+360;EMA;East Midlands airport;East Midlands, United Kingdom
+361;IOM;Ronaldsway Airport;Isle of Man, United Kingdom
+362;FIE;Fair Isle airport;Fair Isle, United Kingdom
+363;TSO;Scilly Tresco airport;Scilly Tresco, United Kingdom
+364;LEG;St. Just Airport;Lands End, United Kingdom
+365;SEN;London Southend airport;London Southend, United Kingdom
+366;LTN;Luton Airport;London Luton, United Kingdom
+367;SWI;Swindon airport;Swindon, United Kingdom
+368;FZO;Filton airport;Filton, United Kingdom
+369;OXF;Oxford airport;Oxford, United Kingdom
+370;NQT;Nottingham Airport;Nottingham, United Kingdom
+371;GSY;Binbrook Airport;Grimsby, United Kingdom
+372;HEN;Hendon airport;Hendon, United Kingdom
+373;BOL;Bally Kelly airport;Bally Kelly, United Kingdom
+374;ISC;St. Marys Airport;Isles of Scilly, United Kingdom
+375;LCY;City Airport;London, United Kingdom
+376;BQH;London airport;London, United Kingdom
+377;KIR;Killarney airport;Killarney, Ireland
+378;ORK;Cork airport;Cork, Ireland
+379;SNN;Shannon airport;Shannon, Ireland
+380;SXL;Sligo airport;Sligo, Ireland
+381;WAT;Waterford airport;Waterford, Ireland
+382;CFN;Donegal;Carrickfinn, Ireland
+383;GWY;Galway airport;Galway, Ireland
+384;DUB;Dublin International Airport;Dublin, Ireland
+385;NOC;Knock airport;Knock, Ireland
+386;CHE;Caherciveen airport;Caherciveen, Ireland
+387;NRW;Metropolitan Area;Nordrhein Westfln, Germany
+388;BER;Metropolitan Area;Berlin, Germany
+389;FRA;Rhein-Main;Frankfurt, Germany
+390;DUS;Rhein-Ruhr;Duesseldorf, Germany
+391;BMK;Borkum airport;Borkum, Germany
+392;AGB;Augsburg airport;Augsburg, Germany
+393;LEJ;Schkeuditz;Leipzig, Germany
+394;BWE;Braunschweig airport;Braunschweig, Germany
+395;BRE;Nieuenland;Bremen, Germany
+396;KEL;Kiel airport;Kiel, Germany
+397;STR;Echterdingen;Stuttgart, Germany
+398;BNJ;Wahn;Bonn, Germany
+399;CGN;Konrad Adenauer;Cologne/Bonn, Germany
+400;QKL;Cologne de airport;Cologne de, Germany
+401;BYU;Bayreuth airport;Bayreuth, Germany
+402;FLF;Flensburg airport;Flensburg, Germany
+403;MHG;Mannheim airport;Mannheim, Germany
+404;AGE;Wangerooge airport;Wangerooge, Germany
+405;FMO;Greven;Muenster, Germany
+406;MUC;Franz Josef Strauss;Munich, Germany
+407;HHN;Hahn airport;Hahn, Germany
+408;DTM;Wickede;Dortmund, Germany
+409;GWT;Westerland airport;Westerland, Germany
+410;FDH;Lowenthal;Friedrichshafen, Germany
+411;DRS;Dresden airport;Dresden, Germany
+412;MGL;Moenchengladbach airport;Moenchengladbach, Germany
+413;PAD;Paderborn airport;Paderborn, Germany
+414;EME;Emden airport;Emden, Germany
+415;ERF;Erfurt airport;Erfurt, Germany
+416;NRD;Norderney airport;Norderney, Germany
+417;ESS;Essen airport;Essen, Germany
+418;NUE;Nuremberg airport;Nuremberg, Germany
+419;SCN;Ensheim;Saarbruecken, Germany
+420;HAM;Fuhlsbuttel;Hamburg, Germany
+421;SXF;Schoenefeld;Berlin, Germany
+422;TXL;Tegel;Tegel-Berlin, Germany
+423;THF;Tempelhof;Templehof-Berlin, Germany
+424;HAJ;Langenhagen;Hanover, Germany
+425;HDB;Downtown Bus Station;Heidelberg hdb, Germany
+426;HGL;Helgoland airport;Helgoland, Germany
+427;HDF;Heringsdorf airport;Heringsdorf, Germany
+428;LHA;Lahr airport;Lahr, Germany
+429;HOQ;Hof airport;Hof, Germany
+430;NRN;airport;, Germany
+431;XFW;Finkerwerden (Airbus Plant);Finkenwerder, Germany
+432;VWN;Wilhelmshaven airport;Wilhelmshaven, Germany
+433;QDU;Dusseldorf airport;Dusseldorf, Germany
+434;AAH;Aachen airport;Aachen, Germany
+435;ZCZ;Erlangen airport;Erlangen, Germany
+436;NDZ;Nordholz-Spieka airport;Nordholz-Spieka, Germany
+437;RLG;Rostock-Laage airport;Rostock-Laage, Germany
+438;LBC;Hamburg airport;Hamburg, Germany
+439;JUI;Juist airport;Juist, Germany
+440;QUA;Puttgarden airport;Puttgarden, Germany
+441;FKB;Soellingen;Karlsruhe/Baden Baden, Germany
+442;MSR;Greven;Muenster, Turkey
+443;ROM;Metropolitan Area;Rome, Italy
+444;MIL;Metropolitan Area;Milan, Italy
+445;FLR;Peretola;Florence, Italy
+446;BLQ;Giuseppe Marconi (Borgo Panigale);Bologna, Italy
+447;BZO;Bolzano airport;Bolzano, Italy
+448;RAN;Ravenna airport;Ravenna, Italy
+449;BDS;Casale;Brindisi, Italy
+450;BRI;Palese Macchie;Bari, Italy
+451;CAG;Elmas;Cagliari, Italy
+452;LIN;Linate;Milan, Italy
+453;MXP;Malpensa;Milan, Italy
+454;BGY;Bergamo airport;Bergamo, Italy
+455;CRV;Crotone airport;Crotone, Italy
+456;VCE;Marco Polo (Tessera);Venice, Italy
+457;VRN;Villafranca;Verona, Italy
+458;TAR;Taranto airport;Taranto, Italy
+459;VIC;Trissino;Vicenza, Italy
+460;CTA;Fontanarossa;Catania, Italy
+461;PSA;Galilei (San Giusto);Pisa, Italy
+462;FOG;Gino Lisa;Foggia, Italy
+463;OLB;Costa Smeralda;Olbia, Italy
+464;TPS;Birgi;Trapani, Italy
+465;TRS;Ronchi dei Legionari;Trieste, Italy
+466;PMO;Punta Raisi;Palermo, Italy
+467;NAP;Capodichino;Naples, Italy
+468;PNL;Pantelleria airport;Pantelleria, Italy
+469;GOA;Cristoforo Colombo (Seatri);Genoa, Italy
+470;TRN;Caselle;Turin, Italy
+471;ALL;Albenga airport;Albenga, Italy
+472;REG;Reggio Calabria airport;Reggio Calabria, Italy
+473;RMI;Rimini airport;Rimini, Italy
+474;PEG;S. Egidio;Perugia, Italy
+475;PSR;Pescara airport;Pescara, Italy
+476;ISH;Ischia airport;Ischia, Italy
+477;AHO;Fertilia;Alghero, Italy
+478;CIA;Ciampino;Rome Ciampino, Italy
+479;FCO;Leonardo da Vinci/Fiumicino;Rome, Italy
+480;AOI;Ancona airport;Ancona, Italy
+481;SUF;Lametia Terme airport;Lametia Terme, Italy
+482;LMP;Lampedusa airport;Lampedusa, Italy
+483;PMF;Milan airport;Milan, Italy
+484;TSF;S. Angelo;Venice, Italy
+485;VBS;Montichiari;Verona, Italy
+486;CUF;Cuneo airport;Cuneo, Italy
+487;TTB;Tortoli airport;Tortoli, Italy
+488;EBA;Elba Island airport;Elba Island, Italy
+489;AOT;Corrado Gex Airport;Aosta, Italy
+490;LGG;Bierset;Liege, Belgium
+491;BRU;National/Zaventem;Brussels, Belgium
+492;OST;Ostend airport;Ostend, Belgium
+493;ANR;Deurne;Antwerp, Belgium
+494;KNO;Knocke L Zout airport;Knocke L Zout, Belgium
+495;CRL;Gosselies;Charleroi, Belgium
+496;ZRH;Zurich airport;Zurich, Switzerland
+497;LUG;Agno;Lugano, Switzerland
+498;GVA;Geneva airport;Geneva, Switzerland
+499;BRN;Berne airport;Berne, Switzerland
+500;SIR;Sion airport;Sion, Switzerland
+501;ACH;Rorshach;Altenrhein, Switzerland
+502;BSL;Basel/Mulhouse EuroAirport;Basel/Mulhouse, France
+503;LNZ;Horsching;Linz, Austria
+504;KLU;Woerthersee;Klagenfurt, Austria
+505;VIE;Schwechat;Vienna, Austria
+506;INN;Kranebitten;Innsbruck, Austria
+507;GRZ;Thalerhof;Graz, Austria
+508;SZG;Salzburg airport;Salzburg, Austria
+509;BUH;Metropolitan Area;Bucharest, Romania
+510;BCM;Bacau airport;Bacau, Romania
+511;OTP;Otopeni;Bucharest, Romania
+512;CND;Mihai Kogainiceanu;Constanta, Romania
+513;SBZ;Sibiu airport;Sibiu, Romania
+514;CRA;Craiova airport;Craiova, Romania
+515;OMR;Oradea airport;Oradea, Romania
+516;TSR;Giarmata;Timisoara, Romania
+517;IAS;Iasi airport;Iasi, Romania
+518;ARW;Arad airport;Arad, Romania
+519;BAY;Baia Mape airport;Baia Mape, Romania
+520;SUJ;Satu Mare airport;Satu Mare, Romania
+521;CLJ;Cluj Napoca airport;Cluj Napoca, Romania
+522;BBU;Baneasa;Baneasa Buchare, Romania
+523;TGM;Vidrasau;Tirgu Mures, Romania
+524;KTW;Pyrzowice;Katowice, Poland
+525;szz;Goleniow;Szczecin, Poland
+526;BZG;Bydgoszcz airport;Bydgoszcz, Poland
+527;OSZ;Koszalin airport;Koszalin, Poland
+528;KRK;Balice;Krakow, Poland
+529;WAW;Okecie;Warsaw, Poland
+530;GDN;Rebiechowo;Gdansk, Poland
+531;WRO;Wroclaw airport;Wroclaw, Poland
+532;RZE;Jasionka;Rzeslow, Poland
+533;POZ;Lawica;Poznan, Poland
+534;IEG;Zielona Gora airport;Zielona Gora, Poland
+535;KSO;Kastoria airport;Kastoria, Greece
+536;KVA;Kavalla airport;Kavalla, Greece
+537;EFL;Kefalonia airport;Kefalonia, Greece
+538;LRS;Leros airport;Leros, Greece
+539;CFU;Corfu airport;Corfu, Greece
+540;LXS;Lemnos airport;Lemnos, Greece
+541;KIT;Kithir airport;Kithir, Greece
+542;KGS;Kos airport;Kos, Greece
+543;JMK;Mikonos airport;Mikonos, Greece
+544;KZI;Kozani airport;Kozani, Greece
+545;JSI;Skiathos airport;Skiathos, Greece
+546;SKG;Mikra;Thessaloniki, Greece
+547;JTR;Santorini airport;Santorini, Greece
+548;CHQ;Chania airport;Chania, Greece
+549;JKH;Chios airport;Chios, Greece
+550;MJT;Mytilene airport;Mytilene, Greece
+551;PAS;Paros airport;Paros, Greece
+552;RHO;Diagoras/Maritsa;Rhodes Island, Greece
+553;ZTH;Zakinthos airport;Zakinthos, Greece
+554;IOA;loannina airport;loannina, Greece
+555;AXD;Alexandroupolis airport;Alexandroupolis, Greece
+556;SMI;Samos Island airport;Samos Island, Greece
+557;PVK;Preveza/Lefkas airport;Preveza/Lefkas, Greece
+558;KLX;Kalamata airport;Kalamata, Greece
+559;HER;Heraklion airport;Heraklion, Greece
+560;ATH;Athens International Airport Eleftherios Venizelos;Athens, Greece
+561;AOK;Karpathos airport;Karpathos, Greece
+562;JSH;Sitia airport;Sitia, Greece
+563;SKU;Skiros airport;Skiros, Greece
+564;DRM;Drama airport;Drama, Greece
+565;JNX;Naxos airport;Naxos, Greece
+566;GPA;Patras airport;Patras, Greece
+567;PYR;Pyrgos airport;Pyrgos, Greece
+568;JSY;Syros Island airport;Syros Island, Greece
+569;JIK;Ikaria;Ikaria Island, Greece
+570;JTY;Astypalaia Island airport;Astypalaia Island, Greece
+571;BOJ;Bourgas airport;Bourgas, Bulgaria
+572;VAR;Varna airport;Varna, Bulgaria
+573;GOZ;Orechovis;Gorna Orechovitsa, Bulgaria
+574;JAM;Jambol airport;Jambol, Bulgaria
+575;ROU;Ruse airport;Ruse, Bulgaria
+576;SOF;Vrajdebna;Sofia, Bulgaria
+577;BRQ;Brno airport;Brno, Czech Republic
+578;OSR;Mosnov;Ostrava, Czech Republic
+579;PRG;Ruzyne;Prague, Czech Republic
+580;GTW;Gottwaldov airport;Gottwaldov, Czech Republic
+581;DBV;Dubrovnik airport;Dubrovnik, Croatia
+582;RJK;Rijeka airport;Rijeka, Croatia
+583;ZAD;Zadar airport;Zadar, Croatia
+584;ZAG;Pleso;Zagreb, Croatia
+585;PUY;Pula airport;Pula, Croatia
+586;SPU;Kastel;Split, Croatia
+587;BWK;Bol airport;Bol, Croatia
+588;OSI;Osijek airport;Osijek, Croatia
+589;ARN;Arlanda;Stockholm, Sweden
+590;BMA;Bromma;Bromma-Stockholm, Sweden
+591;STO;Metropolitan Area;Stockholm, Sweden
+592;LPI;Linkoping airport;Linkoping, Sweden
+593;KRN;Kiruna airport;Kiruna, Sweden
+594;SDL;Harnosand;Sundsvall, Sweden
+595;LLA;Kallax;Lulea, Sweden
+596;LYC;Lycksele airport;Lycksele, Sweden
+597;KRF;Kramfors airport;Kramfors, Sweden
+598;KID;Kristianstad airport;Kristianstad, Sweden
+599;VXO;Vaxjo airport;Vaxjo, Sweden
+600;SFT;Skelleftea airport;Skelleftea, Sweden
+601;VHM;Vilhelmina airport;Vilhelmina, Sweden
+602;VBY;Visby airport;Visby, Sweden
+603;MMA;Malmo airport;Malmo, Sweden
+604;MMX;Sturup;Sturup, Sweden
+605;ORB;Orebro airport;Orebro, Sweden
+606;OER;Ornskoldsvik airport;Ornskoldsvik, Sweden
+607;OSK;Oskarshamn airport;Oskarshamn, Sweden
+608;OSD;Froson Air Base;Ostersund, Sweden
+609;GEV;Gallivare airport;Gallivare, Sweden
+610;THN;Trollhattan airport;Trollhattan, Sweden
+611;UME;Umea airport;Umea, Sweden
+612;HLF;Hultsfred airport;Hultsfred, Sweden
+613;GOT;Land vetter;Gothenburg, Sweden
+614;NRK;Kungsangen;Norrkoping, Sweden
+615;RNB;Ronneby Air Base;Ronneby, Sweden
+616;AGH;Helsingborg airport;Helsingborg, Sweden
+617;JKG;Jonkoping airport;Jonkoping, Sweden
+618;HAD;Halmstad Air Base;Halmstad, Sweden
+619;KLR;Kalmar airport;Kalmar, Sweden
+620;SOO;Soderhamn airport;Soderhamn, Sweden
+621;KSD;Karlstad airport;Karlstad, Sweden
+622;SQO;Storuman airport;Storuman, Sweden
+623;EVG;Sveg airport;Sveg, Sweden
+624;KVB;Skovde airport;Skovde, Sweden
+625;MXX;Siljan;Mora, Sweden
+626;TYF;Fryklanda;Torsby, Sweden
+627;HUV;Hudiksvall airport;Hudiksvall, Sweden
+628;GSE;Save;Gothenburg, Sweden
+629;HFS;Hagfors airport;Hagfors, Sweden
+630;AJR;Arvidsjaur airport;Arvidsjaur, Sweden
+631;JHE;Heliport;Angelholm/Helsingborg, Sweden
+632;VST;Hasslo;Vasteras, Sweden
+633;KEM;Tornio;Kemi, Finland
+634;SVL;Savonlinna airport;Savonlinna, Finland
+635;KOK;Pietarsaari;Kokkola, Finland
+636;MIK;Mikkeli airport;Mikkeli, Finland
+637;VAA;Vaasa airport;Vaasa, Finland
+638;TMP;Pirkkala;Tampere, Finland
+639;KUO;Kuopio airport;Kuopio, Finland
+640;VRK;Varkaus airport;Varkaus, Finland
+641;OUL;Oulu airport;Oulu, Finland
+642;TKU;Turku airport;Turku, Finland
+643;IVL;Ivalo airport;Ivalo, Finland
+644;RVN;Rovaniemi airport;Rovaniemi, Finland
+645;POR;Pori airport;Pori, Finland
+646;JOE;Joensuu airport;Joensuu, Finland
+647;KAO;Kuusamo airport;Kuusamo, Finland
+648;KAJ;Kajaani airport;Kajaani, Finland
+649;HEL;Vantaa;Helsinki, Finland
+650;LPP;Lappeenranta airport;Lappeenranta, Finland
+651;MHQ;Mariehamn/Aland airport;Mariehamn/Aland, Finland
+652;KTT;Kittila airport;Kittila, Finland
+653;ENF;Enontekio airport;Enontekio, Finland
+654;JYV;Jyvaskyla airport;Jyvaskyla, Finland
+655;RNN;Bornholm;Ronne, Denmark
+656;STA;Stauning airport;Stauning, Denmark
+657;CPH;Kastrup;Copenhagen, Denmark
+658;AAL;Aalborg airport;Aalborg, Denmark
+659;AAR;Tirstrup;Aarhus, Denmark
+660;EBJ;Esbjerg airport;Esbjerg, Denmark
+661;ODE;Beldringe;Odense, Denmark
+662;BLL;Billund airport;Billund, Denmark
+663;SGD;Sonderborg airport;Sonderborg, Denmark
+664;KRP;Karup airport;Karup, Denmark
+665;FAE;Vagar;Sorvag, Faroe Islands
+666;OSL;Metropolitan Area;Oslo, Norway
+667;YNE;Norway House Airport;Norway House, MB, Canada
+668;HVG;Honningsvag airport;Honningsvag, Norway
+669;LKN;Leknes airport;Leknes, Norway
+670;SVG;Sola;Stavanger, Norway
+671;SKN;Skagen;Stokmarknes, Norway
+672;SRP;Sorstukken;Stord, Norway
+673;BNN;Bronnoy;Bronnoysund, Norway
+674;KKN;Hoybuktmoen;Kirkenes, Norway
+675;BDU;Bardufoss airport;Bardufoss, Norway
+676;MEH;Mehamn airport;Mehamn, Norway
+677;SVJ;Helle;Svolvaer, Norway
+678;BJF;Batsfjord airport;Batsfjord, Norway
+679;VDS;Vadso airport;Vadso, Norway
+680;KRS;Kjevik;Kristiansand, Norway
+681;KSU;Kvernberget;Kristiansund, Norway
+682;MOL;Aro;Molde, Norway
+683;SKE;Geiteryggen;Skien, Norway
+684;FRO;Floro airport;Floro, Norway
+685;FDE;Bringeland;Forde, Norway
+686;AMS;Schiphol;Amsterdam, Netherlands
+687;SXM;Princes Juliana;Netherlands Antilles, Netherlands Antilles
+688;BON;Flamingo Airport;Bonaire, Netherlands Antilles
+689;EUX;F.D. Roosevelt;St. Eustathius, Netherlands Antilles
+690;SPL;Schiphol;Schiphol, Netherlands
+691;MST;Zuid-Limburg;Maastricht, Netherlands
+692;CUR;Aeropuerto Hato;Curacao, Netherlands Antilles
+693;EIN;Eindhoven airport;Eindhoven, Netherlands
+694;ENS;Enschede airport;Enschede, Netherlands
+695;GRQ;Eeide;Groningen, Netherlands
+696;RTM;Rotterdam airport;Rotterdam, Netherlands
+697;SAB;Saba airport;Saba, Netherlands Antilles
+698;UTC;Soesterberg;Utrecht, Netherlands
+699;RUT;Rutland State Airport;Rutland, VT
+700;HTS;Tri-State/Milton J. Ferguson Field;Huntington, WV
+701;PVD;Theodore Francis Green State Airport;Providence, Rl
+702;SCE;State College airport;State College, PA
+703;WST;Westerly State Airport;Westerly, Rl
+704;FAL;Falcon State Park Airport;Roma, TX
+705;AUG;Augusta State Airport;Augusta, ME
+706;SOL;Solomon State Field;Solomon, AK
+707;BID;Block Island State Airport;Block Island, Rl
+708;MFW;Metropolitan Area;Miami, FL
+709;QLA;Metropolitan Area;Los Angeles, CA
+710;QSF;Metropolitan Area;San Francisco, CA
+711;WAS;Metropolitan Area;Washington, DC
+712;CHI;Metropolitan Area;Chicago, IL
+713;ORL;Metropolitan Area;Orlando Area, FL
+714;KCK;Metropolitan Area;Kansas City, KS
+715;NYC;Metropolitan Area;New York City, NY
+716;BGT;Metropolitan Area;Baghdad, AZ
+717;DTT;Metropolitan Area;Detroit, Ml
+718;ORD;Chicago-OHare International Airport;Chicago, IL
+719;DFW;Dallas/Fort Worth International Airport;Dallas, TX
+720;BOS;General Edward Lawrence Logan International Airport;Boston, MA
+721;CLE;Cleveland-Hopkins International Airport;Cleveland, OH
+722;JFK;John F. Kennedy International Airport;New York City, NY
+723;LGA;La Guardia Airport;New York City, NY
+724;EWR;Newark International Airport;Newark, NJ
+725;SEA;Seattle-Tacoma International Airport;Seattle, WA
+726;MCO;Orlando International Airport;Orlando, FL
+727;MIA;Miami International Airport;Miami, FL
+728;LAX;Los Angeles International Airport;Los Angeles, CA
+729;PDX;Portland International Airport;Portland, OR
+730;ATL;The William B. Hartsfield Atlanta International Airport;Atlanta, GA
+731;SFO;San Francisco International Airport;San Francisco, CA
+732;HOU;William P. Hobby Airport;Houston, TX
+733;LAS;McCarran International Airport;Las Vegas, NV
+734;AUW;Wausau Municipal Airport;Wausau, Wl
+735;KWN;Quinhagak Airport;Quinhagak, AK
+736;LEE;Leesburg Municipal Airport;Leesburg, FL
+737;WAY;Greene County Airport;Waynesburg, PA
+738;VLA;Vandalia Municipal Airport;Vandalia, IL
+739;EAR;Kearney Municipal Airport;Kearney, NE
+740;TOC;Toccoa R. G. Letourneau Field;Toccoa, GA
+741;RMP;Rampart Airport;Rampart, AK
+742;TOG;Togiak Airport;Togiak, AK
+743;TKJ;Tok Airport;Tok, AK
+744;OOK;Toksook Bay Airport;Toksook, AL
+745;WBU;Boulder Municipal Airport;Bolder, CO
+746;BYA;Boundary Airport;Boundary, AK
+747;HNH;Hoonah Airport;Hoonah, AK
+748;CKX;Chicken Airport;Chicken, AK
+749;TOR;Torrington Municipal Airport;Torrington, WY
+750;KCQ;Chignik Airport;Chignik, AK
+751;KCG;Chignik Fisheries Airport;Chignik, AK
+752;QKS;Keystone airport;Keystone, CO
+753;WAL;Chincoteague airport;Chincoteague, VA
+754;DUG;Bisbee Douglas International Airport;Douglas, AZ
+755;CZN;Chisana Airport;Chisana, AK
+756;CHU;Chuathbaluk Airport;Chuathbaluk, AK
+757;QKB;Breckenridge Airport;Breckenridge, CO
+758;IRC;Circle City Airport;Circle, AK
+759;ATK;Atqasuk Airport;Atqasuk, AK
+760;VEE;Venetie Airport;Venetie, AK
+761;KOZ;Ouzinkie Airport;Ouzinkie, AK
+762;KUK;Kasigluk Airport;Kasigluk, AK
+763;VEL;Vernal Airport;Vernal, UT
+764;SAA;Shively Field;Saratoga, WY
+765;KLL;Levelock Airport;Levelock, AK
+766;MLL;Marshall Airport;Marshall, AK
+767;GAB;Gabbs Airport;Gabbs, NV
+768;RED;Mifflin County Airport;Reedsville, PA
+769;LWT;Lewistown Municipal Airport;Lewistown, MT
+770;GLE;Gainesville Municipal Airport;Gainesville, TX
+771;GAI;Montgomery County Airpark;Gaithersburg, MD
+772;GAL;Galena Airport;Galena, AK
+773;SGY;Skagway Airport;Skagway, AK
+774;MAE;Madera Municipal Airport;Madera, CA
+775;DBN;W. H. Bud Barron Airport;Dublin, GA
+776;GAM;Gambell Airport;Gambell, AK
+777;WBB;Stebbins Airport;Stebbins, AK
+778;SVA;Savoonga Airport;Savoonga, AK
+779;SEP;Clark Field Municipal Airport;Stephenville, TX
+780;MDJ;City-County Airport;Madras, OR
+781;CBE;Greater Cumberland Regional Airport;Cumberland, MD
+782;MCG;McGrath Airport;McGrath, AK
+783;SLQ;Sleetmute Airport;Sleetmute, AK
+784;WNA;Napakiak Airport;Napakiak, AK
+785;PKA;Napaskiak Airport;Napaskiak, AK
+786;SKY;Griffing Sandusky Airport;Sandusky, OH
+787;NKI;Naukiti airport;Naukiti, AK
+788;WOO;Woodchopper Airport;Woodchopper, AK
+789;THA;Tullahoma Regional Airport/Wm Northern Field;Tullahoma, TN
+790;TLT;Tuluksak Airport;Tuluksak, AK
+791;WTL;Tuntutuliak airport;Tuntutuliak, AK
+792;IAN;Bob Baker Memorial Airport;Kiana, AK
+793;TNK;Tununak Airport;Tununak, AK
+794;SUD;Stroud Municipal Airport;Stroud, OK
+795;CIN;Arthur N. Neu Airport;Carroll, IA
+796;LIV;Livingood airport;Livingood, AK
+797;EEK;Eek Airport;Eek, AK
+798;COI;Merritt Island Airport;Cocoa, FL
+799;EGX;Egegik airport;Egegik, AK
+800;KKU;Ekuk Airport;Ekuk, AK
+801;KEK;Ekwok Airport;Ekwok, AK
+802;AFO;Afton Municipal Airport;Afton, WY
+803;OEM;Central Airport;Central, AK
+804;UMT;Umiat Airport;Umiat, AK
+805;COM;Coleman Municipal Airport;Coleman, TX
+806;HUS;Hughes Airport;Hughes, AK
+807;CDR;Chadron Municipal Airport;Chadron, NE
+808;HSL;Huslia Airport;Huslia, AK
+809;KGK;New Koliganek Airport;Koliganek, AK
+810;KPN;Kipnuk airport;Kipnuk, AK
+811;BWD;Brownwood Municipal Airport;Brownwood, TX
+812;IGG;Igiugig Airport;Igiugig, AK
+813;GLW;Glasgow Municipal Airport;Glasgow, KY
+814;CFD;Coulter Field;Bryan, TX
+815;BKC;Buckland Airport;Buckland, AK
+816;GGW;Glasgow International Airport;Glasgow, MT
+817;GDV;Dawson Community Airport;Glendive, MT
+818;BRY;Samuels Field;Bardstown, KY
+819;NME;Nightmute Airport;Nightmute, AK
+820;NIB;Nikolai Airport;Nikolai, AK
+821;IKO;Nikolski airport;Nikolski, AK
+822;NIN;Ninilchik Airport;Ninilchik, AK
+823;GLV;Golovin Airport;Golovin, AK
+824;GVE;Gordonsville Municipal Airport;Gordonsville, VA
+825;ELI;Elim Airport;Elim, AK
+826;MYU;Mekoryuk Airport;Mekoryuk, AK
+827;AKI;Akiak Airport;Akiak, AK
+828;LYU;Ely Municipal Airport;Ely, MN
+829;EMK;Emmonak Airport;Emmonak, AK
+830;WLK;Selawik Airport;Selawik, AK
+831;AUK;Alakanuk Airport;Alakanuk, AK
+832;MOR;Moore-Murrell Airport;Morristown, TN
+833;MTM;Metlakatla Airport;Metlakatla, AK
+834;WDG;Enid Woodring Municipal Airport;Enid, OK
+835;PRO;Perry Municipal Airport;Perry, IA
+836;KPV;Perryville Airport;Perryville, AK
+837;WTK;Noatak Airport;Noatak, AK
+838;sue;Schloredt Airport;Sundance, WY
+839;NNL;Nondalton Airport;Nondalton, AK
+840;SWD;Seward Airport;Seward, AK
+841;ORV;Robert (Bob) Curtis Memorial Airport;Noorvik, AK
+842;SER;Freeman Municipal Airport;Seymour, IN
+843;IYK;Inyo kern Airport;Inyo kern, CA
+844;MLK;Malta Airport;Malta, MT
+845;SHX;Shageluk Airport;Shageluk, AK
+846;ORT;Northway Airport;Northway, AK
+847;KGX;Grayling Airport;Grayling, AK
+848;SKK;Shaktoolik Airport;Shatoolik, AK
+849;WKK;Aleknagik Airport;Aleknagik, AK
+850;NOT;Gnoss Field;Novato, CA
+851;LOG;Longview airport;Longview, WA
+852;TEH;Tetlin Airport;Tetlin, AK
+853;GRE;Greenville Airport;Greenville, IL
+854;KVL;Kivalina Airport;Kivalina, AK
+855;ALI;Alice International Airport;Alice, TX
+856;AET;Allakaket Airport;Allakaket, AK
+857;KLW;Klawock Airport;Klawock, AK
+858;EUE;Eureka Airport;Eureka, NV
+859;LUL;Hesler-Noble Field;Laurel, MS
+860;ALE;Alpine-Casparis Municipal Airport;Alpine, TX
+861;RAL;Riverside Municipal Airport;Riverside, CA
+862;CNK;Blosser Municipal Airport;Concordia, KS
+863;RKD;Knox County Regional Airport;Rockland, ME
+864;UGB;Ugashik Bay Airport;Ugashik, AK
+865;OBU;Kobuk Airport;Kobuk, AK
+866;LEW;Auburn/Lewiston Municipal Airport;Lewiston, ME
+867;PTU;Platinum Airport;Platinum, AK
+868;NUI;Niuqsut Airport;Nuiqsut, AK
+869;NUL;Nulato Airport;Nulato, AK
+870;BUB;Cram Field;Burwell, NE
+871;NUP;Nunapitchuk Airport;Nunapitchuk, AK
+872;CRO;Corcoran Airport;Corcoran, CA
+873;AIN;Wainwright Airport;Wainwright, AK
+874;JAS;Jasper County Airport-Bell Field;Jasper, TX
+875;KKH;Kongiganak Airport;Kongiganak, AK
+876;ABL;Ambler Airport;Ambler, AK
+877;HOL;Holikachu airport;Holikachu, AK
+878;ANI;Aniak Airport;Aniak, AK
+879;RBY;Ruby Airport;Ruby, AK
+880;DRG;Deering Airport;Deering, AK
+881;WBQ;Beaver Airport;Beaver, AK
+882;MBL;Manistee County-Blacker Airport;Manistee, Ml
+883;KMO;Manokotak Airport;Manokotak, AK
+884;CIK;Chalkyitsik Airport;Calkyitsik, AK
+885;HNS;Haines Airport;Haines, AK
+886;JBR;Jonesboro Municipal Airport;Jonesboro, AR
+887;UNK;Unalakleet Airport;Unalakleet, AK
+888;HAB;Marion County Airport;Hamilton, AL
+889;ANY;Anthony Municipal Airport;Anthony, KS
+890;SHN;Sanderson Field;Shelton, WA
+891;HAR;Capital City Airport;Harrisburg, PA
+892;ANV;Anvik Airport;Anvik, AK
+893;BTT;Betties Airport;Betties, AK
+894;HRO;Boone County Airport;Harrison, AR
+895;SHH;Shishmaref Airport;Shishmaref, AK
+896;MNT;Minto Airport;Minto, AK
+897;AAF;Apalachicola Municipal Airport;Apalachicola, FL
+898;SLO;Salem-Leckrone Airport;Salem, IL
+899;KWT;Kwethluk Airport;Kwethluk, AK
+900;POC;Brackett Field;Laverne, CA
+901;SHG;Shungnak Airport;Shugnak, AK
+902;PUC;Carbon County Airport;Price, UT
+903;HUL;Houlton International Airport;Houlton, ME
+904;KNK;Kakhonak Airport;Kakhonak, AK
+905;QBF;Brack airport;Brack, CO
+906;SDY;Sidney-Richland Municipal Airport;Sidney, MT
+907;PVC;Provincetown Municipal Airport;Provincetown, MA
+908;LUP;Kalaupapa Airport-Molokai;Kalaupapa, HI
+909;HAE;Havasupai airport;Havasupai, AZ
+910;TCT;Takotna Airport;Takotna, AK
+911;HVR;Havre City-County Airport;Havre, MT
+912;TKA;Talkeetna Airport;Talkeetna, AK
+913;KLG;Kalskag Airport;Kalskag, AK
+914;KOT;Kotlik Airport;Kotlik, AK
+915;KAL;Kaltag Airport;Kaltag, AK
+916;COT;Cotulla-La Salle County Airport;Cotulla, TX
+917;HAY;Haycock Airport;Haycock, AK
+918;HES;Hermiston Municipal Airport;Hermiston, OR
+919;KYU;Koyukuk Airport;Koyukuk, AK
+920;LYO;Lyons-Rice County Municipal Airport;Lyons, KS
+921;CDH;Harrell Field;Camden, AR
+922;HUM;Houma-Terrebonne Airport;Houma, LA
+923;TAL;Ralph M. Calhoun Memorial Airport;Tanana, AK
+924;CYF;Chefornak Airport;Chifornak, AK
+925;VAK;Chevak Airport;Chevak, AK
+926;AKB;Atka Airport;Atka, AK
+927;WJF;General William J. Fox Airfield;Lancaster, CA
+928;LND;Hunt Field;Lander, WY
+929;SAR;Sparta Community Airport-Hunter Field;Sparta, IL
+930;CAR;Caribou Municipal Airport;Caribou, ME
+931;CLD;McClellan-Palomar Airport;Carlsbad, CA
+932;WAA;Wales Airport;Wales, AK
+933;CNY;Canyonlands Field;Moab, UT
+934;HCR;Holy Cross Airport;Holy Cross, AK
+935;DIK;Dickinson Municipal Airport;Dickinson, ND
+936;ARG;Walnut Ridge Regional Airport;Walnut Ridge, AR
+937;FTL;Fortuna Ledge airport;Fortuna Ledge, AK
+938;LEM;Lemmon Municipal Airport;Lemmon, SD
+939;SMK;St. Michael Airport;St Michael, AK
+940;KCL;Chignik Lagoon Airport;Chignik Lagoon, AK
+941;EEN;Dillant-Hopkins Airport;Keene, NH
+942;BAR;Baker Island airport;Baker Island, AK
+943;OTO;Otto airport;Otto, NM
+944;HPB;Hooper Bay Airport;Hooper Bay, AK
+945;FRD;Friday Harbor Airport;Friday Harbor, WA
+946;WMO;White Mountain Airport;White Mountain, AK
+947;DRE;Drummond Island Airport;Drummond Island, Ml
+948;GUP;Gallup Municipal Airport;Gallup, NM
+949;STE;Stevens Point Municipal Airport;Stevens Point, Wl
+950;DUF;Duck airport;Duck, NC
+951;SVS;Stevens Village Airport;Stevens Village, AK
+952;SCM;Scammon Bay Airport;Scammon Bay, AK
+953;SCH;Schenectady County Airport;Schenectady, NY
+954;CLP;Clarks Point Airport;Clarks Point, AK
+955;CAO;Clayton Municipal Airpark;Clayton, NM
+956;ASH;Boire Field;Nashua, NH
+957;NLG;Nelson Lagoon Airport;Nelson Lagoon, AK
+958;KTS;Brevig Mission Airport;Brevig Mission, AK
+959;SRV;Stony River 2 Airport;Stony River, AK
+960;ELA;Eagle Lake Airport;Eagle Lake, TX
+961;TWA;Twin Hills Airport;Twin Hills, AK
+962;EDA;Edna Bay airport;Edna Bay, AK
+963;CFA;Coffee Point airport;Coffee Point, AK
+964;KVC;King Cove Airport;King Cove, AK
+965;IPL;Imperial County Airport;Elcentro/lmperia, CA
+966;ELD;Goodwin Field;El Dorado, AR
+967;NCN;New Chenega airport;New Chenega, AK
+968;KNW;New Stuyahok Airport;New Stuyahok, AK
+969;PDB;Pedro Bay Airport;Pedro Bay, AK
+970;BHB;Hancock County-Bar Harbor Airport;Bar Harbor, ME
+971;GOL;Gold Beach Municipal Airport;Gold Beach, OR
+972;GNU;Good news Airport;Goodnews Bay, AK
+973;ELV;Elfin Cove SPB;Elfin Cove, AK
+974;ELK;Elk City Municipal Airport;Elk City, OK
+975;ALM;Alamogordo-White Sands Regional Airport;Alamogordo, NM
+976;RDV;Red Devil Airport;Red Devil, AK
+977;LIJ;Long Island airport;Long Island, AK
+978;MOS;Moses Point Airport;Moses Point, AK
+979;JGC;Grand Canyon Heliport;Grand Canyon, AZ
+980;ISL;Isabel Pass airport;Isabel Pass, AK
+981;cus;Columbus Municipal Airport;Columbus, NM
+982;LPS;Lopez Island Airport;Lopez Island, WA
+983;CON;Concord Municipal Airport;Concord, NH
+984;RCE;Roche Harbor Airport;Roche Harbor, WA
+985;PIP;Pilot Point Airport;Pilot Point, AK
+986;PQS;Pilot Station Airport;Pilot Station, AK
+987;QCE;Copper Mountain airport;Copper Mountain, CO
+988;PHO;Point Hope Airport;Point Hope, AK
+989;PIZ;Point Lay LRRS;Point lay, AK
+990;AKP;Anaktuvuk Pass Airport;Anaktuvuk Pass, AK
+991;BAM;Battle Mountain Airport;Battle Mountain, NV
+992;PNC;Ponca City Municipal Airport;Ponca City, OK
+993;RSH;Russian Mission Airport;Russian Mission, AK
+994;PTA;Port Alsworth Airport;Port Alsworth, AK
+995;SAC;Sacramento Executive Airport;Sacramento Exec, CA
+996;KPC;Port Clarence Coast Guard Station Airport;Port Clarence, AK
+997;DJN;Delta Junction Airport;Delta Junction, AK
+998;HAI;Three Rivers Municipal Dr. Haines Airport;Three Rivers, Ml
+999;PHN;St. Clair County International Airport;Port Huron, Ml
+1000;ORI;Port Lions Airport;Port Lions, AK
+1001;PML;Port Moller airport;Port Moller, AK
+1002;PCA;Portage Creek Airport;Portage Creek, AK
+1003;MLS;Frank Wiley Field;Miles City, MT
+1004;SXP;Sheldon Point Airport;Sheldon Point, AK
+1005;ANN;Annette Island Airport;Annette Island, AK
+1006;ARC;Arctic Village Airport;Arctic Village, AK
+1007;KSM;St. Marys Airport;St Marys, AK
+1008;SAS;Salton Sea Airport;Salton City, CA
+1009;ZBV;Beaver Creek airport;Beaver Creek, CO
+1010;HKB;Healy River Airport;Healy Lake, AK
+1011;KBC;Birch Creek Airport;Birch Creek, AK
+1012;TSM;Taos Municipal Airport;Taos, NM
+1013;KUW;Kugururok River airport;Kugururok River, AK
+1014;CUW;Cube Cove airport;Cube Cove, AK
+1015;LMA;Lake Minchumina airport;Lake Minchumina, AK
+1016;WSN;South Naknek nr. 2 Airport;South Naknek, AK
+1017;BLU;Blue Canyon-Nyack Airport;Blue Canyon, CA
+1018;CNM;Cavern City Air Terminal;Carlsbad, NM
+1019;WMH;Baxter County Regional Airport;Mountain Home, AR
+1020;MOU;Mountain Village Airport;Mountain Village, AK
+1021;HBB;Hobbs Industrial Airpark;Hobbs, NM
+1022;SVC;Grant County Airport;Silver City, NM
+1023;STG;St. George Airport;St George Island, AK
+1024;CHP;Circle Hot Springs Airport;Circle Hot Sprin, AK
+1025;SSM;Sault Ste. Marie Municipal Airport/Sanderson Field;Sault Ste Marie, Ml
+1026;CVN;Clovis Municipal Airport;Clovis Municipal, NM
+1027;SAF;Santa Fe County Municipal Airport;Santa Fe/Taos, NM
+1028;AIY;Atlantic City Municipal Airport/Bader Field;Atlantic City aiy, NJ
+1029;LAM;Los Alamos Airport;Los Alamos, NM
+1030;MLY;Manley Hot Springs Airport;Manley Hot Springs, AK
+1031;Hll;Lake Havasu City Airport;Lake Havasu City, AZ
+1032;BLF;Mercer County Airport;Bluefield/Prince, WV
+1033;MOB;Bates Field;Mobile/Pascagoul, AL
+1034;MTH;Marathon Airport;Marathon, FL
+1035;FSM;Fort Smith Municipal Airport;Ft Smith, AR
+1036;ATY;Watertown Municipal Airport;Watertown, SD
+1037;FWA;Fort Wayne International Airport;Ft Wayne, IN
+1038;MOD;Modesto City-County Airport-Harry Sham Field;Modesto, CA
+1039;CWA;Central Wisconsin Airport;Central Wise Airport, Wl
+1040;FNL;Fort Collins-Loveland Municipal Airport;Fort Collins, CO
+1041;VPS;Eglin Air Force Base/Okaloosa County Airport;Ft Walton Beach, FL
+1042;STL;Lambert-St. Louis International Airport;St. Louis, MO
+1043;MLI;Quad-City Airport;Moline, IL
+1044;DLG;Dillingham Airport;Dillingham, AK
+1045;PKB;Wood County Airport-Gill Robb Wilson Field;Marie, WV
+1046;RAP;Rapid City Regional Airport;Rapid City, SD
+1047;ENA;Kenai Municipal Airport;Kenai, AK
+1048;LIH;□hue Airport-Kauai;Lihue, HI
+1049;MWA;Williamson County Regional Airport;Marion, IL
+1050;FKL;Venango Regional Airport;Franklin, PA
+1051;TOL;Toledo Express Airport;Toledo, OH
+1052;MQT;Marquette County Airport;Marquette, Ml
+1053;BWG;Bowling Green-Warren County Regional Airport;Bowling Green, KY
+1054;DDC;Dodge City Regional Airport;Dodge City, KS
+1055;GYY;Gary Regional Airport;Gary, IN
+1056;FOE;Forbes Field;Topeka foe, KS
+1057;MDW;Chicago Midway Airport;Chicago, IL
+1058;AUS;Austin-Bergstrom International Airport;Austin, TX
+1059;KTN;Ketchikan International Airport;Ketchikan, AK
+1060;CIC;Chico Municipal Airport;Chico, CA
+1061;BZN;Gallatin Field;Bozeman, MT
+1062;EYW;Key West International Airport;Key West, FL
+1063;SRQ;Sarasota/Bradenton International Airport;Sarasota, FL
+1064;SUX;Sioux Gateway Airport;Sioux City, IA
+1065;BFD;Bradford Regional Airport;Bradford, PA
+1066;DHN;Dothan Airport;Dothan, AL
+1067;BRD;Brainerd-Crow Wing County Regional Airport;Brainerd, MN
+1068;FSD;Joe Foss Field;Sioux Falls, SD
+1069;HIB;Chisholm-Hibbing Airport;Hibbing, MN
+1070;MLU;Monroe Regional Airport;Monroe, LA
+1071;CVG;Cincinnati/Northern Kentucky International Airport;Cincinnati, OH
+1072;BFL;Meadows Field;Bakersfield, CA
+1073;FOD;Fort Dodge Regional Airport;Ft Dodge, IA
+1074;SFB;Central Florida Regional Airport;Sanford, FL
+1075;TRI;Tri-City Regional Airport;Tri City Airport, TN
+1076;OSH;Wittman Regional Airport;Oshkosh, Wl
+1077;MKG;Northside Airport;Muskegon, Ml
+1078;BWI;Baltimore/Washington International Airport;Baltimore, MD
+1079;OTM;Ottumwa Industrial Airport;Ottumwa, IA
+1080;MYR;Myrtle Beach Jetport;Myrtle Beach, SC
+1081;EAT;Pangborn Memorial Airport;Wenatchee, WA
+1082;BGR;Bangor International Airport;Bangor, ME
+1083;SLK;Adirondack Regional Airport;Saranac/Lake Placid, NY
+1084;WYS;Yellowstone Airport;West Yellowstone, MT
+1085;HPN;Westchester County Airport;White Plains, NY
+1086;LWB;Greenbrier Valley Airport;Greenbrier, WV
+1087;FAT;Fresno Air Terminal;Fresno, CA
+1088;LWS;Lewiston-Nez Perce County Airport;Lewiston Clarks, ID
+1089;SIT;Sitka Airport;Sitka, AK
+1090;MVY;Marthas Vineyard Airport;Marthas Vineyard, MA
+1091;MCN;Middle Georgia Regional Airport;Macon, GA
+1092;MCW;Mason City Municipal Airport;Mason City, IA
+1093;MSS;Massena International Airport-Richards Field;Massena, NY
+1094;LEX;Blue Grass Airport;Lexington, KY
+1095;ICT;Wichita Mid-Continent Airport;Wichita, KS
+1096;SPS;Sheppard Air Force Base/Wichita Falls Municipal;Wichita Falls, TX
+1097;GNV;Gainesville Regional Airport;Gainesville, FL
+1098;LBL;Liberal Municipal Airport;Liberal, KS
+1099;TVC;Cherry Capital Airport;Traverse City, Ml
+1100;CIU;Chippewa County International Airport;Sault Ste Marie, Ml
+1101;IPT;Williamsport-Lycoming County Airport;Williamsport, PA
+1102;ISN;Sloulin Field International;Williston, ND
+1103;FLL;Fort Lauderdale/Hollywood International Airport;Fort Lauderdale, FL
+1104;SHD;Shenandoah Valley Regional Airport;Shenandoah Vail, VA
+1105;SAV;Savannah International Airport;Savannah, GA
+1106;ILG;New Castle County Airport;Wilmington, DE
+1107;ILM;New Hanover International Airport;Wilmington, NC
+1108;SBS;Steamboat Springs/Bob Adams Field STOL;Steamboat Springs, CO
+1109;MSN;Dane County Regional Airport-Truax Field;Madison, Wl
+1110;DUJ;Du Bois-Jefferson County Airport;Du Bois, PA
+1111;DBQ;Dubuque Regional Airport;Dubuque, IA
+1112;VCT;Victoria Regional Airport;Victoria, TX
+1113;DLH;Duluth International Airport;Duluth/Superior, MN
+1114;MFE;McAllen Miller International Airport;McAllen, TX
+1115;MCK;McCook Municipal Airport;McCook, NE
+1116;ACY;Atlantic City International Airport;Atlantic City, NJ
+1117;DRO;Durango-La Plata County Airport;Durango, CO
+1118;RDU;Raleigh-Durham International Airport;Raleigh-Durham, NC
+1119;YTO;Metropolitan Area;Toronto yto, , Canada
+1120;YMQ;Metropolitan Area;Montreal, QC, Canada
+1121;YEA;Metropolitan Area;Edmonton yea, , Canada
+1122;YYR;Goose Airport;Goose Bay, NS, Canada
+1123;YEL;Elliot Lake Municipal Airport;Elliott Lake, ON, Canada
+1124;LAK;Aklavik Airport;Aklavik, NT, Canada
+1125;AKV;Akulivik airport;Akulivik, , Canada
+1126;YSK;Sanikiluaq Airport;Sanikiluaq, NT, Canada
+1127;YQZ;Quesnel Airport;Quesnel, BC, Canada
+1128;YRL;Red Lake Airport;Red Lake, ON, Canada
+1129;YPE;Peace River Airport;Peace River, AB, Canada
+1130;YCM;St. Catharines Airport;St Catharines, ON, Canada
+1131;YRB;Resolute Bay Airport;Resolute Bay, , Canada
+1132;YOP;Rainbow Lake Airport;Rainbow Lake, AB, Canada
+1133;YTA;Pembroke Airport;Pembroke, ON, Canada
+1134;YSL;St.-Leonard Airport;St Leonard, NB, Canada
+1135;ZKG;Kegaska Water Aerodrome;Kegaska, QC, Canada
+1136;YLW;Kelowna Airport;Kelowna, BC, Canada
+1137;YRT;Rankin Inlet Airport;Rankin Inlet, NT, Canada
+1138;YQL;Lethbridge Airport;Lethbridge, AB, Canada
+1139;YQK;Kenora Airport;Kenora, ON, Canada
+1140;YBR;Brandon Airport;Brandon, MB, Canada
+1141;YBG;Bagotville Airport;Bagotville, QC, Canada
+1142;YBC;Baie-Comeau Airport;Baie Comeau, QC, Canada
+1143;YBK;Baker Lake Airport;Baker Lake, NT, Canada
+1144;YZR;Sarnia Airport;Sarnia, ON, Canada
+1145;YYF;Penticton Airport;Penticton, BC, Canada
+1146;YXK;Rimouski Airport;Rimouski, QC, Canada
+1147;XQU;Qualicum Beach Aerodrome;Qualicum Beach, BC, Canada
+1148;YJT;Stephenville Airport;Stephenville, NL, Canada
+1149;YKL;Schefferville Airport;Schefferville, QC, Canada
+1150;YSF;Stony Rapids Airport;Stony Rapids, SK, Canada
+1151;YCY;Clyde River Airport;Clyde River, NT, Canada
+1152;YLL;Lloydminster Airport;Lloydminster, AB, Canada
+1153;YPH;Inukjuak Airport;Inukjuak, QC, Canada
+1154;YEV;Inuvik Airport;Inuvik, NT, Canada
+1155;YBT;Brochet Airport;Brochet, MB, Canada
+1156;XBR;Brockville Aerodrome;Brockville, ON, Canada
+1157;YVQ;Norman Wells Airport;Norman Wells, NT, Canada
+1158;YGK;Kingston Airport;Kingston, NB, Canada
+1159;ZBF;Bathurst Airport;Bathurst, NB, Canada
+1160;YXH;Medicine Hat Airport;Medicine Hat, AB, Canada
+1161;YZV;Sept-lies Airport;Sept Isles, QC, Canada
+1162;YYB;North Bay Airport;North Bay, ON, Canada
+1163;YQU;Grande Prairie Airport;Grande Prairie, AB, Canada
+1164;ZTM;Shamattawa Airport;Shamattawa, MB, Canada
+1165;YKF;Kitchener-Waterloo;Kitchener, ON, Canada
+1166;YNE;Norway House Airport;Norway House, MB, Canada
+1167;YQQ;Comox Airport;Comox, BC, Canada
+1168;YGX;Gillam Airport;Gilliam, MB, Canada
+1169;YPF;Esquimlat airport;Esquimlat, , Canada
+1170;YPZ;Burns Lake Airport;Burns Lake, BC, Canada
+1171;YZS;Coral Harbour Airport;Coral Harbour, NT, Canada
+1172;YCC;Regional Airport;Cornwall, , Canada
+1173;YGZ;Grise Fiord Airport;Grise Fiord, NT, Canada
+1174;YTF;Alma Airport;Hebertville/Alma, , Canada
+1175;ZEL;Denny Island Airport;Bella Bella, BC, Canada
+1176;QBC;Bella Coola Airport;Bella Coola, BC, Canada
+1177;YRJ;Roberval Airport;Roberval, QC, Canada
+1178;YBE;Uranium City Airport;Uranium City, SK, Canada
+1179;XTL;Tadoule Lake Water Aerodrome;Tadoule Lake, NB, Canada
+1180;YVO;Val dOr Airport;Val dor, , Canada
+1181;YYH;Spence Bay airport;Spence Bay, ME, Canada
+1182;YPL;Pickle Lake Airport;Pickle Lake, ON, Canada
+1183;YCA;Courtenay Aerodrome;Courtenay, BC, Canada
+1184;YXC;Cranbrook Airport;Cranbrook, BC, Canada
+1185;YCB;Cambridge Bay Airport;Cambridge Bay, NT, Canada
+1186;YBL;Campbell River Airport;Campbell River, BC, Canada
+1187;YCR;Charlie Sinclair Memorial Airport;Cross Lake, MB, Canada
+1188;YGB;Gillies Bay Airport;Gillies Bay, BC, Canada
+1189;YCO;Coppermine Airport;Coppermine, NT, Canada
+1190;YTE;Cape Dorset Airport;Cape Dorset, NT, Canada
+1191;YGT;Igloolik Airport;Igloolik, NT, Canada
+1192;YIK;Ivujivik airport;Ivujivik, , Canada
+1193;YQM;Moncton Airport;Moncton, NB, Canada
+1194;YXL;Sioux Lookout Airport;Sioux Lookout, ON, Canada
+1195;YYY;Mont-Joli Airport;Mont Joli, QC, Canada
+1196;YVB;Bonaventure Airport;Bonaventure, QC, Canada
+1197;YWH;Victoria Inner Harbour Water Aerodrome;Victoria Harbour, NL, Canada
+1198;YUY;Rouyn-Noranda Airport;Rouyn, QC, Canada
+1199;PVR;Lie. Gustavo D. Ordaz;Puerto Vallarta, Mexico
+1200;SJD;Los Cabos International Airport-Cabo San Lucas;San Jose del Cabo, Mexico
+1201;LOM;Lagos de Moreno airport;Lagos de Moreno, Mexico
+1202;CAO;Clayton Municipal Airpark;Clayton, NM
+1203;CVN;Clovis Municipal Airport;Clovis Municipal, NM
+1204;CUS;Columbus Municipal Airport;Columbus, NM
+1205;LAM;Los Alamos Airport;Los Alamos, NM
+1206;TSM;Taos Municipal Airport;Taos, NM
+1207;CNM;Cavern City Air Terminal;Carlsbad, NM
+1208;SVC;Grant County Airport;Silver City, NM
+1209;OTO;Otto airport;Otto, NM
+1210;GUP;Gallup Municipal Airport;Gallup, NM
+1211;ALM;Alamogordo-White Sands Regional Airport;Alamogordo, NM
+1212;HBB;Hobbs Industrial Airpark;Hobbs, NM
+1213;SAF;Santa Fe County Municipal Airport;Santa Fe/Taos, NM
+1214;ABQ;Albuquerque International Airport;Albuquerque, NM
+1215;ROW;Roswell Industrial Air Center Airport;Roswell, NM
+1216;HOB;Lea County (Hobbs) Airport;Hobbs, NM
+1217;LEN;Aeropuero de Bajio;Leon len, Spain
+1218;scu;Antonio Maceo;Santiago, Cuba
+1219;BCA;Baracoa airport;Baracoa, Cuba
+1220;BYM;Bayamo airport;Bayamo, Cuba
+1221;CMW;Ignacio Agramonte;Camaguey, Cuba
+1222;MOA;Moa airport;Moa, Cuba
+1223;VRA;Varadero airport;Varadero, Cuba
+1224;MZO;Manzanillo airport;Manzanillo, Cuba
+1225;GER;Nueva Gerona airport;Nueva Gerona, Cuba
+1226;GAO;Los Canos;Guantanamo, Cuba
+1227;HAV;Aeropuerto Internacional Jose Marti;Havana, Cuba
+1228;HOG;Holguin airport;Holguin, Cuba
+1229;CCC;Cayo Coco airport;Cayo Coco, Cuba
+1230;CYO;Cayo Largo del sur airport;Cayo Largo del sur, Cuba
+1231;AVI;Ciego de Avila airport;Ciego de Avila, Cuba
+1232;MGA;Augusto Cesar Sandino;Managua, Nicaragua
+1233;SAO;Metropolitan Area;Sao Paulo Sao, Brazil
+1234;RIO;Metropolitan Area;Rio de Janeiro, Brazil
+1235;GRU;Aeroporto Internacional Guarulhos;Sao Paolo, Brazil
+1236;GIG;Aeroporto Internacional Galeao;Rio de Janeiro, Brazil
+1237;BHZ;Metropolitan Area;Belo Horizonte bhz, Brazil
+1238;LAZ;Bom Jesus Lapa airport;Bom Jesus Lapa, Brazil
+1239;SLZ;Sao Luiz airport;Sao Luiz, Brazil
+1240;CGH;Aeroporto de Congonhas;Sao Paolo, Brazil
+1241;STM;Santarem airport;Santarem, Brazil
+1242;RIA;Santa Maria airport;Santa Maria, Brazil
+1243;JDO;Juazeiro Norte airport;Juazeiro Norte, Brazil
+1244;BRA;Barreiras airport;Barreiras, Brazil
+1245;BAT;Barretos airport;Barretos, Brazil
+1246;LDB;Londrina airport;Londrina, Brazil
+1247;CCI;Concordia airport;Concordia, Brazil
+1248;TBT;Tabatinga airport;Tabatinga, Brazil
+1249;JDF;Juiz de Fora airport;Juiz de Fora, Brazil
+1250;BAU;Bauru airport;Bauru, Brazil
+1251;BEL;Vale de Caes;Belem, Brazil
+1252;VAL;Valenca airport;Valenca, Brazil

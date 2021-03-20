@@ -179,10 +179,6 @@ namespace testing_fileIO
                         while (reader.Read())
                         {
                             idCountry = int.Parse(reader.GetString(0));
-
-                            if (countryName.Contains("Rica")) {
-                                Console.WriteLine($"CountryId: {idCountry} - {countryName}");
-                            }
                         }
                     }
 
@@ -221,8 +217,8 @@ namespace testing_fileIO
                 string code = cols[1].Trim();
                 string name = cols[2].Trim();
                 string location = cols[3].Trim();
-                string countryName = location.Split(",")[1];
                 int idCountry = 0;
+                string countryName = location.Split(",")[1].Trim();
 
                 using (var connection = new SqliteConnection(sqliteDbPath))
                 {
@@ -240,11 +236,16 @@ namespace testing_fileIO
                         while (reader.Read())
                         {
                             idCountry = int.Parse(reader.GetString(0));
+
+                            if (countryName.Contains("Rica"))
+                            {
+                                Console.WriteLine($"CountryId: {idCountry} - {countryName}");
+                            }
                         }
                     }
 
                     //INSERT
-                    var cmdInsert = @"INSERT INTO 'main'.'Airports' ('id', 'code', 'name', 'location', 'idCountry', 'country') VALUES ($id, $code, $name, $location, $idCountry, $countryName);";
+                    var cmdInsert = @"INSERT INTO 'main'.'Airports' ('id', 'code', 'name', 'location', 'idCountry', 'country') VALUES ($id, $code, $name, $location, $idCountry, $country);";
 
                     command.CommandText = cmdInsert;
                     command.Parameters.Clear();
@@ -253,7 +254,7 @@ namespace testing_fileIO
                     command.Parameters.AddWithValue("$name", name);
                     command.Parameters.AddWithValue("$location", location);
                     command.Parameters.AddWithValue("$idCountry", idCountry);
-                    command.Parameters.AddWithValue("$countryName", countryName); //SE GUARDA DIRECTAMENTE EL COUNTRY EXTRAIDO DEL NAME PQ EN ALGUNOS CASOS TIENE DIFERENTE ESCRITURA QUE LA BBDD DE COUNTRIES
+                    command.Parameters.AddWithValue("$country", countryName); //SE GUARDA DIRECTAMENTE EL COUNTRY EXTRAIDO DEL NAME PQ EN ALGUNOS CASOS TIENE DIFERENTE ESCRITURA QUE LA BBDD DE COUNTRIES
 
 
                     int result = command.ExecuteNonQuery();
