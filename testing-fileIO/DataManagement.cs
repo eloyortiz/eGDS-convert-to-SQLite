@@ -6,9 +6,9 @@ using Microsoft.Data.Sqlite;
 
 namespace testing_fileIO
 {
-    class DataManagement
+    public class DataManagement
     {
-        static void Main(string[] args)
+        public DataManagement()
         {
             #region VARIABLES
             //COMPROBACION DEL SO PARA LA RUTA DE LOS FICHEROS
