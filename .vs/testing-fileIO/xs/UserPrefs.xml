@@ -1,13 +1,15 @@
 ﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{03A7DA65-1132-4719-95FF-CE512F32CCE0}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="testing-fileIO/Program.cs">
     <Files>
       <File FileName="testing-fileIO/Program.cs" Line="7" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="testing-fileIO" expanded="True" selected="True">
-            <Node name="testing-fileIO" expanded="True" />
+          <Node name="testing-fileIO" expanded="True">
+            <Node name="testing-fileIO" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
