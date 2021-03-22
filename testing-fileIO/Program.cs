@@ -36,7 +36,7 @@ namespace testing_fileIO
             sFilePantallas = sPathFiles + "pantallasTodas.txt";
             sqliteDbPath = "Data Source=" + sPathFiles + "egds.db";
 
-            sFileCSV = new string[]{ sPathFiles + "countries.csv", sPathFiles + "aircrafts.csv", sPathFiles + "airlines.csv", sPathFiles + "airports.csv" };
+            sFileCSV = new string[]{ sPathFiles + "countries_ISO3166-1.csv", sPathFiles + "aircrafts.csv", sPathFiles + "airlines.csv", sPathFiles + "airports.csv" };
         }
     }
 
@@ -226,7 +226,7 @@ namespace testing_fileIO
             return _total;
         }
 
-        public static int AddCountries(string sFileCSV, string sqliteDbPath)
+        public int AddCountries(string sFileCSV, string sqliteDbPath)
         {
             int _total = -1;
             string[] lines = File.ReadAllLines(sFileCSV);
@@ -235,7 +235,7 @@ namespace testing_fileIO
             {
                 _total = 0;
                 string[] cols = line.Split(";");
-
+                
                 using (var connection = new SqliteConnection(sqliteDbPath))
                 {
                     connection.Open();
@@ -266,7 +266,7 @@ namespace testing_fileIO
             return _total;
         }
 
-        public static int AddAircrafts(string sFileCSV, string sqliteDbPath)
+        public int AddAircrafts(string sFileCSV, string sqliteDbPath)
         {
             int _total = -1;
             string[] lines = File.ReadAllLines(sFileCSV);
@@ -309,14 +309,13 @@ namespace testing_fileIO
 
         }
 
-        public static int AddAirlines(string sFileCSV, string sqliteDbPath)
+        public int AddAirlines(string sFileCSV, string sqliteDbPath)
         {
-            int _total = -1;
+            int _total = 0;
             string[] lines = File.ReadAllLines(sFileCSV);
 
             foreach (string line in lines)
-            {
-                _total = 0;
+            {                
                 string[] cols = line.Split(";");
 
                 string id = cols[0].Trim();
@@ -343,7 +342,7 @@ namespace testing_fileIO
                 {
                     connection.Open();
                     // SE EXTRAE EL IDCOUNTRY MEDIANTE EL NOMBRE PARA AÑADIRLO COMO FK
-                    var cmdSelect = @"SELECT id FROM 'main'.'Countries' WHERE name like $countryName;";
+                    var cmdSelect = @"SELECT id FROM 'main'.'Countries' WHERE name like '%'||$countryName||'%';";
 
                     var command = connection.CreateCommand();
                     command.CommandText = cmdSelect;
@@ -383,7 +382,7 @@ namespace testing_fileIO
             return _total;
         }
 
-        public static int AddAirports(string sFileCSV, string sqliteDbPath)
+        public int AddAirports(string sFileCSV, string sqliteDbPath)
         {
             int _total = -1;
             string[] lines = File.ReadAllLines(sFileCSV);
@@ -404,7 +403,7 @@ namespace testing_fileIO
                 {
                     connection.Open();
                     // SE EXTRAE EL IDCOUNTRY MEDIANTE EL NOMBRE PARA AÑADIRLO COMO FK
-                    var cmdSelect = @"SELECT id FROM 'main'.'Countries' WHERE name like $countryName;";
+                    var cmdSelect = @"SELECT id FROM 'main'.'Countries' WHERE name like '%'||$countryName||'%';";
 
                     var command = connection.CreateCommand();
                     command.CommandText = cmdSelect;
@@ -455,20 +454,20 @@ namespace testing_fileIO
     {
         static void Main(string[] args)
         {
-            int _result;
-
             Rutas oRutas = new Rutas();
             CSVtoSQLite oCSV = new CSVtoSQLite();
 
             List<Classroom> classrooms = CSVtoSQLite.ConvertToList(oRutas.sFilePantallas, oRutas.sPathInputFiles, oRutas.sPathOutputFiles);
 
-            _result = CSVtoSQLite.AddClassroom(classrooms, oRutas.sqliteDbPath);
+            int _result = -1;
 
-            
-            //_result = oCSV.AddCountries(oRutas.sFileCSV[0], oRutas.sqliteDbPath);
-            //_result = oCSV.AddAircrafts(oRutassFileCSV[1], oRutassqliteDbPath);
-            //_result = oCSV.AddAirlines(oRutassFileCSV[2], oRutassqliteDbPath);
-            //_result = oCSV.AddAirports(oRutassFileCSV[3], oRutassqliteDbPath);
+            //_result = CSVtoSQLite.AddClassroom(classrooms, oRutas.sqliteDbPath);
+
+
+            //_result = oCSV .AddCountries(oRutas.sFileCSV[0], oRutas.sqliteDbPath);
+            //_result = oCSV.AddAircrafts(oRutas.sFileCSV[1], oRutassqliteDbPath);
+            _result = oCSV.AddAirlines(oRutas.sFileCSV[2], oRutas.sqliteDbPath);
+            //_result = oCSV.AddAirports(oRutas.sFileCSV[3], oRutas.sqliteDbPath);
 
         }
     }
