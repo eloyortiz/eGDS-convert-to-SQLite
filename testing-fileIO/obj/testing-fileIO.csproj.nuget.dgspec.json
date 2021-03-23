@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/testing-fileIO.csproj": {}
+    "/Users/eortiz/GDS/GDS-UCO/eGDS-convert-to-SQLite/testing-fileIO/testing-fileIO.csproj": {}
   },
   "projects": {
-    "/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/testing-fileIO.csproj": {
+    "/Users/eortiz/GDS/GDS-UCO/eGDS-convert-to-SQLite/testing-fileIO/testing-fileIO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/testing-fileIO.csproj",
+        "projectUniqueName": "/Users/eortiz/GDS/GDS-UCO/eGDS-convert-to-SQLite/testing-fileIO/testing-fileIO.csproj",
         "projectName": "testing-fileIO",
-        "projectPath": "/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/testing-fileIO.csproj",
+        "projectPath": "/Users/eortiz/GDS/GDS-UCO/eGDS-convert-to-SQLite/testing-fileIO/testing-fileIO.csproj",
         "packagesPath": "/Users/eortiz/.nuget/packages/",
-        "outputPath": "/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/obj/",
+        "outputPath": "/Users/eortiz/GDS/GDS-UCO/eGDS-convert-to-SQLite/testing-fileIO/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/eortiz/.config/NuGet/NuGet.Config"

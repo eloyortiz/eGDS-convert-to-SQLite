@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.809.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testing-fileIO", "testing-fileIO\testing-fileIO.csproj", "{03A7DA65-1132-4719-95FF-CE512F32CCE0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eGDS_convert_to_sqlite", "testing-fileIO\eGDS_convert_to_sqlite.csproj", "{03A7DA65-1132-4719-95FF-CE512F32CCE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,5 +21,16 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9FDCCB74-18BA-4BA9-AF66-DE17CD98FCEF}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.TextStylePolicy = $2
+		$2.inheritsSet = null
+		$2.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $3
+		$3.scope = text/x-csharp
+		$0.VersionControlPolicy = $4
 	EndGlobalSection
 EndGlobal

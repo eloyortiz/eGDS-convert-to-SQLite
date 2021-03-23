@@ -5,8 +5,30 @@ using Microsoft.Data.Sqlite;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 
-namespace testing_fileIO
+namespace eGDS_convert_to_sqlite
 {
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Rutas oRutas = new Rutas();
+            CSVtoSQLite oCSV = new CSVtoSQLite();
+
+            List<Classroom> classrooms = CSVtoSQLite.ConvertToList(oRutas.sFilePantallas, oRutas.sPathInputFiles, oRutas.sPathOutputFiles);
+
+            int _result = -1;
+
+            //_result = CSVtoSQLite.AddClassroom(classrooms, oRutas.sqliteDbPath);
+
+
+            //_result = oCSV .AddCountries(oRutas.sFileCSV[0], oRutas.sqliteDbPath);
+            //_result = oCSV.AddAircrafts(oRutas.sFileCSV[1], oRutassqliteDbPath);
+            //_result = oCSV.AddAirlines(oRutas.sFileCSV[2], oRutas.sqliteDbPath);
+            //_result = oCSV.AddAirports(oRutas.sFileCSV[3], oRutas.sqliteDbPath);
+
+        }
+    }
+
     public class Rutas
     {
         string winPath { get; set; }
@@ -450,25 +472,5 @@ namespace testing_fileIO
 
     }
 
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Rutas oRutas = new Rutas();
-            CSVtoSQLite oCSV = new CSVtoSQLite();
-
-            List<Classroom> classrooms = CSVtoSQLite.ConvertToList(oRutas.sFilePantallas, oRutas.sPathInputFiles, oRutas.sPathOutputFiles);
-
-            int _result = -1;
-
-            //_result = CSVtoSQLite.AddClassroom(classrooms, oRutas.sqliteDbPath);
-
-
-            //_result = oCSV .AddCountries(oRutas.sFileCSV[0], oRutas.sqliteDbPath);
-            //_result = oCSV.AddAircrafts(oRutas.sFileCSV[1], oRutassqliteDbPath);
-            _result = oCSV.AddAirlines(oRutas.sFileCSV[2], oRutas.sqliteDbPath);
-            //_result = oCSV.AddAirports(oRutas.sFileCSV[3], oRutas.sqliteDbPath);
-
-        }
-    }
+  
 }
