@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using Microsoft.Data.Sqlite;
@@ -48,9 +48,11 @@ namespace eGDS_convert_to_sqlite
             //COMPROBACION DEL SO PARA LA RUTA DE LOS FICHEROS
             OperatingSystem osInfo = Environment.OSVersion;
             Console.WriteLine($"SO - Platform: {osInfo.Platform}, Version: {osInfo.Version}");
+        
+            string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
 
-            winPath = @"C:\GDS\GDS-UCO\testing-fileIO\testing-fileIO\data\";
-            macPath = @"/Users/eortiz/GDS/GDS-UCO/testing-fileIO/testing-fileIO/data/";
+            winPath = projectDirectory + @"\data\";
+            macPath = projectDirectory + @"/data/";
 
             sPathFiles = (osInfo.Platform.ToString().ToLower().Contains("win") ? winPath : macPath);
             sPathInputFiles = sPathFiles + "_PANTALLAS/";
